@@ -1,0 +1,22 @@
+.home-welcome, .footer {
+    height: 50vh;
+}
+
+.why-choose-me {
+    position: absolute;
+    left: 0px;
+    height: 50vh;
+    width: 100%;
+    background-color: #111111;
+}
+
+.wcm-header {
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+}
+
+.wcm-description p span {
+    color: #5196CD;
+}
