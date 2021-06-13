@@ -1,92 +1,123 @@
-.home__header {
-    position: relative;
-    height: 100vh;
-}
+/* SZ3YAN by Sze Yan (updated as of )
 
-.home__intro {
-    position: absolute;
-    top: 30%;
-}
+   Structure of 1.szeyan_home.css
+   |
+   ├─ 1. home
+   ├─ 2. chooseMe
+   ├─ 3. findMe
+   ├─ 4. newsletter
+     
+    /* --------------------------------------------------------------------------
+        1. home (heading)
+    -------------------------------------------------------------------------- */
 
-.chooseMe__header {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2573px;
-    background-color: #111111;
-}
-
-.chooseMe__intro {
-    text-align: center;
-    color: white;
-    font-size: 5em;
-    font-weight: 500;
-    padding-top: 1.5em;
-}
-
-.chooseMe__intro1 {
-    position: relative;
-    top: -25px;
-}
-
-.chooseMe__description {
-    text-align: center;
-    color: white;
-    padding-top: 1.2em;
-}
-
-.chooseMe__description p span {
-    color: #5196CD;
-}
-
-.chooseMe__moving {
-    padding-top: 100px;
-    padding-right: 100px;
-}
-
-.chooseMe__left, .chooseMe__right {
-    display: flex;
-}
-
-.chooseMe__left a, .chooseMe__right a {
-    text-decoration: none;
-}
-
-.chooseMe__projects {
-    border-radius: 10px;
-    background-color: #000000;
-    padding: 2px;
-    width: 300px;
-    height: 112px;
-}
-
-.dMdqcP {
-    display: grid;
-    grid-gap: 20px;
-    width: 700px;
-    grid-template-columns: repeat(7, 80px);
-}/*!sc*/
-
-@media only screen and (min-width: 768px) {
-    .dMdqcP {
-        grid-gap: 40px;
-        width: 2380px;
-        grid-template-columns: repeat(7, 300px);
+    .home__header {
+        position: relative;
+        height: 100vh;
     }
-}/*!sc*/
+    
+    .home__intro {
+        position: absolute;
+        top: 30%;
+    }
 
-.chooseMe__projects:active, .chooseMe__projects:hover {
-    transform: scale(0.98);
-}
+    /* --------------------------------------------------------------------------
+        2. chooseMe
+    -------------------------------------------------------------------------- */
 
-.chooseMe__projects h5 {
-    color: #fff;
-}
+    .chooseMe__header {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2573px;
+        background-color: #111111;
+    }
+    
+    .chooseMe__intro {
+        text-align: center;
+        color: white;
+        font-size: 5em;
+        font-weight: 500;
+        padding-top: 1.5em;
+    }
+    
+    .chooseMe__intro1 {
+        position: relative;
+        top: -25px;
+    }
+    
+    .chooseMe__description {
+        text-align: center;
+        color: white;
+        padding-top: 1.2em;
+    }
+    
+    .chooseMe__description p span {
+        color: #5196CD;
+    }
+    
+    .chooseMe__moving {
+        padding-top: 100px;
+        padding-right: 100px;
+    }
+    
+    .chooseMe__left, .chooseMe__right {
+        display: flex;
+    }
+    
+    .chooseMe__left a, .chooseMe__right a {
+        text-decoration: none;
+    }
+    
+    .chooseMe__projects {
+        border-radius: 10px;
+        background-color: #000000;
+        padding: 2px;
+        width: 300px;
+        height: 112px;
+    }
+    
+    .dMdqcP {
+        display: grid;
+        grid-gap: 20px;
+        width: 700px;
+        grid-template-columns: repeat(7, 80px);
+        animation: gJpSAc 396s linear initial infinite;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .dMdqcP {
+            grid-gap: 40px;
+            width: 2380px;
+            grid-template-columns: repeat(7, 300px);
+        }
+    }
+    
+    .chooseMe__projects:active, .chooseMe__projects:hover {
+        transform: scale(0.98);
+    }
+    
+    .chooseMe__projects h5 {
+        color: #fff;
+    }
+    
+    .chooseMe__projects p {
+        color: #606060;
+    }
+    
+    .chooseMe__card {
+        display: flex;
+    }
 
-.chooseMe__projects p {
-    color: #606060;
-}
+    /* --------------------------------------------------------------------------
+        3. findMe
+    -------------------------------------------------------------------------- */
 
-.chooseMe__card {
-    display: flex;
-}
+
+    /* --------------------------------------------------------------------------
+        4. newsletter
+    -------------------------------------------------------------------------- */
+
+
+
+/*
