@@ -70,6 +70,10 @@
         animation: moveleft 110s linear;
     }
 
+    .chooseMe__right {
+        animation: moveleft 396s linear;
+    }
+
    /* needa fix this part -> moving right animation  */
 
     @keyframes moveleft {
