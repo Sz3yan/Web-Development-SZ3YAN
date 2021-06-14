@@ -24,6 +24,7 @@
     /* --------------------------------------------------------------------------
         2. chooseMe
     -------------------------------------------------------------------------- */
+    
     .chooseMe__header {
         position: absolute;
         left: 0;
@@ -48,6 +49,7 @@
         text-align: center;
         color: white;
         padding-top: 1.2em;
+        font-size: 26px;
     }
     
     .chooseMe__description p span {
@@ -66,7 +68,7 @@
     }
 
     .chooseMe__left {
-        animation: moveleft 200s linear;
+        animation: moveleft 75s linear;
     }
 
     .chooseMe__right {
@@ -82,16 +84,6 @@
 
         100% {
             right: 2000px;
-        }
-    }
-
-    @keyframes moveright {
-        0% {
-            left: 0px
-        }
-
-        100% {
-            left: 2000px;
         }
     }
 
@@ -159,6 +151,7 @@
         text-align: center;
         color: white;
         padding-top: 1.2em;
+        font-size: 26px;
     }
 
     .findMe__description p span {
