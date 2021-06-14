@@ -1,13 +1,44 @@
 <html>
     <head>
-        <meta charset="utf-8"/>
-        <meta author="Sze Yan"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SZEYAN - Register</title>
-        <link rel="stylesheet" href="../3. SZ3YAN_CSS/global.css"/>
-        <link rel="stylesheet" href="../3. SZ3YAN_CSS/szeyan_register.css"/>
+        <meta charset="utf-8" />
+        <meta author="Sze Yan" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SZEYAN - Login</title>
+        <link rel="stylesheet" href="../3. SZ3YAN_CSS/global.css" />
+        <link rel="stylesheet" href="../3. SZ3YAN_CSS/szeyan_register.css" />
     </head>
     <body>
-        
+        <div class="register__header">
+            <form method="post" action="1.szeyan_home.html">
+                <a href="1.szeyan_home.html" class="register__logo"><img src="../1. SZ3YAN_design/SZ3YAN logo.png" width="131" height="36" alt="SZE YAN"/></a>
+                <h1>Create an account</h1>
+
+                <div class="register__group register__groupflex">
+                    <input class="register__control register__roundedtop" type="text" required placeholder="First Name" autofocus/>
+                    <input class="register__control register__roundedtop" type="text" required placeholder="Last Name" autofocus/>
+                </div>
+
+                <div class="register__group1">
+                    <input class="register__control register__stacked" type="text" required placeholder="Username" autofocus/>
+                </div>
+
+                <div class="register__group1">
+                    <input class="register__control register__roundedbottom" type="password" required placeholder="Password" />
+                </div>
+
+                <div class="register__field">
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <span>Yes, I’d like to receive news and updates from Mollie.</span>
+                    </label>
+                </div>
+
+                <button class="button" type="submit">Create Account</button>
+
+                <footer>
+                    <p class="register__register">Have an account? <a href="szeyan_login.html">Login</a></p>
+                </footer>
+            </form>
+        </div>
     </body>
 </html>

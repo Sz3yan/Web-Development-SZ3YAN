@@ -1,0 +1,101 @@
+.register__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    padding: 70px 0;
+    text-align: center;
+    margin: auto;
+    height: 96%;
+}
+
+.register__header form {
+    width: 100%;
+}
+
+.register__header h1 {
+    font-size: 36px;
+    color: black;
+}
+
+.register__logo {
+    margin: 0 auto 20px;
+}
+
+.register__group {
+    position: relative;
+    margin-top: 30px;
+}
+
+.register__groupflex {
+    display: flex;
+}
+
+.register__group1 {
+    position: relative;
+}
+
+.register__group input, .register__group1 input {
+    width: 100%;
+    padding: 0 20px;
+    height: 50px;
+    border: 1px solid #dfe2e6;
+}
+
+input:focus {
+    border-color: #5196CD;
+    z-index: 2;
+    outline: 0;
+    position: relative;
+}
+
+.register__roundedtop {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.register__stacked {
+    margin-bottom: -1px;
+}
+
+.register__roundedbottom {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.register__control {
+    font-size: 16px;
+    border-radius: 0;
+}
+
+.register__field {
+    display: flex;
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 0 16px;
+    border-radius: 6px;
+    background-color: #5196CD;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.register__register {
+    font-size: 16px;
+}
+
+.register__register a, .register__field a {
+    color: #5196CD;
+}
