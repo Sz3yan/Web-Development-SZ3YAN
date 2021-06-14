@@ -29,7 +29,7 @@ body {
   letter-spacing: -0.02em;
   color: var(--color-default);
   padding: 1rem 1rem 0;
-  background-color: var(--color-light-bg);
+  background-color: var(--page-bg);
 }
 
 a {
@@ -38,18 +38,8 @@ a {
 
 /* Page structure */
 .container {
-  max-width: 1040px;
+  max-width: 1360px;
   margin: auto;
-}
-
-@media (max-width: 700px) {
-  .container {
-    margin: auto;
-    max-width: 480px;
-  }
-  .nav__header.container {
-    max-width: 100%;
-  }
 }
 
 /* Header */
@@ -71,8 +61,94 @@ a {
 .nav__navigation a {
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 0.875rem;
-  color: var(--color-default);
+  font-size: 0.975rem;
+  color: black;
+}
+
+@media (min-width: 891px) {
+  /* Larger screen nav */
+  .nav__header {
+    background-color: var(--page-bg);
+    margin: -1rem;
+  }
+
+  .nav__navigation {
+    flex: 1;
+  }
+
+  .nav__navigation a {
+    margin-left: 2.5rem;
+  }
+
+  .nav__navigation .nav li {
+    display: inline-block;
+    position: relative;
+  }
+
+  .nav__navigation > .nav__trigger { display: none; }
+
+  .nav__wrapper .nav > li.nav__current a {
+    border-color: var(--color-blue);
+    color: var(--color-blue);
+  }
+
+  /* Hide man mobile nav */
+  .nav__navigation > .nav__wrapper > .nav__trigger {
+    display: none;
+  }
+
+  .subnav .nav__trigger { 
+    padding: 0.5rem; 
+    margin-right: -0.5rem; 
+    cursor: pointer; 
+    font-size: 12px 
+  }
+
+  .subnav.nav__wrapper { 
+    display: inline-block; 
+  }
+
+  .subnav.nav__wrapper .nav {
+    position: absolute;
+    display: none;
+    left: 0.5rem;
+    border-radius: var(--box-corner-radius);
+    z-index: 1;
+  }
+
+  .subnav.nav__wrapper:hover > .nav {
+    display: block;
+  }
+
+  .subnav.nav__wrapper .nav li {
+    display: list-item;
+  }
+
+  .subnav.nav__wrapper .nav li a {
+    padding: 0.4rem 1rem;
+    margin-left: 0;
+    display: block;
+    background-color: var(--page-bg);
+    min-width: 200px;
+    text-align: left;
+  }
+
+  .subnav.nav__wrapper .nav li a:hover {
+    background-color: pink;
+  }
+
+  /* navigation under projects - rounded borders */
+  .subnav.nav__wrapper .nav li:first-of-type a {
+    border-radius: var(--box-corner-radius) var(--box-corner-radius) 0 0;
+  }
+
+  .subnav.nav__wrapper .nav li:last-of-type a {
+    border-radius: 0 0 var(--box-corner-radius) var(--box-corner-radius);
+  }
+
+  .subnav.nav__wrapper .nav li a:hover {
+    background-color: var(--color-light-bg)
+  }
 }
 
 @media (max-width: 890px) {
@@ -83,7 +159,7 @@ a {
     top: 0;
     left: 0;
     padding: 0.5rem 1rem;
-    background: var(--color-light-bg);
+    background: var(--page-bg);
     z-index: 1;
   }
 
@@ -145,92 +221,5 @@ a {
 
   .subnav { 
     display: none 
-  }
-}
-
-@media (min-width: 891px) {
-  /* Larger screen nav */
-  .nav__header {
-    background-color: var(--color-light-bg);
-    margin: -1rem;
-  }
-
-  .nav__navigation {
-    flex: 1;
-  }
-
-  .nav__navigation a {
-    margin-left: 1.5rem;
-  }
-
-  .nav__navigation .nav li {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav__navigation > .nav__trigger { display: none; }
-
-  .nav__wrapper .nav > li.nav__current a {
-    border-color: var(--color-blue);
-    color: var(--color-blue);
-  }
-
-  .nav__wrapper .nav > li.nav__current a:hover {
-    border-color: var(--color-blue);
-    color: var(--color-blue);
-  }
-
-  /* Hide man mobile nav */
-  .nav__navigation > .nav__wrapper > .nav__trigger {
-    display: none;
-  }
-
-  .subnav .nav__trigger { 
-    padding: 0.5rem; 
-    margin-right: -0.5rem; 
-    cursor: pointer; 
-    font-size: 12px 
-  }
-
-  .subnav.nav__wrapper { 
-    display: inline-block; 
-  }
-
-  .subnav.nav__wrapper .nav {
-    position: absolute;
-    display: none;
-    left: 0.5rem;
-    border-radius: var(--box-corner-radius);
-    z-index: 1;
-  }
-
-  .subnav.nav__wrapper:hover > .nav {
-    display: block;
-  }
-
-  .subnav.nav__wrapper .nav li {
-    display: list-item;
-  }
-
-  .subnav.nav__wrapper .nav li a {
-    padding: 0.4rem 1rem;
-    margin-left: 0;
-    display: block;
-    background-color: var(--page-bg);
-    min-width: 200px;
-    text-align: left;
-  }
-
-  /* navigation under projects - rounded borders */
-  .subnav.nav__wrapper .nav li:first-of-type a {
-    border-radius: var(--box-corner-radius) var(--box-corner-radius) 0 0;
-  }
-
-  .subnav.nav__wrapper .nav li:last-of-type a {
-    border-radius: 0 0 var(--box-corner-radius) var(--box-corner-radius);
-  }
-
-  .subnav.nav__wrapper .nav li a:hover {
-    background-color: var(--color-light-bg)
   }
 }
