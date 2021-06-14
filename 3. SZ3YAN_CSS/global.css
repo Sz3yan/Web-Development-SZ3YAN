@@ -10,9 +10,9 @@ html {
   --color-blue-hover: #227cb5;
   --color-yellow: #EEF13B;
   --color-light-bg: #F8FAFC;
-  --color-light-grey: #E3E3E3;
+  --color-light-grey: #ffffff;
   --color-grey: #666;
-  --page-bg: #fff;
+  --page-bg: #ffffff;
   --box-shadow: rgba(0,0,0,0.2);
 
   /* Layout */
