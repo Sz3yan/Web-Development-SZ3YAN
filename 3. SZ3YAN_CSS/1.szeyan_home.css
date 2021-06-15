@@ -76,16 +76,16 @@
     }
 
     .chooseMe__left {
-        animation: moveleft 130s linear infinite;
+        animation: moveleft 300s linear infinite;
     }
 
     .chooseMe__right {
-        animation: moveright 130s linear infinite;
+        animation: moveright 300s linear infinite;
     }
 
     .chooseMe__right .chooseMe__projectSet1, .chooseMe__right .chooseMe__projectSet2 {
         position: relative;
-        left: 2000px;
+        left: 1500px;
     }
 
     @keyframes moveleft {
@@ -159,26 +159,40 @@
         3. findMe
     -------------------------------------------------------------------------- */
 
+    .findMe {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
     .findMe__intro {
         text-align: center;
         color: white;
-        font-size: 5em;
-        font-weight: 500;
+        font-size: 38px;
+        font-weight: 600;
+        letter-spacing: -.005em;
+        padding-top: 2.5em;
+        max-width: 800px;
+        margin: auto;
     }
-    
-    .findMe__intro1 {
-        position: relative;
-        top: -25px;
+
+    .findMe__intro h6 {
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: var(--dark-grey);
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: .05em;
     }
     
     .findMe__description {
         text-align: center;
-        color: white;
+        color: var(--grey);
         padding-top: 1.2em;
-        font-size: 26px;
+        font-size: 20px;
+        font-weight: 500;
     }
 
-    .findMe__description p span {
+    .findMe__description span {
         color: var(--blue);
     }
 
