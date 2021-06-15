@@ -23,7 +23,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: -.031em;
-  padding: 1rem 1rem;
+  padding: 2rem 0;
   background-color: var(--page-bg);
   font-family: Circular Pro, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -144,8 +144,8 @@ p {
   }
 
   .subnav.nav__wrapper .nav li a:hover {
-    background-color: var(--color-blue);
-    color: var(--blue);
+    background-color: var(--blue);
+    color: var(--black);
   }
 }
 
@@ -165,7 +165,7 @@ p {
   }
 
   body {
-    padding-top: 3.75rem;
+    padding-top: 0;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -213,7 +213,7 @@ p {
   }
 
   .nav__wrapper .nav li a:hover {
-    background-color: var(--color-light-bg)
+    background-color: var(--black)
   }
 
   .subnav { 
