@@ -47,10 +47,17 @@ p {
   margin: auto;
 }
 
+.nav__header {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
 .nav__header .container {
   display: flex;
   align-items: center;
   height: 55px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .nav__navigation .nav {
@@ -69,6 +76,11 @@ p {
 }
 
 @media (min-width: 891px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .nav__header {
     background-color: var(--page-bg);
     margin: -1rem;
@@ -153,20 +165,17 @@ p {
 @media (max-width: 890px) {
   .nav__header {
     width: 100%;
-    top: 0;
-    left: 0;
-    padding: 0.5rem 1rem;
     background: var(--page-bg);
     z-index: 1;
+    padding-top: 0;
   }
 
+
   .nav__header .container {
-    padding: 0;
     max-width: 100%;
   }
 
-  body {
-    padding-top: 0;
+  .container {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -214,7 +223,8 @@ p {
   }
 
   .nav__wrapper .nav li a:hover {
-    background-color: var(--black)
+    background-color: var(--blue);
+    color: var(--black);
   }
 
   .subnav { 
