@@ -231,4 +231,72 @@
         height: 100vh;
         background-color: var(--bblack);
     }
+
+    .newsletter__intro {
+        text-align: center;
+        color: white;
+        font-size: 38px;
+        font-weight: 600;
+        letter-spacing: -.005em;
+        padding-top: 2.5em;
+        max-width: 650px;
+        margin: auto;
+    }
+
+    .newsletter__intro h6 {
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: var(--dark-grey);
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: .05em;
+    }
+    
+    .newsletter__description {
+        text-align: center;
+        color: var(--grey);
+        padding-top: 1.2em;
+        padding-bottom: 20px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+     .newsletter form {
+        margin-bottom: 16px;
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .pro-select {
+         position: relative;
+         width: 100%;
+         color: white;
+     }
+
+     .pro-select select {
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 18px;
+        font-size: 14px;
+        color: inherit;
+        background: var(--dark-grey);
+        border: none;
+        border-radius: 20px;
+        padding: 0 42px 0 18px;
+        outline: none;
+        -webkit-appearance: none;
+        margin-bottom: 16px;
+    }
+
+    .newsletter button {
+        color: white;
+        background-color: var(--blue);
+        height: 30px;
+        border-radius: 15px;
+        padding: 0 18px;
+    }
 /*
