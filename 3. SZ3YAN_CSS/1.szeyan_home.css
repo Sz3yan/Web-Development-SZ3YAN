@@ -1,4 +1,4 @@
-/* SZ3YAN by Sze Yan (updated as of )
+/* SZ3YAN by Sze Yan (updated as of 17 June 2021)
 
    Structure of 1.szeyan_home.css
    |
@@ -229,6 +229,7 @@
     .newsletter__header {
         height: 80vh;
         background-color: var(--bblack);
+        position: relative;
     }
 
     .newsletter__intro {
@@ -269,13 +270,13 @@
         align-items: center;
      }
 
-     .pro-select {
+     .newsletter__question {
          position: relative;
          width: 100%;
          color: white;
      }
 
-     .pro-select select {
+     .newsletter__question select {
         display: block;
         width: 100%;
         height: 40px;
@@ -297,5 +298,63 @@
         height: 30px;
         border-radius: 15px;
         padding: 0 18px;
+    }
+
+    .newsletter__question input {
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 18px;
+        font-size: 14px;
+        color: white;
+        background: var(--dark-grey);
+        border: none;
+        border-radius: 15px;
+        padding: 0 42px 0 18px;
+        outline: none;
+        -webkit-appearance: none;
+        margin-bottom: 16px;
+    }
+
+    .newsletter__question input {
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 18px;
+        font-size: 14px;
+        color: inherit;
+        background: var(--dark-grey);
+        border: none;
+        border-radius: 15px;
+        padding: 0 42px 0 18px;
+        outline: none;
+        -webkit-appearance: none;
+        margin-bottom: 16px;
+    }
+
+    .newsletter__question input::placeholder, #hishow textarea::placeholder {
+        color: white;
+    }
+
+    #hishow h4, #colabshow h4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .your_info {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+    }
+
+    #hishow textarea, #colabshow textarea {
+        resize: none;
+        background-color: var(--dark-grey);
+        color: white;
+        font-size: 14px;
+        border: none;
+        width: 100%;
+        padding: 14px 18px;
+        border-radius: 15px;
     }
 /*

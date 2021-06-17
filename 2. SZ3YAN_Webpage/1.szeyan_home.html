@@ -406,18 +406,41 @@
                         <p class="newsletter__description">Let us know what we can do for you</p>
                     </div>
                     
-                    <form class="pro-select" method="POST" action="">
-                        <select id="pro-select-239" autocomplete="off" required="required">
-                            <option disabled="disabled" selected="selected" value="">Choose a selection...</option> 
-                            <option value="crash">My app is crashing or freezing</option>
-                            <option value="bug">My app has a bug or other issue</option>
-                            <option value="learn">How do I...?</option>
-                            <option value="feedback">I have an idea or suggestion</option>
-                            <option value="marcom">Let's discuss a business/marketing opportunity</option>
-                            <option value="hi">I just want to say hi!</option>
+                    <form class="newsletter__question">
+                        <select id="seeAnotherField" autocomplete="off">
+                            <option disabled selected value="">Choose a selection...</option> 
+                            <option value="email">How do I sign up for newsletter?</option>
+                            <option value="colab">I have an idea or suggestion</option>
+                            <option value="hi">I just wanna to say hai!</option>
                         </select>
+
+                        <div id="emailshow">
+                            <input type="email" placeholder="email">
+                        </div>
+
+                        <div id="colabshow">
+                            <h4>Wanna collab?</h4>
+                            <div class="your_info">
+                                <input type="text" placeholder="What's your name?">
+                                <input type="email" placeholder="Where can I contact you?">
+                            </div>
+                            <textarea rows="6" placeholder="Tell me about your idea" style="height: 136px;"></textarea>
+                        </div>
+
+                        <div id="hishow">
+                            <h4>I love to hear from you!</h4>
+                            <div class="your_info">
+                                <input type="text" placeholder="What's your name?">
+                                <input type="email" placeholder="Where can I contact you?">
+                            </div>
+                            <textarea rows="6" placeholder="what's on your mind" style="height: 136px;"></textarea>
+                        </div>
+
                         <button type="submit">CONTINUE</button>
                     </form>
+
+                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+                    <script src="../4.SZ3YAN_JS/hide_form.js"></script>
                 </div>
             </div>
             <p class="copyright">Copyright &copy; 2021 Sze Yan All rights reserved.</p>
