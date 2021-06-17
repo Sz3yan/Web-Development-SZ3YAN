@@ -24,7 +24,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: -.031em;
-  padding: 2rem 0;
+  padding-top: 2rem;
   background-color: var(--page-bg);
   font-family: Circular Pro, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -45,6 +45,14 @@ p {
 .container {
   max-width: 1080px;
   margin: auto;
+}
+
+.copyright {
+  text-align: center;
+  color: var(--grey);
+  font-size: 10px;
+  padding-bottom: 16px;
+  background-color: var(--bblack);
 }
 
 .nav__header {

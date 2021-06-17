@@ -26,8 +26,6 @@
     -------------------------------------------------------------------------- */
     
     .chooseMe__header {
-        position: absolute;
-        left: 0;
         width: 100%;
         background-color: var(--bblack);
     }
@@ -180,9 +178,10 @@
         3. findMe
     -------------------------------------------------------------------------- */
 
-    .findMe {
+    .findMe__header {
         padding-top: 100px;
         padding-bottom: 200px;
+        background-color: var(--bblack);
     }
 
     .findMe__intro {
@@ -227,8 +226,8 @@
         4. newsletter
     -------------------------------------------------------------------------- */
 
-    .newsletter {
-        height: 100vh;
+    .newsletter__header {
+        height: 80vh;
         background-color: var(--bblack);
     }
 
@@ -261,7 +260,7 @@
         font-weight: 500;
     }
 
-     .newsletter form {
+     .newsletter__header form {
         margin-bottom: 16px;
         max-width: 500px;
         margin: auto;
@@ -292,7 +291,7 @@
         margin-bottom: 16px;
     }
 
-    .newsletter button {
+    .newsletter__header button {
         color: white;
         background-color: var(--blue);
         height: 30px;
