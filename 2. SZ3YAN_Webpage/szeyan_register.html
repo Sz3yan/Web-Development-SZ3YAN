@@ -14,26 +14,34 @@
                 <h1>Create an account</h1>
 
                 <div class="register__group register__groupflex">
-                    <input class="register__control register__roundedtop" type="text" placeholder="First Name" required autofocus/>
+                    <input id="nom" class="register__control register__roundedtop" type="text" placeholder="First Name" required autofocus/>
                     <input class="register__control register__roundedtop" type="text" placeholder="Last Name" required/>
                 </div>
 
                 <div class="register__group1">
-                    <input class="register__control register__stacked" type="text" placeholder="Username" required/>
+                    <input id="user" class="register__control register__stacked" type="text" placeholder="Username" required/>
                 </div>
 
                 <div class="register__group1">
-                    <input class="register__control register__roundedbottom" type="password" placeholder="Password" required/>
+                    <input id="pw" class="register__control register__roundedbottom" type="password" placeholder="Password" required/>
                 </div>
 
                 <div class="register__field">
                     <label class="checkbox">
                         <input type="checkbox"/>
-                        <span>Yes, I’d like to receive news and updates from Mollie.</span>
+                        <span>Yes, I’d like to receive news and updates.</span>
                     </label>
                 </div>
 
-                <button class="button" type="submit">Create Account</button>
+                <script>
+                    function store(){
+                        localStorage.setItem('user', user.value);
+                        localStorage.setItem('pw', pw.value);
+                        localStorage.setItem('nom', nom.value);
+                    }
+                </script>
+
+                <button class="button" type="submit" onclick="store()">Create Account</button>
 
                 <footer>
                     <p class="register__register">Have an account? <a href="szeyan_login.html">Login</a></p>
