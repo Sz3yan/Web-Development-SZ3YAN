@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: Circular Pro;
-  src: url("../1. SZ3YAN_design/circular-pro-book.woff2") format("woff2")
+  src: url("../1. SZ3YAN_design/circular-pro-book.woff2")
 }
 
 * {
@@ -165,15 +165,22 @@ p {
 
   .nav__header .container {
     max-width: 100%;
+    display: flex;
+    align-items: center;
   }
 
-  .nav__logo, .nav__navigation { 
-    width: 50%; 
+  .nav__logo {
+    width: 95%;
+  }
+
+  .nav__navigation .nav {
+    list-style: none
   }
 
   .nav__trigger { 
     padding: 0.5rem; 
     cursor: pointer; 
+    position: relative;
   }
 
   .nav__wrapper { 
