@@ -42,49 +42,10 @@ p {
   font-size: 20px;
 }
 
-.container {
-  max-width: 1080px;
-  margin: auto;
-}
-
-.copyright {
-  text-align: center;
-  color: var(--grey);
-  font-size: 10px;
-  padding-bottom: 16px;
-  background-color: var(--bblack);
-}
-
-.nav__header {
-  padding-top: 10px;
-  padding-bottom: 30px;
-}
-
-.nav__header .container {
-  display: flex;
-  align-items: center;
-  height: 55px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.nav__navigation .nav {
-  list-style: none
-}
-
-.nav__navigation {
-  text-align: right;
-  position: relative;
-}
-
-.nav__navigation a {
-  text-decoration: none;
-  font-size: 16px;
-  color: black;
-}
-
 @media (min-width: 891px) {
   .container {
+    max-width: 1080px;
+    margin: auto;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -92,14 +53,33 @@ p {
   .nav__header {
     background-color: var(--page-bg);
     margin: -1rem;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .nav__header .container {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .nav__navigation {
+    text-align: right;
+    position: relative;
     flex: 1;
   }
 
   .nav__navigation a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
     margin-left: 3rem;
+  }
+
+  .nav__navigation .nav {
+    list-style: none
   }
 
   .nav__navigation .nav li {
@@ -171,6 +151,11 @@ p {
 }
 
 @media (max-width: 890px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
   .nav__header {
     width: 100%;
     background: var(--page-bg);
@@ -178,14 +163,8 @@ p {
     padding-top: 0;
   }
 
-
   .nav__header .container {
     max-width: 100%;
-  }
-
-  .container {
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   .nav__logo, .nav__navigation { 
@@ -238,4 +217,11 @@ p {
   .subnav { 
     display: none 
   }
+}
+
+.copyright {
+  text-align: center;
+  color: var(--grey);
+  font-size: 10px;
+  padding-bottom: 16px;
 }
