@@ -84,6 +84,11 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 16px;
+      }
+
+      .gallery div img:hover {
+        transform: scale(0.98);
       }
       
       /* Make the gallery items all matchy matchy on smaller screen sizes */
