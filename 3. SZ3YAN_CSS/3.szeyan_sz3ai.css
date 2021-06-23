@@ -11,15 +11,17 @@
         1. home (heading)
     -------------------------------------------------------------------------- */
 
-    video {
+    body {
+        background-color: #111111;
+        color: var(--grey);
+    }
+
+    .nav a {
+        color: var(--grey);
+    }
+
+    .haish {
         width: 100%;
-        top: 0;
-        left: 0;
-        display: block;
-        min-height: 320px;
-        max-height: 1000px;
-        position: absolute;
-        z-index: -1;
     }
 
     /* --------------------------------------------------------------------------

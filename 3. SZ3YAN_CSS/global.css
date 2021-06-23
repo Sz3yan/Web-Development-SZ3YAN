@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: Circular Pro;
-  src: url("../1. SZ3YAN_design/circular-pro-book.woff2")
+  src: url("../1. SZ3YAN_design/circular-pro-book.ttf")
 }
 
 * {
@@ -33,6 +33,11 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+h1, h4, p {
+  font-weight: 100;
+  line-height: 1.5em;
+}
+
 a {
   text-decoration: none;
   color: var(--blue);
@@ -52,7 +57,6 @@ p {
 
   .nav__header {
     background-color: var(--page-bg);
-    margin: -1rem;
     padding-top: 10px;
     padding-bottom: 30px;
   }
@@ -160,7 +164,7 @@ p {
     width: 100%;
     background: var(--page-bg);
     z-index: 1;
-    padding-top: 0;
+    padding-top: 5px;
   }
 
   .nav__header .container {
@@ -229,6 +233,6 @@ p {
 .copyright {
   text-align: center;
   color: var(--grey);
-  font-size: 10px;
+  font-size: 12px;
   padding-bottom: 16px;
 }
