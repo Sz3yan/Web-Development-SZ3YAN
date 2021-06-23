@@ -33,11 +33,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-h1, h4, p {
-  font-weight: 100;
-  line-height: 1.5em;
-}
-
 a {
   text-decoration: none;
   color: var(--blue);

@@ -18,12 +18,7 @@
     .home__intro {
         position: absolute;
         top: 40%;
-        font-size: 40px;
-    }
-
-    .home__intro p {
-        font-size: 24px;
-        font-weight: 100;
+        font-size: 30px;
     }
 
     /* --------------------------------------------------------------------------
@@ -39,7 +34,7 @@
         text-align: center;
         color: white;
         letter-spacing: -.005em;
-        padding-top: 14em;
+        padding-top: 10em;
         max-width: 800px;
         margin: auto;
     }

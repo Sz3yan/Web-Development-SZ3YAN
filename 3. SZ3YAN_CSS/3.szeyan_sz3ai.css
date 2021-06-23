@@ -1,3 +1,16 @@
+body {
+    background-color: #111111;
+    color: var(--grey);
+}
+
+.nav a {
+    color: var(--grey);
+}
+
+.haish {
+    width: 100%;
+}
+
 /* SZ3YAN by Sze Yan (updated as of 21 June 2021)
 
    Structure of 1.szeyan_sz3ai.css
@@ -6,22 +19,36 @@
    ├─ 2. chooseMe
    ├─ 3. findMe
    ├─ 4. newsletter
-     
+
     /* --------------------------------------------------------------------------
-        1. home (heading)
+        1. sz3ai (heading)
     -------------------------------------------------------------------------- */
 
-    body {
-        background-color: #111111;
-        color: var(--grey);
-    }
-
-    .nav a {
-        color: var(--grey);
-    }
-
-    .haish {
+    .sz3ai__header {
         width: 100%;
+    }
+    
+    .sz3ai__intro {
+        text-align: center;
+        color: white;
+        letter-spacing: -.005em;
+        padding-top: 2em;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .sz3ai__intro h6 {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: var(--dark-grey);
+        text-transform: uppercase;
+        font-weight: 200;
+        letter-spacing: .05em;
+    }
+
+    .sz3ai__intro h2 {
+        font-size: 45px;
+        font-weight: 100;
     }
 
     /* --------------------------------------------------------------------------
