@@ -128,7 +128,7 @@
     }
     
     .chooseMe__card {
-        border-radius: 10px;
+        border-radius: 16px;
         background-color: var(--black);
         padding: 20px;
         width: 300px;
