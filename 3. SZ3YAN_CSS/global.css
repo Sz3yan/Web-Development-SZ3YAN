@@ -15,18 +15,18 @@
 
 * {
   box-sizing: border-box;
-  border:0;
-  margin:0;
-  padding:0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: -.031em;
-  padding-top: 2rem;
+  padding-top: 1.75rem;
   background-color: var(--page-bg);
-  font-family: Circular Pro, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Circular Pro, -apple-system, sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -52,14 +52,12 @@ p {
 
   .nav__header {
     background-color: var(--page-bg);
-    padding-top: 10px;
     padding-bottom: 30px;
   }
 
   .nav__header .container {
     display: flex;
     align-items: center;
-    height: 55px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -97,55 +95,6 @@ p {
 
   .nav__navigation > .nav__wrapper > .nav__trigger {
     display: none;
-  }
-
-  .subnav .nav__trigger { 
-    padding: 0.5rem; 
-    margin-right: -0.5rem; 
-    cursor: pointer; 
-    font-size: 12px 
-  }
-
-  .subnav.nav__wrapper { 
-    display: inline-block; 
-  }
-
-  .subnav.nav__wrapper .nav {
-    position: absolute;
-    display: none;
-    left: 0.5rem;
-    border-radius: var(--box-corner-radius);
-    z-index: 1;
-  }
-
-  .subnav.nav__wrapper:hover > .nav {
-    display: block;
-  }
-
-  .subnav.nav__wrapper .nav li {
-    display: list-item;
-  }
-
-  .subnav.nav__wrapper .nav li a {
-    padding: 0.4rem 1rem;
-    margin-left: 0;
-    display: block;
-    background-color: var(--page-bg);
-    min-width: 200px;
-    text-align: left;
-  }
-
-  .subnav.nav__wrapper .nav li:first-of-type a {
-    border-radius: var(--box-corner-radius) var(--box-corner-radius) 0 0;
-  }
-
-  .subnav.nav__wrapper .nav li:last-of-type a {
-    border-radius: 0 0 var(--box-corner-radius) var(--box-corner-radius);
-  }
-
-  .subnav.nav__wrapper .nav li a:hover {
-    background-color: var(--blue);
-    color: var(--black);
   }
 }
 
@@ -218,10 +167,6 @@ p {
   .nav__wrapper .nav li a:hover {
     background-color: var(--blue);
     color: var(--black);
-  }
-
-  .subnav { 
-    display: none 
   }
 }
 
