@@ -42,6 +42,10 @@ p {
   font-size: 20px;
 }
 
+.nav__mobile {
+  display: none;
+}
+
 @media (min-width: 891px) {
   .container {
     max-width: 1080px;
@@ -106,7 +110,7 @@ p {
   
   .nav__header {
     width: 100%;
-    background: var(--page-bg);
+    background: transparent;
     z-index: 1;
     padding-top: 5px;
   }
@@ -131,10 +135,6 @@ p {
     position: relative;
   }
 
-  .nav__wrapper { 
-    display: inline-block; 
-  }
-
   .nav__wrapper .nav {
     position: absolute;
     display: none;
@@ -144,29 +144,20 @@ p {
     z-index: 1;
   }
 
-  .nav__wrapper:hover > .nav {
-    display: block;
+  .nav__wrapper button {
+    background-color: transparent;
   }
 
-  .nav__wrapper .nav li a {
-    padding: 0.4rem 1rem;
-    display: block;
-    border: 0;
-    background-color: var(--page-bg);
-    min-width: 140px;
+  .nav__mobile {
+    background-color: pink;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
   }
 
-  .nav__wrapper .nav li:first-of-type a {
-    border-radius: var(--box-corner-radius) var(--box-corner-radius) 0 0;
-  }
-
-  .nav__wrapper .nav li:last-of-type a {
-    border-radius: 0 0 var(--box-corner-radius) var(--box-corner-radius);
-  }
-
-  .nav__wrapper .nav li a:hover {
-    background-color: var(--blue);
-    color: var(--black);
+  .nav__mobile .container .nav {
+    padding-top: 100px;
   }
 }
 
