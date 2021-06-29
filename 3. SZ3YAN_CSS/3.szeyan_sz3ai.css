@@ -26,6 +26,7 @@ body {
 
     .sz3ai__header {
         width: 100%;
+        z-index: -3;
     }
     
     .sz3ai__intro {
@@ -35,6 +36,7 @@ body {
         padding-top: 2em;
         max-width: 800px;
         margin: auto;
+        
     }
 
     .sz3ai__intro h6 {

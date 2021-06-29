@@ -93,17 +93,15 @@ p {
     color: var(--blue);
   }
 
-  .nav__navigation > .nav__wrapper > .nav__trigger, .nav__mobile {
+  .nav__navigation > .nav__wrapper > .nav__trigger, #nav__mobile {
     display: none;
   }
-
-
 }
 
 @media (max-width: 890px) {
   .container {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 26px;
+    padding-right: 26px;
   }
   
   .nav__header {
@@ -146,17 +144,23 @@ p {
     background-color: transparent;
   }
 
-  .nav__mobile {
-    background-color: pink;
-    position: absolute;
-    top: 0;
+  #nav__mobile {
+    background-color: var(--page-bg);
     width: 100%;
     z-index: -1;
     display: none;
   }
 
-  .nav__mobile .container .nav {
-    padding-top: 100px;
+  #nav__mobile .container .nav {
+    padding-bottom: 30px;
+    list-style: none;
+    width: 100%;
+  }
+
+  #nav__mobile .container .nav li {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid var(--grey);
   }
 }
 

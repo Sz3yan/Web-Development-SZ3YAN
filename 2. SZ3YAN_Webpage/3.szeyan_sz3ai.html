@@ -23,9 +23,9 @@
                 </div>
                 <div class="nav__navigation">
                     <div class="nav__wrapper">
-                        <span class="nav__trigger">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><g fill="var(--bblack)"><path d="M8 14h7a1 1 0 000-2H8a1 1 0 000 2zM1 4h14a1 1 0 000-2H1a1 1 0 000 2zM1 9h14a1 1 0 000-2H1a1 1 0 000 2z"></path></g></svg>
-                        </span>
+                        <button class="nav__trigger" onclick="mobile()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><g fill="var(--page-bg)"><path d="M8 14h7a1 1 0 000-2H8a1 1 0 000 2zM1 4h14a1 1 0 000-2H1a1 1 0 000 2zM1 9h14a1 1 0 000-2H1a1 1 0 000 2z"></path></g></svg>
+                        </button>
                         <ul class="nav">
                             <li class="nav__about"><a href="2.szeyan_about.html">About</a></li>
                             <li class="nav__sz3ai nav__current"><a href="3.szeyan_sz3ai.html">SZ3AI</a></li>
@@ -36,6 +36,29 @@
                     </div>
                 </div>
             </nav>
+
+            <div id="nav__mobile">
+                <div class="container">
+                    <ul class="nav">
+                        <li class="nav__about"><a href="2.szeyan_about.html">About</a></li>
+                        <li class="nav__sz3ai"><a href="3.szeyan_sz3ai.html">SZ3AI</a></li>
+                        <li class="nav__projects"><a href="4.szeyan_project.html">Projects</a></li>
+                        <li class="nav__badminton"><a href="5.szeyan_badminton.html">Badminton</a></li>
+                        <li class="nav__login"><a href="szeyan_login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <script>
+                function mobile() {
+                    var x = document.getElementById("nav__mobile");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
         </div>
         
         <div class="sz3ai__header">
