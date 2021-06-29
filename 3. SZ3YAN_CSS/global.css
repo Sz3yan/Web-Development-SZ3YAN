@@ -42,10 +42,6 @@ p {
   font-size: 20px;
 }
 
-.nav__mobile {
-  display: none;
-}
-
 @media (min-width: 891px) {
   .container {
     max-width: 1080px;
@@ -97,9 +93,11 @@ p {
     color: var(--blue);
   }
 
-  .nav__navigation > .nav__wrapper > .nav__trigger {
+  .nav__navigation > .nav__wrapper > .nav__trigger, .nav__mobile {
     display: none;
   }
+
+
 }
 
 @media (max-width: 890px) {
@@ -154,6 +152,7 @@ p {
     top: 0;
     width: 100%;
     z-index: -1;
+    display: none;
   }
 
   .nav__mobile .container .nav {
