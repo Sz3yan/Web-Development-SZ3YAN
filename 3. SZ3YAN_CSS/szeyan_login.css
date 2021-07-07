@@ -97,7 +97,7 @@ footer {
     color: #5196CD;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 400px) {
     .login__header {
         padding-left: 40px;
         padding-right: 40px;
