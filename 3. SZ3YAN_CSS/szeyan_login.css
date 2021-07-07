@@ -96,3 +96,10 @@ footer {
 .login__register a, .login__field a {
     color: #5196CD;
 }
+
+@media (max-width: 890px) {
+    .login__header {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}

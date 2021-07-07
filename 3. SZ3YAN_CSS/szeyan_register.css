@@ -99,3 +99,10 @@ footer {
 .register__register a, .register__field a {
     color: #5196CD;
 }
+
+@media (max-width: 890px) {
+    .register__header {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
