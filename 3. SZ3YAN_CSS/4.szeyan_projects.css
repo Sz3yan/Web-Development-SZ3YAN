@@ -10,15 +10,10 @@
     
     .project__intro {
         position: fixed;
-        bottom: 15%;
-        font-size: 30px;
-        z-index: -10;
-        width: 100%;
-        display: flex;
-    }
-
-    .greeting {
-        width: 35%;
+        left: 0px;
+        width: 40%;
+        height: 100%;
+        padding: 75px 55px 50px;
     }
 
     .greeting p {
@@ -43,23 +38,25 @@
         font-size: 16px;
     }
 
-    .project__me {
-        margin: auto;
-        width: 60%;
-        padding: 65px;
-    }
-
-    .projects {
+    .project__content {
         background-image: linear-gradient(#f4b93d, #f4b93d);
-        width: 100%;
+        width: 60%;
+        margin-left: 40%;
     }
 
     @media (max-width: 890px) {
         .project__intro {
-            display: block;
-            width: 85%;
+            position: static;
+            width: 100%;
+            height: 750px;
+            padding-right: 55px;
+            padding-left: 55px;
         }
 
+        .project__content {
+            width: 100%;
+            margin-left: 0%;
+        }
     }
 
 /*
