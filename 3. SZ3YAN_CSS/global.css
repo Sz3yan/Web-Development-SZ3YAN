@@ -112,8 +112,8 @@ p {
 
 @media (max-width: 890px) {
   .container {
-    padding-left: 26px;
-    padding-right: 26px;
+    padding-left: 65px;
+    padding-right: 65px;
   }
   
   .nav__header {
