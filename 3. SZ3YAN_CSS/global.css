@@ -63,7 +63,7 @@ p {
   }
 
   .nav__header {
-    background-color: var(--page-bg);
+    background-color: transparent;
     padding-bottom: 30px;
   }
 

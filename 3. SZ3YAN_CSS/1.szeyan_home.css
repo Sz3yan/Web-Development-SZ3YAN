@@ -13,15 +13,15 @@
 
     .home__header {
         height: 100vh;
+        padding-top: 14%;
     }
     
     .home__intro {
-        position: absolute;
-        bottom: 15%;
         font-size: 30px;
-        z-index: -10;
+    }
+
+    .greeting {
         width: 40%;
-        display: flex;
     }
 
     .greeting p {
@@ -34,8 +34,76 @@
         margin-bottom: 65px;
     }
 
-    .home__icons a {
-        padding-right: 30px;
+    .home__icons .insta {
+        width: 24px;
+        height: 24px;
+        background-image: url("../1. SZ3YAN_design/insta.png");
+        background-size: 24px;
+        background-repeat: no-repeat;
+        margin-right: 30px
+    }
+
+    .home__icons .insta:hover {
+        background-image: url("../1. SZ3YAN_design/insta-colour.png");
+        transition: all 300ms ease;
+    }
+
+    .home__icons .whatsapp {
+        width: 24px;
+        height: 24px;
+        background-image: url("../1. SZ3YAN_design/whatsapp.png");
+        background-size: 24px;
+        background-repeat: no-repeat;
+        margin-right: 30px
+    }
+
+    .home__icons .whatsapp:hover {
+        background-image: url("../1. SZ3YAN_design/whatsapp-colour.png");
+        transition: all 300ms ease;
+    }
+
+    .home__icons .gmail {
+        width: 24px;
+        height: 24px;
+        background-image: url("../1. SZ3YAN_design/gmail.png");
+        background-size: 24px;
+        background-repeat: no-repeat;
+        margin-right: 30px
+    }
+
+    .home__icons .gmail:hover {
+        background-image: url("../1. SZ3YAN_design/gmail-colour.png");
+        transition: all 300ms ease;
+    }
+
+    .home__icons .profile {
+        width: 24px;
+        height: 24px;
+        background-image: url("../1. SZ3YAN_design/profile.png");
+        background-size: 24px;
+        background-repeat: no-repeat;
+        margin-right: 30px
+    }
+
+    .home__icons .profile:hover {
+        background-image: url("../1. SZ3YAN_design/profile-colour.png");
+        transition: all 300ms ease;
+    }
+
+    .home__incons .insta:hover {
+        background-image: pink;
+    }
+
+    .small {
+        display: none;
+    }
+
+    .small {
+        padding: 15px 65px;
+        border-radius: 100px;
+        background-color: var(--blue);
+        color: white;
+        font-size: 16px;
     }
 
     .home__hai {
@@ -47,16 +115,31 @@
     }
 
     .home__me {
-        margin: auto;
-        width: 60%;
+        position: absolute;
+        top: 250px;
+        right: 0;
     }
 
     @media (max-width: 890px) {
-        .home__intro {
-            display: block;
-            width: 85%;
+        .greeting {
+            width: 100%;
         }
 
+        .home__me {
+            top: 460px;
+            margin-left: 28%;
+        }
+
+        .small {
+            display: block;
+            position: relative;
+            left: 150px;
+            padding-left: 30px;
+        }
+
+        .home__hai {
+            display: none;
+        }
     }
 
     /* --------------------------------------------------------------------------
