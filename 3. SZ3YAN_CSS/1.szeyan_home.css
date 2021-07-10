@@ -381,6 +381,14 @@
         text-align: center;
     }
 
+    .findMe__invert a{
+        opacity: 0;
+    }
+
+    .findMe__invert a:hover {
+        opacity: 1;
+    }
+
     .cursor {
         width: 300px;
         height: 300px;
