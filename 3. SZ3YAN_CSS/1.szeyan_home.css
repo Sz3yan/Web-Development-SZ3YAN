@@ -13,7 +13,7 @@
 
     .home__header {
         height: 100vh;
-        padding-top: 13%;
+        padding-top: 14%;
     }
     
     .home__intro {
@@ -303,7 +303,7 @@
             padding-bottom: 50px;
         }
 
-        .chooseMe__left, .chooseMe__projects__description {
+        .mobile, .chooseMe__projects__description {
             display: none;
         }
 
@@ -311,17 +311,15 @@
             animation: moveright 300s linear infinite;
         }
 
-        .chooseMe__projectSet1, .chooseMe__projectSet2 {
-            row-gap: 30px;
-            grid-template-columns: repeat(5, 100px);
+        .chooseMe__card {
+            background-color: transparent;
+            width: 100px;
+            padding: 0;
         }
 
-        .chooseMe__card {
-            border-radius: none;
-            background-color: transparent;
-            padding: 0;
-            width: auto;
-            height: auto;
+        .chooseMe__projectSet1, .chooseMe__projectSet2 {
+            grid-template-columns: repeat(5, 100px);
+            padding-top: 20px;
         }
 
         .chooseMe__card img {
