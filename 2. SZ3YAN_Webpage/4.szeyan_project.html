@@ -84,15 +84,23 @@
                 <div class="container">
                     <div class="project__intro">
                         <div class="greeting">
-                            <h1>DESIGNER.<br/>
-                                THINKER.<br/>
-                                HUSBAND<br/>
-                                & FATHER.</h1>
+                            <script>
+                                var getname = localStorage.getItem("nom");
+    
+                                if (getname != null) {
+                                    document.write("<h1> Hey " + getname + "</h1>");
+                                }
+    
+                                else {
+                                    document.write("<h1>Hey Guys</h1>");
+                                }
+                            </script>
                             <p>I’m Sze Yan. Currently studying in NYP. Taking a Diploma in Cybersecurity & Digital Forensics. Find my work and project below.</p>
                             <div class="project__icons">
-                                <a href="" target="_blank"><img src="../1. SZ3YAN_design/insta-grey.png" width="24px"></a>
-                                <a href="" target="_blank"><img src="../1. SZ3YAN_design/insta-grey.png" width="24px"></a>
-                                <a href="" target="_blank"><img src="../1. SZ3YAN_design/insta-grey.png" width="24px"></a>
+                                <a href="https://www.instagram.com/sz3.yan/" target="_blank"><img src="1. SZ3YAN_design/insta-grey.png" width="24px"></a>
+                                <a href="https://wa.me/6597924720" target="_blank"><img src="1. SZ3YAN_design/whatsapp.png" width="24px"></a>
+                                <a href="mailto:sz3yan@gmail.com" target="_blank"><img src="1. SZ3YAN_design/gmail.png" width="24px"></a>
+                                <a href="2. SZ3YAN_Webpage/szeyan_login.html" target="_blank"><img src="1. SZ3YAN_design/profile.png" width="24px"></a>
                             </div>
                             <a class="project__hai" href="">Say Hai!</a>
                         </div>
@@ -103,22 +111,18 @@
             <div class="project__content">
                 <div class="content-wrapper">
                     <div class="overcapture">
-
+                        <p>About</p>
+                        <img src="1. SZ3YAN_design/me.png" width="40%">
                     </div>
-                    <div class="overcapture">
-
+                    <div class="overcapture" style="background-color: var(--black);">
+                        <p>SZ3AI</p>
+                        <img src="1. SZ3YAN_design/iphone-12-pro-max--graphite@2x.png" width="40%">
                     </div>
-                    <div class="overcapture">
-
+                    <div class="overcapture" style="background-color: #E7B1D3;">
+                        <p>Projects</p>
                     </div>
-                    <div class="overcapture">
-
-                    </div>
-                    <div class="overcapture">
-
-                    </div>
-                    <div class="overcapture">
-
+                    <div class="overcapture" style="background-color: #0294DE;">
+                        <p>Badminton</p>
                     </div>
                 </div>
             </div>
