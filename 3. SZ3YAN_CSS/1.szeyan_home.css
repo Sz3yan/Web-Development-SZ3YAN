@@ -138,7 +138,7 @@
 
     @media (max-width: 890px) {
         .home__me img {
-            margin-left: 0;
+            margin-left: 5%;
         }
     }
 
