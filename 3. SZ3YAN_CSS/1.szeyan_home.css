@@ -307,14 +307,14 @@
         text-align: center;
     }
 
-    .findMe__invert a img {
-        width: 40%;
-    }
-
     @media (max-width: 890px) {
         .findMe__intro {
             padding-left: 26px;
             padding-right: 26px;
+        }
+
+        .findMe__invert a img {
+            width: 40%;
         }
     }
 
