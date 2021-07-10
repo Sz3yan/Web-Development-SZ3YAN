@@ -15,20 +15,6 @@
 
             gtag('config', 'G-9MZZ65V8BT');
         </script>
-
-        <!-- <style>
-            .cursor {
-                width: 300px;
-                height: 300px;
-                background: #fff;
-                border-radius: 50%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                transform: translateX(-50%) translateY(-50%);
-                mix-blend-mode: difference;
-            }
-        </style> -->
     </head>
 
     <body>
@@ -460,35 +446,46 @@
                             <h2>Find Me On</h2> 
                             <p class="findMe__description">💻 Coding, 🏸 Badminton, 😴 Sleep, ↺ Repeat. Look up for <span>QR code</span>. Scan it for more details about me.</p> 
                         </div>
+
+                        <script>
+                            window.onscroll = function() {scrollFunction()};
     
-                        <!-- <script>
-                            const cursor = document.querySelector('.cursor');
+                            function scrollFunction() {
+                                if (document.documentElement.scrollTop > 1000 && document.documentElement.scrollTop < 2200) {
+                                    const cursor = document.querySelector('.cursor');
+                                    cursor.style.display = "block";
     
-                            let mouseX = 0;
-                            let mouseY = 0;
-                            let cursorX = 0;
-                            let cursorY = 0;
-                            let speed = 0.5; // change to increase the ease
-    
-                            function animate() {
-                                let distX = mouseX - cursorX;
-                                let distY = mouseY - cursorY;
-    
-                                cursorX = cursorX + (distX * speed);
-                                cursorY = cursorY + (distY * speed);
-    
-                                cursor.style.left = cursorX + 'px';
-                                cursor.style.top = cursorY + 'px';
-    
-                                requestAnimationFrame(animate);
+                                    let mouseX = 0;
+                                    let mouseY = 0;
+                                    let cursorX = 0;
+                                    let cursorY = 0;
+                                    let speed = 0.5; // change to increase the ease
+
+                                    function animate() {
+                                        let distX = mouseX - cursorX;
+                                        let distY = mouseY - cursorY;
+
+                                        cursorX = cursorX + (distX * speed);
+                                        cursorY = cursorY + (distY * speed);
+
+                                        cursor.style.left = cursorX + 'px';
+                                        cursor.style.top = cursorY + 'px';
+
+                                        requestAnimationFrame(animate);
+                                    }
+                                    animate();
+
+                                    document.addEventListener('mousemove', (event) => {
+                                        mouseX = event.pageX;
+                                        mouseY = event.pageY;
+                                    })
+                                }
+
+                                else {
+                                    document.querySelector('.cursor').style.display = "none";
+                                }
                             }
-                            animate();
-    
-                            document.addEventListener('mousemove', (event) => {
-                                mouseX = event.pageX;
-                                mouseY = event.pageY;
-                            })
-                        </script> -->
+                        </script>
                     </div>
     
                     <div class="findMe__invert">
