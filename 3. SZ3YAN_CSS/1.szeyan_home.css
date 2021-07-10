@@ -124,6 +124,24 @@
         }
     }
 
+    @media (max-width: 1112px) {
+        .home__me img {
+            margin-left: 10%;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .home__me img {
+            margin-left: 18%;
+        }
+    }
+
+    @media (max-width: 890px) {
+        .home__me img {
+            margin-left: 0;
+        }
+    }
+
     /* --------------------------------------------------------------------------
         2. chooseMe
     -------------------------------------------------------------------------- */
