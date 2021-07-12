@@ -36,9 +36,8 @@ body {
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: -.031em;
-  padding-top: 1.75rem;
   background-color: var(--page-bg);
-  font-family: Circular Pro, -apple-system, sans-serif;
+  font-family: Graphik web , Circular Pro, -apple-system, sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -64,6 +63,7 @@ p {
 
   .nav__header {
     background-color: transparent;
+    padding-top: 55px;
     padding-bottom: 30px;
   }
 
@@ -112,15 +112,15 @@ p {
 
 @media (max-width: 890px) {
   .container {
-    padding-left: 26px;
-    padding-right: 26px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   
   .nav__header {
     width: 100%;
     background: transparent;
+    padding-top: 50px;
     z-index: 1;
-    padding-top: 5px;
   }
 
   .nav__header .container {

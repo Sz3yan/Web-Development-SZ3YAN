@@ -13,18 +13,37 @@
 
     .home__header {
         height: 90vh;
-        padding-top: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .home__intro {
-        font-size: 30px;
+        display: grid;
+        width: 100%;
+        max-width: 1280px;
+        margin: auto;
+        grid-column-gap: 16px;
+        grid-row-gap: 60px;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto;
     }
 
-    .greeting {
-        width: 40%;
+    .home__greeting {
+        display: flex;
+        max-width: 420px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .greeting p {
+    .home__greeting h1 {
+        font-size: 50px;
+    }
+
+    .home__greeting p {
+        max-width: 380px;
+        font-size: 18px;
+        line-height: 1.6;
         margin-top: 35px;
     }
 
@@ -102,14 +121,16 @@
         font-size: 16px;
     }
 
-    .home__me {
-        position: absolute;
-        top: 230px;
-        right: 0;
+    .home__screenshot {
+        display: flex;
+        min-height: 420px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
     }
 
     @media (max-width: 890px) {
-        .greeting {
+        .home__greeting {
             width: 100%;
         }
 
