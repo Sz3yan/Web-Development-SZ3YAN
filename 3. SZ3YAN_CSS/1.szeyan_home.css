@@ -381,7 +381,7 @@
         text-align: center;
     }
 
-    .findMe__invert a{
+    .findMe__invert a {
         opacity: 0;
     }
 
@@ -518,7 +518,6 @@
         border-radius: 15px;
         padding: 0 42px 0 18px;
         outline: none;
-        -webkit-appearance: none;
         margin-bottom: 16px;
     }
 

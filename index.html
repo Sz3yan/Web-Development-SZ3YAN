@@ -449,9 +449,10 @@
 
                         <script>
                             window.onscroll = function() {scrollFunction()};
+                            console.log(document.documentElement.scrollTop)
     
                             function scrollFunction() {
-                                if (document.documentElement.scrollTop > 1000 && document.documentElement.scrollTop < 2500) {
+                                if (document.documentElement.scrollTop > 1500 && document.documentElement.scrollTop < 1800) {
                                     const cursor = document.querySelector('.cursor');
                                     cursor.style.display = "block";
     
