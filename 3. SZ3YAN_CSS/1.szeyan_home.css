@@ -427,7 +427,7 @@
     -------------------------------------------------------------------------- */
 
     .newsletter__header {
-        height: 100vh;
+        height: 105vh;
         background-color: var(--bblack);
     }
 
@@ -533,6 +533,10 @@
         border-radius: 15px;
         padding: 0 42px 0 18px;
         outline: none;
+        margin-bottom: 16px;
+    }
+
+    .newsletter__question textarea {
         margin-bottom: 16px;
     }
 
