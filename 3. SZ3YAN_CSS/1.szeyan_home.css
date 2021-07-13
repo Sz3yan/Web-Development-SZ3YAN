@@ -128,6 +128,18 @@
         align-items: center;
         padding-bottom: 50px;
     }
+
+    @media (max-width: 1112px) {
+        .home__me img {
+            margin-left: 10%;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .home__me img {
+            margin-left: 18%;
+        }
+    }
     
     @media (max-width: 890px) {
         .home__intro {
@@ -152,21 +164,23 @@
         }
     }
 
-    @media (max-width: 1112px) {
-        .home__me img {
-            margin-left: 10%;
+    @media (max-width: 375px) {
+        .home__greeting {
+            top: 130px;
         }
     }
 
-    @media (max-width: 1024px) {
-        .home__me img {
-            margin-left: 18%;
+    @media (max-width: 320px) {
+        .home__greeting {
+            top: 180px;
         }
-    }
 
-    @media (max-width: 890px) {
-        .home__me img {
-            margin-left: 5%;
+        .home__hai {
+            display: none;
+        }
+
+        .home__screenshot img {
+            width: 37%;
         }
     }
 
