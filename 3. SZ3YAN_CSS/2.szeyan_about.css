@@ -80,17 +80,53 @@
         grid-column: span 2;
         grid-row: span 2;
       }
+
+      .moreaboutMe__card {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
       
-      .moreaboutMe__gallery div img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      .content1 {
+        background-image: url("../1. SZ3YAN_design/ahh/Rectangle 38.png");
         border-radius: 16px;
       }
 
-      .moreaboutMe__gallery div img:hover {
+      .content2 {
+        background-image: url("../1. SZ3YAN_design/ahh/Rectangle 39.png");
+        background-size: cover;
+        border-radius: 16px;
+      }
+
+      .content3 {
+        background-image: url("../1. SZ3YAN_design/ahh/Rectangle 40.png");
+        background-size: cover;
+        border-radius: 16px;
+      }
+
+      .content4 {
+        background-image: url("../1. SZ3YAN_design/ahh/Rectangle 41.png");
+        border-radius: 16px;
+      }
+
+      .content5 {
+        background-image: url("../1. SZ3YAN_design/ahh/Rectangle 42.png");
+        border-radius: 16px;
+      }
+
+      .content6 {
+        background-image: url("../1. SZ3YAN_design/ahh/Rectangle 43.png");
+        border-radius: 16px;
+      }
+
+      .content7 {
+        background-image: url("../1. SZ3YAN_design/ahh/Rectangle 44.png");
+        border-radius: 16px;
+      }
+
+      .moreaboutMe__gallery .moreaboutMe__card:hover {
         transform: scale(0.99);
-        background-color: #5196CD;
+        background-image: #5196CD;
       }
       
       /* Make the gallery items all matchy matchy on smaller screen sizes */
