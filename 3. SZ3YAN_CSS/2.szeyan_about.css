@@ -86,6 +86,10 @@
           justify-content: center;
           align-items: center;
       }
+
+      .moreaboutMe__intro {
+          display: none;
+      }
       
       .content1 {
         background-image: url("../1. SZ3YAN_design/ahh/Rectangle 38.png");
@@ -126,7 +130,7 @@
 
       .moreaboutMe__gallery .moreaboutMe__card:hover {
         transform: scale(0.99);
-        background-image: #5196CD;
+        
       }
       
       /* Make the gallery items all matchy matchy on smaller screen sizes */
