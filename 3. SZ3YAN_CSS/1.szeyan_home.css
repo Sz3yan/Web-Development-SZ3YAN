@@ -468,12 +468,12 @@
     -------------------------------------------------------------------------- */
 
     .newsletter__header {
-        height: 105vh;
+        height: 90vh;
         background-color: var(--bblack);
     }
 
     .newsletter__header .container {
-        padding-top: 15%;
+        padding-top: 14%;
     }
 
     .newsletter__intro {
