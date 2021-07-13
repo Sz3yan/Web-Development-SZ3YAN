@@ -130,11 +130,6 @@
         margin: auto;
     }
 
-    .newsletter__intro h2 {
-        font-size: 45px;
-        font-weight: 100;
-    }
-
     .newsletter__intro h6 {
         margin-bottom: 10px;
         font-size: 16px;
@@ -143,13 +138,17 @@
         font-weight: 100;
         letter-spacing: .05em;
     }
+
+    .newsletter__intro h2 {
+        font-size: 45px;
+        font-weight: 100;
+    }
     
     .newsletter__description {
         text-align: center;
         color: var(--grey);
-        padding-top: 1.2em;
+        padding-top: 10px;
         padding-bottom: 20px;
-        font-size: 20px;
         font-weight: 100;
     }
 
@@ -163,91 +162,100 @@
      }
 
      .newsletter__question {
-        position: relative;
+         position: relative;
+         width: 100%;
+         color: white;
+     }
+
+     .newsletter__question select {
+        display: block;
         width: 100%;
+        height: 40px;
+        line-height: 18px;
+        font-size: 14px;
+        color: inherit;
+        background: var(--grey);
+        border: none;
+        border-radius: 20px;
+        padding: 0 18px 0 18px;
+        outline: none;
+        -webkit-appearance: none;
+        margin-bottom: 16px;
+    }
+
+    .newsletter__header button {
+        color: white;
+        background-color: var(--blue);
+        height: 30px;
+        border-radius: 15px;
+        padding: 0 18px;
+    }
+
+    .newsletter__question input {
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 18px;
+        font-size: 14px;
+        color: white;
+        background: var(--dark-grey);
+        border: none;
+        border-radius: 15px;
+        padding: 0 42px 0 18px;
+        outline: none;
+        margin-bottom: 16px;
+    }
+
+    .newsletter__question input {
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 18px;
+        font-size: 14px;
+        color: inherit;
+        background: var(--dark-grey);
+        border: none;
+        border-radius: 15px;
+        padding: 0 42px 0 18px;
+        outline: none;
+        margin-bottom: 16px;
+    }
+
+    .newsletter__question textarea {
+        margin-bottom: 16px;
+    }
+
+    .newsletter__question input::placeholder, #hishow textarea::placeholder {
         color: white;
     }
 
-    .newsletter__question select {
-       display: block;
-       width: 100%;
-       height: 40px;
-       line-height: 18px;
-       font-size: 14px;
-       color: inherit;
-       background: var(--grey);
-       border: none;
-       border-radius: 20px;
-       padding: 0 18px 0 18px;
-       outline: none;
-       -webkit-appearance: none;
-       margin-bottom: 16px;
-   }
+    #hishow h4, #colabshow h4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-   .newsletter__header button {
-       color: white;
-       background-color: var(--blue);
-       height: 30px;
-       border-radius: 15px;
-       padding: 0 18px;
-   }
+    #colabshow, #hishow {
+        width: 100%;
+    }
 
-   .newsletter__question input {
-       display: block;
-       width: 100%;
-       height: 40px;
-       line-height: 18px;
-       font-size: 14px;
-       color: white;
-       background: var(--grey);
-       border: none;
-       border-radius: 15px;
-       padding: 0 42px 0 18px;
-       outline: none;
-       -webkit-appearance: none;
-       margin-bottom: 16px;
-   }
+    #hishow textarea, #colabshow textarea {
+        resize: none;
+        background-color: var(--dark-grey);
+        color: white;
+        font-size: 14px;
+        border: none;
+        width: 100%;
+        padding: 14px 18px;
+        border-radius: 15px;
+    }
 
-   .newsletter__question input {
-       display: block;
-       width: 100%;
-       height: 40px;
-       line-height: 18px;
-       font-size: 14px;
-       color: inherit;
-       background: var(--grey);
-       border: none;
-       border-radius: 15px;
-       padding: 0 42px 0 18px;
-       outline: none;
-       -webkit-appearance: none;
-       margin-bottom: 16px;
-   }
+    @media (max-width: 890px) {
+        .newsletter__intro h2{
+            font-size: 36px;
+        }
 
-   .newsletter__question input::placeholder, #hishow textarea::placeholder {
-       color: white;
-   }
-
-   #hishow h4, #colabshow h4 {
-       text-align: center;
-       margin-bottom: 20px;
-       color: black;
-   }
-
-   .your_info {
-       display: flex;
-       justify-content: space-between;
-       width: 500px;
-   }
-
-   #hishow textarea, #colabshow textarea {
-       resize: none;
-       background-color: var(--grey);
-       color: white;
-       font-size: 14px;
-       border: none;
-       width: 100%;
-       padding: 14px 18px;
-       border-radius: 15px;
-   }
+        .newsletter__description {
+            font-size: 16px;
+        }
+    }
 /*
