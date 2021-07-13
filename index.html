@@ -18,525 +18,522 @@
     </head>
 
     <body>
-        <section>
-            <div class="nav__header"> 
-                <nav class="container">
-                    <div class="nav__logo">
-                        <a href="index.html">
-                            <img src="1. SZ3YAN_design/SZ3YAN logo.png" width="104" alt="SZE YAN"/>
-                        </a>
-                    </div>
-                    <div class="nav__navigation">
-                        <div class="nav__wrapper">
-                            <button class="nav__trigger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
-    
-                            <ul class="nav">
-                                <li class="nav__about"><a href="2. SZ3YAN_Webpage/2.szeyan_about.html">About</a></li>
-                                <li class="nav__sz3ai"><a href="2. SZ3YAN_Webpage/3.szeyan_sz3ai.html">SZ3AI</a></li>
-                                <li class="nav__projects"><a href="2. SZ3YAN_Webpage/4.szeyan_project.html">Projects</a></li>
-                                <li class="nav__badminton"><a href="2. SZ3YAN_Webpage/5.szeyan_badminton.html">Badminton</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-    
-            <div id="nav__mobile">
-                <nav class="container">
-                    <div class="mobile__navigation">
-                        <div class="mobile__wrapper">
-                            <ul class="nav">
-                                <li class="nav__about"><a href="2. SZ3YAN_Webpage/2.szeyan_about.html">About</a></li>
-                                <li class="nav__sz3ai"><a href="2. SZ3YAN_Webpage/3.szeyan_sz3ai.html">SZ3AI</a></li>
-                                <li class="nav__projects"><a href="2. SZ3YAN_Webpage/4.szeyan_project.html">Projects</a></li>
-                                <li class="nav__badminton"><a href="2. SZ3YAN_Webpage/5.szeyan_badminton.html">Badminton</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <script>
-                    const burger = document.querySelector(".nav__trigger");
-                    burger.addEventListener("click", function () {
-                        const body = document.body;
-                        body.classList.toggle("nav__open");
-        
-                        var x = document.getElementById("nav__mobile");
-                        if (x.style.display === "block") {
-                            x.style.display = "none";
-                        } 
-                        
-                        else {
-                            x.style.display = "block";
-                        }
-                    });
-                </script>
-            </div>
+        <div class="nav__header"> 
+            <nav class="container">
+                <div class="nav__logo">
+                    <a href="index.html">
+                        <img src="1. SZ3YAN_design/SZ3YAN logo.png" width="104" alt="SZE YAN"/>
+                    </a>
+                </div>
+                <div class="nav__navigation">
+                    <div class="nav__wrapper">
+                        <button class="nav__trigger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
 
-            <section>
-                <div class="home__header">
-                    <div class="container">
-                        <div class="home__intro">
-                            <div class="home__greeting">
-                                <script>
-                                    var getname = localStorage.getItem("nom");
-        
-                                    if (getname != null) {
-                                        document.write("<h1> Hey " + getname.charAt(0).toUpperCase() + getname.slice(1) + "</h1>");
-                                    }
-        
-                                    else {
-                                        document.write("<h1>Hey Guys</h1>");
-                                    }
-                                </script>
-                                <p>I’m Sze Yan. Studying in NYP. Taking a Diploma in Cybersecurity & Digital Forensics. Find my work and project below.</p>
-                                <div class="home__icons">
-                                    <a class="insta" href="https://www.instagram.com/sz3.yan/" target="_blank"></a>
-                                    <a class="whatsapp" href="https://wa.me/6597924720" target="_blank"></a>
-                                    <a class="gmail" href="mailto:sz3yan@gmail.com" target="_blank"></a>
-                                    <a class="profile" href="2. SZ3YAN_Webpage/szeyan_login.html"></a>
-                                </div>
-                                <a class="home__hai" href="">Say Hai!</a>
-                              </a>
-                            </div>
-                            <div class="home__screenshot"><img src="1. SZ3YAN_design/me.png" width="50%"></div>
-                        </div>
+                        <ul class="nav">
+                            <li class="nav__about"><a href="2. SZ3YAN_Webpage/2.szeyan_about.html">About</a></li>
+                            <li class="nav__sz3ai"><a href="2. SZ3YAN_Webpage/3.szeyan_sz3ai.html">SZ3AI</a></li>
+                            <li class="nav__projects"><a href="2. SZ3YAN_Webpage/4.szeyan_project.html">Projects</a></li>
+                            <li class="nav__badminton"><a href="2. SZ3YAN_Webpage/5.szeyan_badminton.html">Badminton</a></li>
+                        </ul>
                     </div>
                 </div>
-    
-                <div class="chooseMe__header">
-                    <div class"container">
-                        <div class="chooseMe__intro">
-                            <h6>Diverse experience</h6> 
-                            <h2>Projects Accomplished</h2> 
-                            <p class="chooseMe__description">Over 50 projects, ranging from small to big. Each addresses a problem and provide an <span>intuitiative solution</span>. Here's an overview.</p> 
-                        </div>
-                    </div>
-        
-                    <div class="chooseMe__moving">
-                        <div class="chooseMe__left">
-                            <div class="chooseMe__projectSet1">
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 1.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZEYAN</h4>
-                                            <p class="">This wonderful website. Develop with SZ3Dev.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 2.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3YAN</h4>
-                                            <p class="">This wonderful website. Develop with SZ3Dev.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="3.szeyan_sz3ai.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 3.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3AI</h4>
-                                            <p class="">Harnest the power of Machine Leanring.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 4.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Text</h4>
-                                            <p class="">Easily convert any Image to text.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 5.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Pay</h4>
-                                            <p class="">The easiest payment method.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-        
-                            <div class="chooseMe__projectSet2">
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 1.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZEYAN</h4>
-                                            <p class="">This wonderful website. Develop with SZ3Dev.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 2.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3YAN</h4>
-                                            <p class="">This wonderful website. Develop with SZ3Dev.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="3.szeyan_sz3ai.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 3.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3AI</h4>
-                                            <p class="">Harnest the power of Machine Leanring.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 4.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Text</h4>
-                                            <p class="">Easily convert any Image to text.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 5.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Pay</h4>
-                                            <p class="">The easiest payment method.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <div class="chooseMe__right">
-                            <div class="chooseMe__projectSet1">
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 6.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Search</h4>
-                                            <p class="">Quick, new way to present Information.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 7.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Photo</h4>
-                                            <p class="">Image editing redefined. Power by SZ3AI.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 8.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Vid</h4>
-                                            <p class="">Create stunning stories. Focus on shooting</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 9.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Dev</h4>
-                                            <p class="">Making your Dream a reality.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 10.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3YAN</h4>
-                                            <p class="">This wonderful website. Develop with SZ3Dev.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-        
-                            <div class="chooseMe__projectSet2">
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 6.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Search</h4>
-                                            <p class="">Quick, new way to present Information.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 7.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Photo</h4>
-                                            <p class="">Image editing redefined. Power by SZ3AI.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 8.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Vid</h4>
-                                            <p class="">Create stunning stories. Focus on shooting</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 9.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Dev</h4>
-                                            <p class="">Making your Dream a reality.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 10.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3YAN</h4>
-                                            <p class="">This wonderful website. Develop with SZ3Dev.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <div class="chooseMe__left mobile">
-                            <div class="chooseMe__projectSet1">
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 11.png" alt="" width="32" height="32">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3YAN</h4>
-                                            <p class="">This wonderful website. Develop with SZ3Dev.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 12.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Secure</h4>
-                                            <p class="">One click security solution.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 13.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Cal</h4>
-                                            <p class="">Intutitive Calculator.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 14.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Host</h4>
-                                            <p class="">Host anything. You name it. We got it.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 15.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Go</h4>
-                                            <p class="">Popular credit card used in 210 countries worldwide.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-        
-                            <div class="chooseMe__projectSet2">
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 11.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3YAN</h4>
-                                            <p class="">This wonderful website. Develop with SZ3Dev.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 12.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Secure</h4>
-                                            <p class="">One click security solution.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 13.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Cal</h4>
-                                            <p class="">Intutitive Calculator.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 14.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Host</h4>
-                                            <p class="">Host anything. You name it. We got it.</p>
-                                        </div>
-                                    </a>
-                                </div>
-        
-                                <div class="chooseMe__card">
-                                    <a class="chooseMe__content" href="4.szeyan_project.html">
-                                        <img src="1. SZ3YAN_design/uns/Ellipse 15.png" alt="" width="32" height="32" draggable="false">
-                                        <div class="chooseMe__projects__description">
-                                            <h4 class="">SZ3Go</h4>
-                                            <p class="">Popular credit card used in 210 countries worldwide.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+            </nav>
+        </div>
+
+        <div id="nav__mobile">
+            <nav class="container">
+                <div class="mobile__navigation">
+                    <div class="mobile__wrapper">
+                        <ul class="nav">
+                            <li class="nav__about"><a href="2. SZ3YAN_Webpage/2.szeyan_about.html">About</a></li>
+                            <li class="nav__sz3ai"><a href="2. SZ3YAN_Webpage/3.szeyan_sz3ai.html">SZ3AI</a></li>
+                            <li class="nav__projects"><a href="2. SZ3YAN_Webpage/4.szeyan_project.html">Projects</a></li>
+                            <li class="nav__badminton"><a href="2. SZ3YAN_Webpage/5.szeyan_badminton.html">Badminton</a></li>
+                        </ul>
                     </div>
                 </div>
+            </nav>
+            <script>
+                const burger = document.querySelector(".nav__trigger");
+                burger.addEventListener("click", function () {
+                    const body = document.body;
+                    body.classList.toggle("nav__open");
     
-                <div class="findMe__header">
-                    <div class"container">
-                        <div class="findMe__intro">
-                            <h6>Contact</h6> 
-                            <h2>Find Me On</h2> 
-                            <p class="findMe__description">💻 Coding, 🏸 Badminton, 😴 Sleep, ↺ Repeat. Look up for <span>QR code</span>. Scan it for more details about me.</p> 
-                        </div>
-                    </div>
-    
-                    <div class="findMe__invert">
-                        <div class="cursor"></div>
-                        <a href="https://www.sz3yan.co/about/"><img src="1. SZ3YAN_design/qr-code.svg" width="10%" /></a>
+                    var x = document.getElementById("nav__mobile");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } 
+                    
+                    else {
+                        x.style.display = "block";
+                    }
+                });
+            </script>
+        </div>
+
+        <div class="home__header">
+            <div class="container">
+                <div class="home__intro">
+                    <div class="home__greeting">
                         <script>
-                            window.onscroll = function() {scrollFunction()};
-    
-                            function scrollFunction() {
-                                if (document.documentElement.scrollTop > 1500 && document.documentElement.scrollTop < 2000) {
-                                    const cursor = document.querySelector('.cursor');
-                                    cursor.style.display = "block";
-    
-                                    let mouseX = 0;
-                                    let mouseY = 0;
-                                    let cursorX = 0;
-                                    let cursorY = 0;
-                                    let speed = 0.9;
+                            var getname = localStorage.getItem("nom");
 
-                                    function animate() {
-                                        let distX = mouseX - cursorX;
-                                        let distY = mouseY - cursorY;
+                            if (getname != null) {
+                                document.write("<h1> Hey " + getname.charAt(0).toUpperCase() + getname.slice(1) + "</h1>");
+                            }
 
-                                        cursorX = cursorX + (distX * speed);
-                                        cursorY = cursorY + (distY * speed);
-
-                                        cursor.style.left = cursorX + 'px';
-                                        cursor.style.top = cursorY + 'px';
-
-                                        requestAnimationFrame(animate);
-                                    }
-                                    animate();
-
-                                    document.addEventListener('mousemove', (event) => {
-                                        mouseX = event.pageX;
-                                        mouseY = event.pageY;
-                                    })
-                                }
-
-                                else {
-                                    document.querySelector('.cursor').style.display = "none";
-                                }
+                            else {
+                                document.write("<h1>Hey Guys</h1>");
                             }
                         </script>
-                    </div>
-                </div>
-    
-                <div class="newsletter__header">
-                    <div class="container">
-                        <div class="newsletter__intro">
-                            <h6>Still got questions?</h6>
-                            <h2>Stay in the loop</h2>
-                            <p class="newsletter__description">Let us know what we can do for you</p>
+                        <p>I’m Sze Yan. Studying in NYP. Taking a Diploma in Cybersecurity & Digital Forensics. Find my work and project below.</p>
+                        <div class="home__icons">
+                            <a class="insta" href="https://www.instagram.com/sz3.yan/" target="_blank"></a>
+                            <a class="whatsapp" href="https://wa.me/6597924720" target="_blank"></a>
+                            <a class="gmail" href="mailto:sz3yan@gmail.com" target="_blank"></a>
+                            <a class="profile" href="2. SZ3YAN_Webpage/szeyan_login.html"></a>
                         </div>
-                        
-                        <form class="newsletter__question">
-                            <select id="seeAnotherField" autocomplete="off">
-                                <option disabled selected value="">Choose a selection...</option> 
-                                <option value="email">How do I sign up for newsletter?</option>
-                                <option value="colab">I have an idea or suggestion</option>
-                                <option value="hi">I just wanna to say hai!</option>
-                            </select>
-    
-                            <div id="emailshow">
-                                <input type="email" placeholder="email">
-                            </div>
-    
-                            <div id="colabshow">
-                                <h4>Wanna collab?</h4>
-                                <div class="your_info">
-                                    <input type="text" placeholder="What's your name?">
-                                    <input type="email" placeholder="Where can I contact you?">
+                        <a class="home__hai" href="">Say Hai!</a>
+                      </a>
+                    </div>
+                    <div class="home__screenshot"><img src="1. SZ3YAN_design/me.png" width="50%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chooseMe__header">
+            <div class"container">
+                <div class="chooseMe__intro">
+                    <h6>Diverse experience</h6> 
+                    <h2>Projects Accomplished</h2> 
+                    <p class="chooseMe__description">Over 50 projects, ranging from small to big. Each addresses a problem and provide an <span>intuitiative solution</span>. Here's an overview.</p> 
+                </div>
+            </div>
+
+            <div class="chooseMe__moving">
+                <div class="chooseMe__left">
+                    <div class="chooseMe__projectSet1">
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 1.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZEYAN</h4>
+                                    <p class="">This wonderful website. Develop with SZ3Dev.</p>
                                 </div>
-                                <textarea rows="6" placeholder="Tell me about your idea" style="height: 136px;"></textarea>
-                            </div>
-    
-                            <div id="hishow">
-                                <h4>I love to hear from you!</h4>
-                                <div class="your_info">
-                                    <input type="text" placeholder="What's your name?">
-                                    <input type="email" placeholder="Where can I contact you?">
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 2.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3YAN</h4>
+                                    <p class="">This wonderful website. Develop with SZ3Dev.</p>
                                 </div>
-                                <textarea rows="6" placeholder="what's on your mind" style="height: 136px;"></textarea>
-                            </div>
-    
-                            <button type="submit">CONTINUE</button>
-                        </form>
-    
-                        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-                        <script src="4.SZ3YAN_JS/hide_form.js"></script>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="3.szeyan_sz3ai.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 3.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3AI</h4>
+                                    <p class="">Harnest the power of Machine Leanring.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 4.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Text</h4>
+                                    <p class="">Easily convert any Image to text.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 5.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Pay</h4>
+                                    <p class="">The easiest payment method.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="chooseMe__projectSet2">
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 1.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZEYAN</h4>
+                                    <p class="">This wonderful website. Develop with SZ3Dev.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 2.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3YAN</h4>
+                                    <p class="">This wonderful website. Develop with SZ3Dev.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="3.szeyan_sz3ai.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 3.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3AI</h4>
+                                    <p class="">Harnest the power of Machine Leanring.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 4.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Text</h4>
+                                    <p class="">Easily convert any Image to text.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 5.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Pay</h4>
+                                    <p class="">The easiest payment method.</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <p class="copyright" style="background-color: var(--bblack);">Copyright &copy; 2021 Sze Yan All rights reserved.</p>
-        </section>
+    
+                <div class="chooseMe__right">
+                    <div class="chooseMe__projectSet1">
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 6.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Search</h4>
+                                    <p class="">Quick, new way to present Information.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 7.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Photo</h4>
+                                    <p class="">Image editing redefined. Power by SZ3AI.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 8.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Vid</h4>
+                                    <p class="">Create stunning stories. Focus on shooting</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 9.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Dev</h4>
+                                    <p class="">Making your Dream a reality.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 10.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3YAN</h4>
+                                    <p class="">This wonderful website. Develop with SZ3Dev.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="chooseMe__projectSet2">
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 6.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Search</h4>
+                                    <p class="">Quick, new way to present Information.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 7.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Photo</h4>
+                                    <p class="">Image editing redefined. Power by SZ3AI.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 8.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Vid</h4>
+                                    <p class="">Create stunning stories. Focus on shooting</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 9.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Dev</h4>
+                                    <p class="">Making your Dream a reality.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 10.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3YAN</h4>
+                                    <p class="">This wonderful website. Develop with SZ3Dev.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="chooseMe__left mobile">
+                    <div class="chooseMe__projectSet1">
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 11.png" alt="" width="32" height="32">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3YAN</h4>
+                                    <p class="">This wonderful website. Develop with SZ3Dev.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 12.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Secure</h4>
+                                    <p class="">One click security solution.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 13.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Cal</h4>
+                                    <p class="">Intutitive Calculator.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 14.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Host</h4>
+                                    <p class="">Host anything. You name it. We got it.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 15.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Go</h4>
+                                    <p class="">Popular credit card used in 210 countries worldwide.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="chooseMe__projectSet2">
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 11.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3YAN</h4>
+                                    <p class="">This wonderful website. Develop with SZ3Dev.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 12.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Secure</h4>
+                                    <p class="">One click security solution.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 13.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Cal</h4>
+                                    <p class="">Intutitive Calculator.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 14.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Host</h4>
+                                    <p class="">Host anything. You name it. We got it.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="chooseMe__card">
+                            <a class="chooseMe__content" href="4.szeyan_project.html">
+                                <img src="1. SZ3YAN_design/uns/Ellipse 15.png" alt="" width="32" height="32" draggable="false">
+                                <div class="chooseMe__projects__description">
+                                    <h4 class="">SZ3Go</h4>
+                                    <p class="">Popular credit card used in 210 countries worldwide.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="findMe__header">
+            <div class"container">
+                <div class="findMe__intro">
+                    <h6>Contact</h6> 
+                    <h2>Find Me On</h2> 
+                    <p class="findMe__description">💻 Coding, 🏸 Badminton, 😴 Sleep, ↺ Repeat. Look up for <span>QR code</span>. Scan it for more details about me.</p> 
+                </div>
+            </div>
+
+            <div class="findMe__invert">
+                <div class="cursor"></div>
+                <a href="https://www.sz3yan.co/about/"><img src="1. SZ3YAN_design/qr-code.svg" width="10%" /></a>
+                <script>
+                    window.onscroll = function() {scrollFunction()};
+
+                    function scrollFunction() {
+                        if (document.documentElement.scrollTop > 1500 && document.documentElement.scrollTop < 2000) {
+                            const cursor = document.querySelector('.cursor');
+                            cursor.style.display = "block";
+
+                            let mouseX = 0;
+                            let mouseY = 0;
+                            let cursorX = 0;
+                            let cursorY = 0;
+                            let speed = 0.9;
+
+                            function animate() {
+                                let distX = mouseX - cursorX;
+                                let distY = mouseY - cursorY;
+
+                                cursorX = cursorX + (distX * speed);
+                                cursorY = cursorY + (distY * speed);
+
+                                cursor.style.left = cursorX + 'px';
+                                cursor.style.top = cursorY + 'px';
+
+                                requestAnimationFrame(animate);
+                            }
+                            animate();
+
+                            document.addEventListener('mousemove', (event) => {
+                                mouseX = event.pageX;
+                                mouseY = event.pageY;
+                            })
+                        }
+
+                        else {
+                            document.querySelector('.cursor').style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="newsletter__header">
+            <div class="container">
+                <div class="newsletter__intro">
+                    <h6>Still got questions?</h6>
+                    <h2>Stay in the loop</h2>
+                    <p class="newsletter__description">Let us know what we can do for you</p>
+                </div>
+                
+                <form class="newsletter__question">
+                    <select id="seeAnotherField" autocomplete="off">
+                        <option disabled selected value="">Choose a selection...</option> 
+                        <option value="email">How do I sign up for newsletter?</option>
+                        <option value="colab">I have an idea or suggestion</option>
+                        <option value="hi">I just wanna to say hai!</option>
+                    </select>
+
+                    <div id="emailshow">
+                        <input type="email" placeholder="email">
+                    </div>
+
+                    <div id="colabshow">
+                        <h4>Wanna collab?</h4>
+                        <div class="your_info">
+                            <input type="text" placeholder="What's your name?">
+                            <input type="email" placeholder="Where can I contact you?">
+                        </div>
+                        <textarea rows="6" placeholder="Tell me about your idea" style="height: 136px;"></textarea>
+                    </div>
+
+                    <div id="hishow">
+                        <h4>I love to hear from you!</h4>
+                        <div class="your_info">
+                            <input type="text" placeholder="What's your name?">
+                            <input type="email" placeholder="Where can I contact you?">
+                        </div>
+                        <textarea rows="6" placeholder="what's on your mind" style="height: 136px;"></textarea>
+                    </div>
+
+                    <button type="submit">CONTINUE</button>
+                </form>
+
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+                <script src="4.SZ3YAN_JS/hide_form.js"></script>
+            </div>
+        </div>
+        <p class="copyright" style="background-color: var(--bblack);">Copyright &copy; 2021 Sze Yan All rights reserved.</p>
     </body>
 </html>
