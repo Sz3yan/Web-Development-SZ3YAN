@@ -18,7 +18,7 @@
     </head>
 
     <body>
-        <div class="nav__header"> 
+        <section class="nav__header"> 
             <nav class="container">
                 <div class="nav__logo">
                     <a href="../index.html">
@@ -52,25 +52,24 @@
                         <li class="nav__badminton"><a href="5.szeyan_badminton.html">Badminton</a></li>
                     </ul>
                 </div>
+                <script>
+                    const burger = document.querySelector(".nav__trigger");
+                    burger.addEventListener("click", function () {
+                        const body = document.body;
+                        body.classList.toggle("nav__open");
+        
+                        var x = document.getElementById("nav__mobile");
+                        if (x.style.display === "block") {
+                            x.style.display = "none";
+                        } 
+                        
+                        else {
+                            x.style.display = "block";
+                        }
+                    });
+                </script>
             </div>
-        </div>
-
-        <script>
-            const burger = document.querySelector(".nav__trigger");
-            burger.addEventListener("click", function () {
-                const body = document.body;
-                body.classList.toggle("nav__open");
-
-                var x = document.getElementById("nav__mobile");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } 
-                
-                else {
-                    x.style.display = "block";
-                }
-            });
-        </script>
+        </section>
 
         <section>
             <div class="aboutMe__header">
