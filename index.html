@@ -440,15 +440,17 @@
                 <div class="findMe__header">
                     <div class"container">
                         <div class="findMe__intro">
-                            <div class="cursor"></div>
                             <h6>Contact</h6> 
                             <h2>Find Me On</h2> 
                             <p class="findMe__description">💻 Coding, 🏸 Badminton, 😴 Sleep, ↺ Repeat. Look up for <span>QR code</span>. Scan it for more details about me.</p> 
                         </div>
-
+                    </div>
+    
+                    <div class="findMe__invert">
+                        <div class="cursor"></div>
+                        <a href="https://www.sz3yan.co/about/"><img src="1. SZ3YAN_design/qr-code.svg" width="10%" /></a>
                         <script>
                             window.onscroll = function() {scrollFunction()};
-                            console.log(document.documentElement.scrollTop)
     
                             function scrollFunction() {
                                 if (document.documentElement.scrollTop > 1500 && document.documentElement.scrollTop < 2000) {
@@ -459,7 +461,7 @@
                                     let mouseY = 0;
                                     let cursorX = 0;
                                     let cursorY = 0;
-                                    let speed = 0.5; // change to increase the ease
+                                    let speed = 0.9;
 
                                     function animate() {
                                         let distX = mouseX - cursorX;
@@ -486,10 +488,6 @@
                                 }
                             }
                         </script>
-                    </div>
-    
-                    <div class="findMe__invert">
-                        <a href="https://www.sz3yan.co/about/"><img src="1. SZ3YAN_design/qr-code.svg" width="10%"/></a>
                     </div>
                 </div>
     

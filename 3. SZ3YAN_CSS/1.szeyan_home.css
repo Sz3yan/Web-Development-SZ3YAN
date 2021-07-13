@@ -198,7 +198,6 @@
         margin: auto;
         color: var(--grey);
         padding-top: 10px;
-        font-weight: 100;
         max-width: 760px;
     }
     
@@ -387,7 +386,6 @@
         margin: auto;
         color: var(--grey);
         padding-top: 10px;
-        font-weight: 500;
         max-width: 550px; 
     }
 
@@ -403,6 +401,7 @@
 
     .findMe__invert a {
         opacity: 0;
+        z-index: 2;
     }
 
     .findMe__invert a:hover {
