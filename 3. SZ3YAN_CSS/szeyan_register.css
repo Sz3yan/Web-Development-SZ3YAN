@@ -78,10 +78,6 @@ input:focus {
     list-style: none;
 }
 
-.password-requirements li {
-    content: "#"
-}
-
 .password-requirements li p {
     color: #737373;
     font-size: 14px;
