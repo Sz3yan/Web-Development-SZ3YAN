@@ -36,10 +36,46 @@
                 </div>
 
                 <div class="register__field">
-                    <label class="checkbox">
-                        <input type="checkbox"/>
-                        <span>Yes, I’d like to receive news and updates.</span>
-                    </label>
+                    <ul class="password-requirements">
+                        <li class="twelve__character"><p>A minimum of 12 characters</p></li>
+                        <li class="one__number"><p>At least one number</p></li>
+                        <li class="lowerupper__case"><p>At lease one lower upper case</p></li>
+                        <li class="special__character"><p>At lease one special character</p></li>
+                    </ul>
+                    <script>
+                        var password = document.getElementById("pw");
+
+                        password.addEventListener("keyup", function(){
+                            let pass = document.getElementById("pw").value;
+                            check(pass);
+                        });
+
+                        function check(password) {
+                            if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) {
+                                document.querySelector(".twelve__character").style.listStyleType = "lower-alpha";
+                            } else {
+                                document.querySelector(".twelve__character").style.listStyle = "none";
+                            }
+                            //If it has numbers and characters
+                            if (password.match(/([0-9])/)) {
+                                document.querySelector(".twelve__character").style.listStyleType = "lower-alpha";
+                            } else {
+                                document.querySelector(".twelve__character").style.listStyle = "none";
+                            }
+                            //If it has one special character
+                            if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) {
+                                document.querySelector(".twelve__character").style.listStyleType = "lower-alpha";
+                            } else {
+                                document.querySelector(".twelve__character").style.listStyle = "none";
+                            }
+                            //If password is greater than 7
+                            if (password.length >= 12) {
+                                document.querySelector(".twelve__character").style.listStyleType = "lower-alpha";
+                            } else {
+                                document.querySelector(".twelve__character").style.listStyle = "none";
+                            }
+                        }
+                    </script>
                 </div>
 
                 <script>
