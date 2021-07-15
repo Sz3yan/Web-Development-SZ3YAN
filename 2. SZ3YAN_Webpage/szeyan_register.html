@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="register__field">
-                    <ul class="password-requirements">
+                    <ul class="register__requirements">
                         <li class="twelve__character"><p>A minimum of 12 characters</p></li>
                         <li class="one__number"><p>At least one number</p></li>
                         <li class="lowerupper__case"><p>At lease one lower upper case</p></li>
@@ -52,25 +52,25 @@
 
                         function check(password) {
                             if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) {
-                                document.querySelector(".lowerupper__case").style.listStyleType = "lower-alpha";
+                                document.querySelector(".lowerupper__case").style.listStyleType = "disc";
                             } else {
                                 document.querySelector(".lowerupper__case").style.listStyle = "none";
                             }
                             //If it has numbers and characters
                             if (password.match(/([0-9])/)) {
-                                document.querySelector(".one__number").style.listStyleType = "lower-alpha";
+                                document.querySelector(".one__number").style.listStyleType = "disc";
                             } else {
                                 document.querySelector(".one__number").style.listStyle = "none";
                             }
                             //If it has one special character
                             if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) {
-                                document.querySelector(".special__character").style.listStyleType = "lower-alpha";
+                                document.querySelector(".special__character").style.listStyleType = "disc";
                             } else {
                                 document.querySelector(".special__character").style.listStyle = "none";
                             }
                             //If password is greater than 7
                             if (password.length >= 12) {
-                                document.querySelector(".twelve__character").style.listStyleType = "lower-alpha";
+                                document.querySelector(".twelve__character").style.listStyleType = "disc";
                             } else {
                                 document.querySelector(".twelve__character").style.listStyle = "none";
                             }

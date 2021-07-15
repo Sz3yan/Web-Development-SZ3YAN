@@ -68,7 +68,7 @@ input:focus {
     border-radius: 0;
 }
 
-.password-requirements {
+.register__requirements {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
@@ -76,16 +76,15 @@ input:focus {
     margin-top: 10px;
     padding-left: 20px;
     list-style: none;
+    color: #0FB966;
 }
 
-.password-requirements li p {
-    color: #737373;
+.register__requirements li p {
+    color: var(--grey);
     font-size: 14px;
-    line-height: 1.5;
-    font-weight: 400;
     text-align: left;
+    height: 24px;
 }
-
 
 .button {
     margin-top: 20px;
