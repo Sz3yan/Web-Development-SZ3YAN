@@ -130,7 +130,12 @@
 
       .moreaboutMe__gallery .moreaboutMe__card:hover {
         transform: scale(0.99);
-        
+        box-shadow: 4px 5px 5px var(--grey);
+        background-image: url("../1. SZ3YAN_design/blue.png");
+      }
+
+      .moreaboutMe__card:hover .moreaboutMe__intro {
+        display: block;
       }
       
       /* Make the gallery items all matchy matchy on smaller screen sizes */
