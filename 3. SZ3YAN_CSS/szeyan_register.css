@@ -117,4 +117,9 @@ footer {
         padding-left: 40px;
         padding-right: 40px;
     }
+
+    .register__requirements {
+        row-gap: 30px ;
+        margin-bottom: 10px;
+    }
 }
