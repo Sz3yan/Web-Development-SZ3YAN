@@ -71,7 +71,7 @@ input:focus {
 .password-requirements {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
+    grid-column-gap: 30px;
     grid-row-gap: 15px;
     margin-top: 10px;
     padding-left: 20px;

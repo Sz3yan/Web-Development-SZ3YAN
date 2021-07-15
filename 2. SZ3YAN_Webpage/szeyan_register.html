@@ -18,7 +18,7 @@
     </head>
     <body>
         <div class="register__header">
-            <form method="POST" action="../index.html">
+            <form id="reg" method="POST" action="../index.html">
                 <a class="register__logo" href="../index.html"><img src="../1. SZ3YAN_design/SZ3YAN logo.png"  width="104" alt="SZE YAN"/></a>
                 <h1>Create an Account</h1>
 
@@ -52,21 +52,21 @@
 
                         function check(password) {
                             if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) {
-                                document.querySelector(".twelve__character").style.listStyleType = "lower-alpha";
+                                document.querySelector(".lowerupper__case").style.listStyleType = "lower-alpha";
                             } else {
-                                document.querySelector(".twelve__character").style.listStyle = "none";
+                                document.querySelector(".lowerupper__case").style.listStyle = "none";
                             }
                             //If it has numbers and characters
                             if (password.match(/([0-9])/)) {
-                                document.querySelector(".twelve__character").style.listStyleType = "lower-alpha";
+                                document.querySelector(".one__number").style.listStyleType = "lower-alpha";
                             } else {
-                                document.querySelector(".twelve__character").style.listStyle = "none";
+                                document.querySelector(".one__number").style.listStyle = "none";
                             }
                             //If it has one special character
                             if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) {
-                                document.querySelector(".twelve__character").style.listStyleType = "lower-alpha";
+                                document.querySelector(".special__character").style.listStyleType = "lower-alpha";
                             } else {
-                                document.querySelector(".twelve__character").style.listStyle = "none";
+                                document.querySelector(".special__character").style.listStyle = "none";
                             }
                             //If password is greater than 7
                             if (password.length >= 12) {
@@ -80,9 +80,20 @@
 
                 <script>
                     function store(){
-                        localStorage.setItem('user', user.value);
-                        localStorage.setItem('pw', pw.value);
-                        localStorage.setItem('nom', nom.value);
+                        if (document.querySelector(".twelve__character").style.listStyle != "none" &&
+                            document.querySelector(".one__number").style.listStyle != "none" &&
+                            document.querySelector(".special__character").style.listStyle != "none" &&
+                            document.querySelector(".lowerupper__case").style.listStyle != "none" 
+                        ) {
+                            localStorage.setItem('user', user.value);
+                            localStorage.setItem('pw', pw.value);
+                            localStorage.setItem('nom', nom.value);
+                        }
+
+                        else {
+                            document.getElementById("reg").action = "";
+                            alert("Enter the password again");
+                        }
                     }
                 </script>
 
