@@ -137,8 +137,8 @@
         border-radius: 50%;
         position: absolute;
         display: none;
-        bottom: 30px;
-        right: 30px;
+        bottom: 24px;
+        right: 24px;
       }
 
       .moreaboutMe__card:hover button, .moreaboutMe__card:hover .moreaboutMe__intro {
@@ -171,18 +171,7 @@
           transform: rotate(45deg)
         }
       }
-
-      /* .moreaboutMe__gallery .moreaboutMe__card:hover {
-        transform: scale(0.99);
-        box-shadow: 4px 5px 5px var(--grey);
-        background-image: url("../1. SZ3YAN_design/blue.png");
-      }
-
-      .moreaboutMe__card:hover .moreaboutMe__intro {
-        display: block;
-      } */
       
-      /* Make the gallery items all matchy matchy on smaller screen sizes */
       @media screen and (max-width: 515px) {
         .v-stretch {
           grid-row: span 1;
