@@ -85,6 +85,8 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          color: white;
+          position: relative;
       }
 
       .moreaboutMe__intro {
@@ -135,6 +137,8 @@
         border-radius: 50%;
         position: absolute;
         display: none;
+        bottom: 30px;
+        right: 30px;
       }
 
       .moreaboutMe__card:hover button, .moreaboutMe__card:hover .moreaboutMe__intro {
