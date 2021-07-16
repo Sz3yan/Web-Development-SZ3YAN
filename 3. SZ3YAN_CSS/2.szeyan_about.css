@@ -133,22 +133,11 @@
         width: 33px;
         background-color: var(--grey);
         border-radius: 50%;
-        position: relative;
-        left: 115px;
-        top: 90px;
+        position: absolute;
         display: none;
       }
 
-      .v-stretch button {
-        top: 220px;
-      }
-
-      .big-stretch button {
-        left: 270px;
-        top: 220px;
-      }
-
-      .moreaboutMe__card:hover button {
+      .moreaboutMe__card:hover button, .moreaboutMe__card:hover .moreaboutMe__intro {
         display: block;
       }
 
