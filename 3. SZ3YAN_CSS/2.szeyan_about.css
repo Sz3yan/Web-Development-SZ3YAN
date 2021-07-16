@@ -129,20 +129,34 @@
       }
 
       .moreaboutMe__card button {
-        height: 44px;
-        width: 44px;
+        height: 33px;
+        width: 33px;
         background-color: var(--grey);
         border-radius: 50%;
         position: relative;
         left: 115px;
         top: 90px;
+        display: none;
+      }
+
+      .v-stretch button {
+        top: 220px;
+      }
+
+      .big-stretch button {
+        left: 270px;
+        top: 220px;
+      }
+
+      .moreaboutMe__card:hover button {
+        display: block;
       }
 
       .moreaboutMe__card button:hover {
         cursor: pointer;
       }
 
-      .tile-icon-alt {
+      .moreaboutMe__turn1, .moreaboutMe__turn2, .moreaboutMe__turn3, .moreaboutMe__turn4, .moreaboutMe__turn5, .moreaboutMe__turn6, .moreaboutMe__turn7 {
         height: 50%;
       }
 
@@ -151,9 +165,8 @@
         animation-fill-mode: forwards;
       }
 
-      .close {
-        animation: buttonclose 1s;
-        animation-fill-mode: forwards;
+      .blue {
+        background-image: url("../1. SZ3YAN_design/blue.png");
       }
 
       @keyframes buttonanimate {
@@ -163,16 +176,6 @@
 
         to {
           transform: rotate(45deg)
-        }
-      }
-
-      @keyframes buttonclose {
-        from {
-          transform: rotate(45deg)
-        }
-
-        to {
-          transform: rotate(0deg)
         }
       }
 
