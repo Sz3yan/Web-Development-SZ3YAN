@@ -277,7 +277,7 @@
         line-height: 18px;
         font-size: 14px;
         color: white;
-        background: var(--dark-grey);
+        background: var(--grey);
         border: none;
         border-radius: 15px;
         padding: 0 42px 0 18px;
@@ -292,7 +292,7 @@
         line-height: 18px;
         font-size: 14px;
         color: inherit;
-        background: var(--dark-grey);
+        background: var(--grey);
         border: none;
         border-radius: 15px;
         padding: 0 42px 0 18px;
@@ -317,15 +317,23 @@
         width: 100%;
     }
 
+    #colabshow h4, #hishow h4 {
+      color: var(--black);
+    }
+
     #hishow textarea, #colabshow textarea {
         resize: none;
-        background-color: var(--dark-grey);
+        background-color: var(--grey);
         color: white;
         font-size: 14px;
         border: none;
         width: 100%;
         padding: 14px 18px;
         border-radius: 15px;
+    }
+
+    #hishow textarea::placeholder, #colabshow textarea::placeholder {
+      color: white;
     }
 
     @media (max-width: 890px) {

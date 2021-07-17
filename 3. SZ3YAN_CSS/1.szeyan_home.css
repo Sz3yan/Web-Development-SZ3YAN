@@ -421,12 +421,11 @@
         text-align: center;
     }
 
-    .findMe__invert a {
+    .findMe__invert a img{
         opacity: 0;
-        z-index: 2;
     }
 
-    .findMe__invert a:hover {
+    .findMe__invert a img:hover {
         opacity: 1;
     }
 
@@ -603,6 +602,10 @@
         width: 100%;
         padding: 14px 18px;
         border-radius: 15px;
+    }
+    
+    #hishow textarea::placeholder, #colabshow textarea::placeholder {
+        color: white;
     }
 
     @media (max-width: 890px) {
