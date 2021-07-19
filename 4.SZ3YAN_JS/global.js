@@ -68,7 +68,7 @@ function check(){
     var enterpw = document.getElementById("pw")
     
     if (enteruser.value == storeuser && enterpw.value == storepw) {
-        document.getElementById("formid").action = "../2. SZ3YAN_Webpage/index.html"
+        document.getElementById("formid").action = "../index.html"
     }
 
     else {
