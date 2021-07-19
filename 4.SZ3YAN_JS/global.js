@@ -80,7 +80,7 @@ function register__validate() {
     var password = document.getElementById("pw");
 
     password.addEventListener("keyup", function(){
-        let pass = document.getElementById("pw").value;
+        var pass = document.getElementById("pw").value;
         check(pass);
     });
 
@@ -120,7 +120,7 @@ function register__validate() {
 }
 
 function store(){
-    if (document.querySelector(".twelve__character").style.listStyle != "none" &&
+    if (//document.querySelector(".twelve__character").style.listStyle != "none" &&
         document.querySelector(".one__number").style.listStyle != "none" &&
         document.querySelector(".special__character").style.listStyle != "none" &&
         document.querySelector(".lowerupper__case").style.listStyle != "none" 
