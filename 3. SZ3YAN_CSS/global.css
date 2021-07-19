@@ -36,10 +36,6 @@ body {
   font-family: Circular Pro, -apple-system, sans-serif;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 a {
   text-decoration: none;
   color: var(--blue);

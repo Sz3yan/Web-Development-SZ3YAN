@@ -153,6 +153,15 @@
         height: 50%;
       }
 
+      .tile-overlay-content {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
       .turning {
         animation: buttonanimate 1s;
         animation-fill-mode: forwards;
@@ -160,6 +169,10 @@
 
       .blue {
         background-image: url("../1. SZ3YAN_design/blue.png");
+      }
+
+      .blue h3 {
+        opacity: 0;
       }
 
       @keyframes buttonanimate {
