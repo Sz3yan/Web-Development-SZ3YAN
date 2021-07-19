@@ -147,6 +147,42 @@
             top: 100px;
         }
 
+        .home__icons .insta {
+            width: 24px;
+            height: 24px;
+            background-image: url("../1. SZ3YAN_design/insta-colour.png");
+            background-size: 24px;
+            background-repeat: no-repeat;
+            margin-right: 30px
+        }
+    
+        .home__icons .whatsapp {
+            width: 24px;
+            height: 24px;
+            background-image: url("../1. SZ3YAN_design/whatsapp-colour.png");
+            background-size: 24px;
+            background-repeat: no-repeat;
+            margin-right: 30px
+        }
+    
+        .home__icons .gmail {
+            width: 24px;
+            height: 24px;
+            background-image: url("../1. SZ3YAN_design/gmail-colour.png");
+            background-size: 24px;
+            background-repeat: no-repeat;
+            margin-right: 30px
+        }
+    
+        .home__icons .profile {
+            width: 24px;
+            height: 24px;
+            background-image: url("../1. SZ3YAN_design/profile-colour.png");
+            background-size: 24px;
+            background-repeat: no-repeat;
+            margin-right: 30px
+        }
+
         .home__hai {
             position: relative;
             bottom: 35px;
