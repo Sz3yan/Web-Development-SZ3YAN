@@ -6,6 +6,7 @@
         <title>SZEYAN - Login</title>
         <link rel="stylesheet" href="../3. SZ3YAN_CSS/global.css"/>
         <link rel="stylesheet" href="../3. SZ3YAN_CSS/szeyan_register.css"/>
+        <script src="../4.SZ3YAN_JS/global.js"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-9MZZ65V8BT"></script>
         <script>
@@ -19,7 +20,7 @@
     <body>
         <div class="register__header">
             <form id="reg" method="POST" action="../index.html">
-                <a class="register__logo" href="../index.html"><img src="../1. SZ3YAN_design/SZ3YAN logo.png"  width="104" alt="SZE YAN"/></a>
+                <a class="register__logo" href="../index.html"><img src="../1. SZ3YAN_design/SZ3YAN logo.png" width="104" alt="SZE YAN"/></a>
                 <h1>Create an Account</h1>
 
                 <div class="register__group register__groupflex">
@@ -42,60 +43,10 @@
                         <li class="lowerupper__case"><p>At lease one lower upper case</p></li>
                         <li class="special__character"><p>At lease one special character</p></li>
                     </ul>
-                    <script>
-                        var password = document.getElementById("pw");
-
-                        password.addEventListener("keyup", function(){
-                            let pass = document.getElementById("pw").value;
-                            check(pass);
-                        });
-
-                        function check(password) {
-                            if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) {
-                                document.querySelector(".lowerupper__case").style.listStyleType = "disc";
-                            } else {
-                                document.querySelector(".lowerupper__case").style.listStyle = "none";
-                            }
-                            //If it has numbers and characters
-                            if (password.match(/([0-9])/)) {
-                                document.querySelector(".one__number").style.listStyleType = "disc";
-                            } else {
-                                document.querySelector(".one__number").style.listStyle = "none";
-                            }
-                            //If it has one special character
-                            if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) {
-                                document.querySelector(".special__character").style.listStyleType = "disc";
-                            } else {
-                                document.querySelector(".special__character").style.listStyle = "none";
-                            }
-                            //If password is greater than 7
-                            if (password.length >= 12) {
-                                document.querySelector(".twelve__character").style.listStyleType.li = "disc";
-                            } else {
-                                document.querySelector(".twelve__character").style.listStyle = "none";
-                            }
-                        }
-                    </script>
+                    <script>register()</script>
                 </div>
 
-                <script>
-                    function store(){
-                        if (document.querySelector(".twelve__character").style.listStyle != "none" &&
-                            document.querySelector(".one__number").style.listStyle != "none" &&
-                            document.querySelector(".special__character").style.listStyle != "none" &&
-                            document.querySelector(".lowerupper__case").style.listStyle != "none" 
-                        ) {
-                            localStorage.setItem('user', user.value);
-                            localStorage.setItem('pw', (pw.value));
-                            localStorage.setItem('nom', nom.value);
-                        }
-
-                        else {
-                            document.getElementById("reg").action = "";
-                            alert("Enter the password again");
-                        }
-                    }
-                </script>
+                <script>store()</script>
 
                 <button class="button" type="submit" onclick="store()">Create Account</button>
 

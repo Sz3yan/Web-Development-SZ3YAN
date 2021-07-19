@@ -6,6 +6,7 @@
         <title>SZEYAN - Login</title>
         <link rel="stylesheet" href="../3. SZ3YAN_CSS/global.css"/>
         <link rel="stylesheet" href="../3. SZ3YAN_CSS/szeyan_login.css"/>
+        <script src="../4.SZ3YAN_JS/global.js"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-9MZZ65V8BT"></script>
         <script>
@@ -39,22 +40,7 @@
                     <a href="">Forgot your password?</a>
                 </div>
 
-                <script>
-                    function check(){
-                        var storeuser = localStorage.getItem("user");
-                        var storepw = localStorage.getItem("pw");
-                        var enteruser = document.getElementById("user")
-                        var enterpw = document.getElementById("pw")
-                        
-                        if (enteruser.value == storeuser && enterpw.value == storepw) {
-                            document.getElementById("formid").action = "../2. SZ3YAN_Webpage/index.html"
-                        }
-
-                        else {
-                            alert("Click on sign up first.");
-                        }
-                    }
-                </script>
+                <script>check()</script>
 
                 <button class="button" type="submit" onclick="check()">Log in</button>
 
