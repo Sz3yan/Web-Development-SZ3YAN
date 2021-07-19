@@ -43,8 +43,6 @@
 
     .home__greeting p {
         max-width: 380px;
-        font-size: 18px;
-        line-height: 1.6;
         margin-top: 35px;
     }
 
@@ -108,10 +106,6 @@
     .home__icons .profile:hover {
         background-image: url("../1. SZ3YAN_design/profile-colour.png");
         transition: all 300ms ease;
-    }
-
-    .home__incons .insta:hover {
-        background-image: pink;
     }
 
     .home__hai {
@@ -191,7 +185,7 @@
     
     .chooseMe__header {
         width: 100%;
-        background-color: var(--bblack);
+        background-color: var(--black);
     }
     
     .chooseMe__intro {
@@ -205,11 +199,9 @@
 
     .chooseMe__intro h6 {
         margin-bottom: 10px;
-        font-size: 16px;
         color: var(--dark-grey);
         text-transform: uppercase;
-        font-weight: 200;
-        letter-spacing: .05em;
+        
     }
 
     .chooseMe__intro h2 {
@@ -274,7 +266,7 @@
 
     .chooseMe__projectSet1, .chooseMe__projectSet2 {
         display: grid;
-        row-gap: 40px;
+        row-gap: 45px;
         column-gap: 40px;
         grid-template-columns: repeat(5, 300px);
         padding-top: 20px;
@@ -285,8 +277,8 @@
     }
     
     .chooseMe__card {
-        border-radius: 16px;
-        background-color: var(--black);
+        border-radius: 10px;
+        background-color: var(--bblack);
         padding: 20px;
         width: 300px;
         height: 112px;
@@ -309,10 +301,12 @@
         width: 100%;
     }
 
-    .chooseMe__projects__description {
-        display: inline;
-        align-items: center;
-        padding-left: 5px;
+    .chooseMe__content img {
+        margin-right: 10px
+    }
+
+    .chooseMe__projects__description h4 {
+        font-size: 16px;
     }
 
     .chooseMe__projects__description p {
