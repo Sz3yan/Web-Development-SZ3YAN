@@ -76,46 +76,43 @@ function check(){
     }
 }
 
-function register() {
+function register__validate() {
     var password = document.getElementById("pw");
 
     password.addEventListener("keyup", function(){
         let pass = document.getElementById("pw").value;
-        check1(pass);
+        check(pass);
     });
 
-    function check1(password) {
+    function check(password) {
         if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) {
             document.querySelector(".lowerupper__case").style.listStyleType = "disc";
         } 
-                            
+        
         else {
             document.querySelector(".lowerupper__case").style.listStyle = "none";
         }
         
-        //If it has numbers and characters
         if (password.match(/([0-9])/)) {
             document.querySelector(".one__number").style.listStyleType = "disc";
         } 
-                            
+
         else {
             document.querySelector(".one__number").style.listStyle = "none";
         }
                             
-        //If it has one special character
         if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) {
             document.querySelector(".special__character").style.listStyleType = "disc";
         } 
-                            
+                
         else {
             document.querySelector(".special__character").style.listStyle = "none";
         }
 
-        //If password is greater than 7
         if (password.length >= 12) {
             document.querySelector(".twelve__character").style.listStyleType.li = "disc";
         } 
-                            
+        
         else {
             document.querySelector(".twelve__character").style.listStyle = "none";
         }
