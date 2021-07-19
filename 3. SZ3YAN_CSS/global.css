@@ -134,8 +134,7 @@ p {
 
   .nav__header {
     background-color: transparent;
-    padding-top: 55px;
-    padding-bottom: 30px;
+    padding-top: 35px;
   }
 
   .nav__header .container {
@@ -297,6 +296,7 @@ p {
 }
 
 .copyright {
+  position: relative;
   text-align: center;
   color: var(--grey);
   font-size: 12px;

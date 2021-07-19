@@ -371,7 +371,7 @@
     .findMe__header {
         padding-top: 100px;
         padding-bottom: 200px;
-        background-color: var(--bblack);
+        background-color: var(--black);
     }
 
     .findMe__intro {
@@ -463,7 +463,7 @@
 
     .newsletter__header {
         height: 100vh;
-        background-color: var(--bblack);
+        background-color: var(--black);
     }
 
     .newsletter__header .container {
