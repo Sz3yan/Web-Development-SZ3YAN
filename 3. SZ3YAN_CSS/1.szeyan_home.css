@@ -36,8 +36,9 @@
         align-items: flex-start;
     }
 
-    .home__greeting h1 {
-        font-size: 35px;
+    .home__greeting h2 {
+        font-size: 55px;
+        font-weight: 600;
     }
 
     .home__greeting p {

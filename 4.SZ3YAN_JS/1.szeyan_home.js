@@ -2,11 +2,11 @@ function home__greeting() {
     var getname = localStorage.getItem("nom");
 
     if (getname != null) {
-        document.write("<h1> Hey " + getname.charAt(0).toUpperCase() + getname.slice(1) + "</h1>");
+        document.write("<h2> Hey " + getname.charAt(0).toUpperCase() + getname.slice(1) + "</h2>");
     } 
 
     else {
-        document.write("<h1>Hey Guys</h1>");
+        document.write("<h2>Hey Guys</h2>");
     }
 }
 
