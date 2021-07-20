@@ -129,7 +129,7 @@
         display: flex;
         justify-content: space-evenly;
         padding-top: 170px;
-        padding-bottom: 170px;
+        padding-bottom: 50px;
     }
 
     .sz3ai__ui1 img:nth-child(1) {
@@ -138,6 +138,13 @@
 
     .sz3ai__ui1 img:nth-child(2) {
         padding-top: 100px;
+    }
+
+    .sz3ai__description {
+        margin: auto;
+        color: var(--grey);
+        padding-top: 10px;
+        max-width: 710px;
     }
 
     .sz3ai__ui2 img:nth-child(1) {
