@@ -11,28 +11,28 @@
   font-family: Circular Pro;
   font-weight: 400;
   font-style: normal;
-  src: url("../1. SZ3YAN_design/circular-pro-book.woff2")
+  src: url("../1. SZ3YAN_design/font/circular-pro-book.woff2")
 }
 
 @font-face {
   font-family: Circular Pro;
   font-weight: 500;
   font-style: normal;
-  src: url("../1. SZ3YAN_design/circular-pro-medium.woff2") format("woff2")
+  src: url("../1. SZ3YAN_design/font/circular-pro-medium.woff2")
 }
 
 @font-face {
   font-family: Circular Pro;
   font-weight: 600;
   font-style: normal;
-  src: url("../1. SZ3YAN_design/circular-pro-bold.woff2") format("woff2")
+  src: url("../1. SZ3YAN_design/font/circular-pro-bold.woff2")
 }
 
 @font-face {
   font-family: Circular Pro;
   font-weight: 700;
   font-style: normal;
-  src: url("../1. SZ3YAN_design/circular-pro-black.woff2") format("woff2")
+  src: url("../1. SZ3YAN_design/font/circular-pro-black.woff2")
 }
 
 * {
