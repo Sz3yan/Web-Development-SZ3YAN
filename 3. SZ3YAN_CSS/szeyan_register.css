@@ -84,6 +84,8 @@ input:focus {
     font-size: 14px;
     text-align: left;
     height: 24px;
+    font-size: 13px;
+    font-weight: 400;
 }
 
 .button {
