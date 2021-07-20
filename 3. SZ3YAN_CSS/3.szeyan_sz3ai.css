@@ -21,7 +21,7 @@
         text-align: center;
         color: white;
         letter-spacing: -.005em;
-        padding-top: 4.5em;
+        padding-top: 5em;
         max-width: 800px;
         margin: auto;
     }
@@ -61,6 +61,10 @@
         padding: 0 18px;
     }
 
+    .sz3ai__buy:hover {
+        opacity: 0.5;
+    }
+
     .arrow {
         display: inline-block;
         position: relative;
@@ -91,7 +95,7 @@
         position: relative;
     }
 
-    .sz3ai__iphones .sz3ai__col:nth-of-type(3n+1) .iphone--landscape {
+    .sz3ai__iphones .sz3ai__col:nth-of-type(3n+1) .landscape {
         left: 100%; 
         transform: translate(-100%);
     }
@@ -100,6 +104,21 @@
         .sz3ai__col {
             margin: 0 16px;
         }
+
+        /* .portrait img {
+            width: 236px;
+            height: 481px;
+        }
+
+        .landscape img {
+            width: 481px;
+            height: 236px;
+        } */
+
+        /* .sz3ai__iphones .sz3ai__col:nth-of-type(3n+1) .landscape {
+            left: 0; 
+            transform: none;
+        } */
     }
 
     /* --------------------------------------------------------------------------
