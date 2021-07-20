@@ -1,12 +1,3 @@
-body {
-    background-color: #111111;
-    color: var(--grey);
-}
-
-.nav a {
-    color: var(--grey);
-}
-
 /* SZ3YAN by Sze Yan (updated as of 21 June 2021)
 
    Structure of 1.szeyan_sz3ai.css
@@ -30,9 +21,14 @@ body {
         text-align: center;
         color: white;
         letter-spacing: -.005em;
-        padding-top: 2em;
+        padding-top: 4.5em;
         max-width: 800px;
         margin: auto;
+    }
+
+    .sz3ai__intro:nth-child(3) {
+        margin-bottom: 10px;
+        color: white;
     }
 
     .sz3ai__intro h6 {
@@ -47,6 +43,7 @@ body {
     .sz3ai__intro h2 {
         font-size: 45px;
         font-weight: 100;
+        color: var(--grey);
     }
 
     .haish {
