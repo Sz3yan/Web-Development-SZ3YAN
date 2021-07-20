@@ -93,39 +93,44 @@
       }
       
       .content1 {
-        background-image: url("../1. SZ3YAN_design/ahh/Rectangle 38.png");
+        background-image: url("../1. SZ3YAN_design/icit.jpeg");
+        background-size: cover;
         border-radius: 16px;
       }
 
       .content2 {
-        background-image: url("../1. SZ3YAN_design/ahh/Rectangle 39.png");
+        background-image: url("../1. SZ3YAN_design/badminton.jpeg");
         background-size: cover;
         border-radius: 16px;
       }
 
       .content3 {
-        background-image: url("../1. SZ3YAN_design/ahh/Rectangle 40.png");
+        background-image: url("../1. SZ3YAN_design/ncdcc.jpg");
         background-size: cover;
         border-radius: 16px;
       }
 
       .content4 {
-        background-image: url("../1. SZ3YAN_design/ahh/Rectangle 41.png");
+        background-image: url("../1. SZ3YAN_design/python.jpeg");
+        background-size: cover;
         border-radius: 16px;
       }
 
       .content5 {
-        background-image: url("../1. SZ3YAN_design/ahh/Rectangle 42.png");
+        background-image: url("../1. SZ3YAN_design/hiking.jpeg");
+        background-size: cover;
         border-radius: 16px;
       }
 
       .content6 {
-        background-image: url("../1. SZ3YAN_design/ahh/Rectangle 43.png");
+        background-image: url("../1. SZ3YAN_design/photography.jpeg");
+        background-size: cover;
         border-radius: 16px;
       }
 
       .content7 {
-        background-image: url("../1. SZ3YAN_design/ahh/Rectangle 44.png");
+        background-image: url("../1. SZ3YAN_design/backend.jpeg");
+        background-size: cover;
         border-radius: 16px;
       }
 
