@@ -34,7 +34,7 @@
     .sz3ai__intro h6 {
         margin-bottom: 10px;
         font-size: 16px;
-        color: var(--dark-grey);
+        color: var(--blue);
         text-transform: uppercase;
         font-weight: 200;
         letter-spacing: .05em;
@@ -104,58 +104,42 @@
         .sz3ai__col {
             margin: 0 16px;
         }
-
-        /* .portrait img {
-            width: 236px;
-            height: 481px;
-        }
-
-        .landscape img {
-            width: 481px;
-            height: 236px;
-        } */
-
-        /* .sz3ai__iphones .sz3ai__col:nth-of-type(3n+1) .landscape {
-            left: 0; 
-            transform: none;
-        } */
     }
 
     /* --------------------------------------------------------------------------
         2. features
     -------------------------------------------------------------------------- */
     
+    .sz3ai__features {
+        width: 656px;
+        margin: auto;
+        padding-top: 260px;
+    }
+
+    .sz3ai__feature1, .sz3ai__feature2 {
+        padding-bottom: 340px;
+    }
+
     .sz3ai__ui1, .sz3ai__ui2 {
         display: flex;
         justify-content: space-evenly;
-        padding-top: 170px;
-        padding-bottom: 50px;
     }
 
-    .sz3ai__ui1 img:nth-child(1) {
-        padding-bottom: 100px;
+    .sz3ai__ui1 video {
+        margin-right: 16px;
     }
 
-    .sz3ai__ui1 img:nth-child(2) {
+    .sz3ai__ui1 img {
         padding-top: 100px;
+        margin-left: 16px;
     }
 
-    .sz3ai__description {
-        margin: auto;
-        color: var(--grey);
-        padding-top: 10px;
-        max-width: 710px;
-    }
-
-    .sz3ai__ui2 img:nth-child(1) {
-        padding-top: 100px;
-    }
-
-    .sz3ai__ui2 img:nth-child(2) {
-        padding-bottom: 100px;
+    .copy {
+        text-align: left;
+        margin-top: -50px;
+        margin-right: calc(50% + 32px);
     }
     
-
     /* --------------------------------------------------------------------------
         3. 
     -------------------------------------------------------------------------- */
