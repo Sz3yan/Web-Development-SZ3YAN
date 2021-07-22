@@ -73,7 +73,6 @@
 
     .sz3ai__iphones {
         width: 100%;
-        overflow: hidden;
     }
 
     .iphones__wrapper {
@@ -181,7 +180,7 @@
         margin: 0 30px;
       }
       
-      .con {
+    .con {
         max-width: 1000px; 
         position: relative;
         padding: 5px;
@@ -189,9 +188,9 @@
         margin: 15px auto;
         box-shadow: 0 15px 35px -15px #656565;
         border-radius: 1rem;
-      }
+    }
       
-      .slider { 
+    .slider { 
         margin: 0 auto; 
         width: 100%; 
         height: 100%;
@@ -199,17 +198,17 @@
         display: flex; 
         overflow: hidden; 
         scroll-behavior: smooth;
-      } 
+    } 
       
-      .slider img { 
+    .slider img { 
         min-width: 100%; 
         max-width: 100%; 
         height: auto; 
         object-fit: contain;
         border-radius: 0.7rem;
-      }
+    }
         
-      #previous, #next { 
+    #previous, #next { 
         cursor: pointer; 
         position: absolute; 
         width: 50px; 
@@ -223,37 +222,36 @@
         top: calc(50% - 25px); 
         left: -20px;
         box-shadow: 0 12px 25px -9px #0041ac;
-      } 
+    } 
       
-      #next { 
+    #next { 
         left: unset; 
         right: -20px; 
-      }
+    }
 
-      @media (max-width: 480px){
+    @media (max-width: 480px){
         #previous, #next { 
           width: 40px; 
           height: 40px; 
           border-radius: 10px;
-          top: calc(50% - 20px);
+          top: calc(50% - 20px);    
         } 
       }
       
-      @media (min-width: 1200px){
+    @media (min-width: 1200px){
         #previous, #next { 
-          width: 60px; 
-          height: 60px; 
-          border-radius: 18px;
-          top: calc(50% - 30px);
-          left: -30px;
+            width: 60px; 
+            height: 60px; 
+            border-radius: 18px;
+            top: calc(50% - 30px);
+            left: -30px;
         }
         
         #next { 
-          left: unset; 
-          right: -30px; 
+            left: unset; 
+            right: -30px;     
         }
-      }
-      
+    }
 
     /* --------------------------------------------------------------------------
         4. price
