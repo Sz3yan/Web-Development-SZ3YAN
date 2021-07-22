@@ -151,6 +151,22 @@
     .copy h2 {
         color: white;
     }
+
+    @media (max-width: 890px) {
+        .sz3ai__features {
+            width: 544px;
+        }
+
+        .sz3ai__ui1 img, .sz3ai__ui1 video {
+            width: 264px;
+        }
+
+        .copy {
+            text-align: center;
+            margin-top: 32px;
+            margin-right: 0;
+        }
+    }
     
     /* --------------------------------------------------------------------------
         3. 
