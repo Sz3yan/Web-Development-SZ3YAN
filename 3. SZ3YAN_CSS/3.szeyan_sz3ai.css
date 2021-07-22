@@ -1,11 +1,11 @@
-/* SZ3YAN by Sze Yan (updated as of 21 June 2021)
+/* SZ3YAN by Sze Yan (updated as of 22 July 2021)
 
    Structure of 1.szeyan_sz3ai.css
    |
    ├─ 1. sz3ai
    ├─ 2. features
-   ├─ 3. 
-   ├─ 4. 
+   ├─ 3. slide
+   ├─ 4. price
 
     /* --------------------------------------------------------------------------
         1. sz3ai (heading)
@@ -170,14 +170,136 @@
     }
     
     /* --------------------------------------------------------------------------
-        3. 
+        3. slide
     -------------------------------------------------------------------------- */
 
-    
+    .sz3ai__slide {
+        height: 100vh;
+    }
+
+    section {
+        margin: 0 30px;
+      }
+      
+      .con {
+        max-width: 1000px; 
+        position: relative;
+        padding: 5px;
+        background: #fff;
+        margin: 15px auto;
+        box-shadow: 0 15px 35px -15px #656565;
+        border-radius: 1rem;
+      }
+      
+      .slider { 
+        margin: 0 auto; 
+        width: 100%; 
+        height: 100%;
+        border-radius: 0.7rem;
+        display: flex; 
+        overflow: hidden; 
+        scroll-behavior: smooth;
+      } 
+      
+      .slider img { 
+        min-width: 100%; 
+        max-width: 100%; 
+        height: auto; 
+        object-fit: contain;
+        border-radius: 0.7rem;
+      }
+        
+      #previous, #next { 
+        cursor: pointer; 
+        position: absolute; 
+        width: 50px; 
+        height: 50px; 
+        border-radius: 16px; 
+        background: #2770ff;
+        color: #fff;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        top: calc(50% - 25px); 
+        left: -20px;
+        box-shadow: 0 12px 25px -9px #0041ac;
+      } 
+      
+      #next { 
+        left: unset; 
+        right: -20px; 
+      }
+
+      @media (max-width: 480px){
+        #previous, #next { 
+          width: 40px; 
+          height: 40px; 
+          border-radius: 10px;
+          top: calc(50% - 20px);
+        } 
+      }
+      
+      @media (min-width: 1200px){
+        #previous, #next { 
+          width: 60px; 
+          height: 60px; 
+          border-radius: 18px;
+          top: calc(50% - 30px);
+          left: -30px;
+        }
+        
+        #next { 
+          left: unset; 
+          right: -30px; 
+        }
+      }
+      
 
     /* --------------------------------------------------------------------------
-        4. 
+        4. price
     -------------------------------------------------------------------------- */
 
-    
+    .sz3ai__price {
+        padding-top: 150px;
+        padding-bottom: 10px;;
+        text-align: center;
+        margin: auto;
+    }
+
+    .sz3ai__price .container h1 {
+        color: white;
+    }
+
+    .sz3ai__price__description {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .price__cards {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
+
+    .price1, .price2 {
+        border-radius: 30px;
+        background-color: #141414;
+        width: 452px;
+        height: 527px;
+    }
+
+    .price1:hover, .price2:hover {
+        transform: scale(0.98);
+        cursor: pointer;
+    }
+
+    @media (max-width: 890px) {
+        .price__cards {
+            display: block;
+            text-align: center;
+        }
+    }
+
 /*

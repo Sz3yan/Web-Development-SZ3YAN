@@ -165,12 +165,59 @@
             </div>
 
             <div class="sz3ai__slide">
-                
+                <div class="">
+                    <section>
+                        <div class="con">
+                            <span id="previous"><i data-feather="chevron-left"></i></span>
+                            <span id="next"><i data-feather="chevron-right"></i></span>
+                        
+                            <div id="slider" class="slider">
+                                <img src="https://images.unsplash.com/photo-1536855337232-a0f6f6f57142?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIwMjczNjA0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000">
+                                <img src="https://images.unsplash.com/photo-1604364184406-060f871a0fee?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIwMjczNDU1&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000">
+                                <img src="https://images.unsplash.com/photo-1496065187959-7f07b8353c55?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIwMjczNDEy&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000">
+                                <img src="https://images.unsplash.com/photo-1433878455169-4698e60005b1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIwMjcyODkx&ixlib=rb-1.2.1&q=60&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000">
+                                <img src="https://images.unsplash.com/photo-1427847856029-612f5e500306?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIwMjcyMDQ3&ixlib=rb-1.2.1&q=60&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000">
+                            </div>
+                        </div>
+                    <section>
+                    <script src='https://unpkg.com/feather-icons'></script>
+                    <script>
+                        feather.replace()
+
+                        const nextEl = document.getElementById("next");
+                        const previousEl = document.getElementById("previous");
+                        const sliderEl = document.getElementById("slider");
+                        //const imgWidth = sliderEl.offsetWidth;
+                        nextEl.addEventListener("click", onNextClick);
+                        previousEl.addEventListener("click", onPreviousClick);
+
+                        function onNextClick() {
+                            const imgWidth = sliderEl.offsetWidth;
+                            sliderEl.scrollLeft += imgWidth;
+                        }
+                        function onPreviousClick() {
+                            const imgWidth = sliderEl.offsetWidth;
+                            sliderEl.scrollLeft -= imgWidth;
+                        }
+                    </script>
+                </div>
             </div>
 
             <div class="sz3ai__price">
-
+                <div class="container">
+                    <h1>Pay per trained model only</h1>
+                    <div class="sz3ai__price__description">No minimum costs, no contracts, no hidden fees.</div>
+                    <div class="price__cards">
+                        <div class="price1">
+                            
+                        </div>
+                        <div class="price2">
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        <p class="copyright">Copyright &copy; 2021 Sze Yan All rights reserved.</p>
     </body>
 </html>
