@@ -119,7 +119,7 @@
     -------------------------------------------------------------------------- */
     
     .sz3ai__features {
-        width: 656px;
+        max-width: 656px;
         margin: auto;
         padding-top: 260px;
     }
@@ -154,11 +154,11 @@
 
     @media (max-width: 890px) {
         .sz3ai__features {
-            width: 544px;
+            max-width: 544px;
         }
 
         .sz3ai__ui1 img, .sz3ai__ui1 video {
-            width: 264px;
+            max-width: 264px;
         }
 
         .copy {
