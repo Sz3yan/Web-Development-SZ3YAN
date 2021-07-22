@@ -68,11 +68,12 @@
     .arrow {
         display: inline-block;
         position: relative;
-        width: .8em;
+        width: 0.8em;
     }
 
     .sz3ai__iphones {
         width: 100%;
+        overflow: hidden;
     }
 
     .iphones__wrapper {
