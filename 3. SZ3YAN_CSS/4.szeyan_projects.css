@@ -8,4 +8,134 @@
         1. Project
     -------------------------------------------------------------------------- */
 
+    .chooseMe__header {
+        width: 100%;
+        background-color: var(--black);
+    }
+    
+    .chooseMe__intro {
+        text-align: center;
+        color: white;
+        letter-spacing: -.005em;
+        padding-top: 10em;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .chooseMe__intro h6 {
+        margin-bottom: 10px;
+        color: var(--dark-grey);
+        text-transform: uppercase;
+        
+    }
+
+    .chooseMe__intro h2 {
+        font-size: 45px;
+        font-weight: 100;
+    }
+    
+    .chooseMe__description {
+        margin: auto;
+        color: var(--grey);
+        padding-top: 10px;
+        max-width: 760px;
+    }
+    
+    .chooseMe__description span {
+        color: var(--blue);
+    }
+    
+    .chooseMe__moving {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        overflow-x: hidden;
+    }
+    
+    .chooseMe__left, .chooseMe__right {
+        display: flex;
+        position: relative;
+    }
+
+    .chooseMe__left {
+        animation: moveleft 300s linear infinite;
+    }
+
+    .chooseMe__right {
+        animation: moveright 300s linear infinite;
+    }
+
+    .chooseMe__right .chooseMe__projectSet1, .chooseMe__right .chooseMe__projectSet2 {
+        position: relative;
+        left: 500px;
+    }
+
+    @keyframes moveleft {
+        0% {
+            right: 0px
+        }
+
+        100% {
+            right: 2000px;
+        }
+    }
+
+    @keyframes moveright {
+        100% {
+            right: 0px
+        }
+
+        0% {
+            right: 2000px;
+        }
+    }
+
+    .chooseMe__projectSet1, .chooseMe__projectSet2 {
+        display: grid;
+        row-gap: 45px;
+        column-gap: 40px;
+        grid-template-columns: repeat(5, 300px);
+        padding-top: 20px;
+    }
+
+    .chooseMe__projectSet2 {
+        padding-left: 40px;
+    }
+    
+    .chooseMe__card {
+        border-radius: 10px;
+        background-color: var(--bblack);
+        padding: 20px;
+        width: 300px;
+        height: 112px;
+    }
+
+    .chooseMe__card:active, .chooseMe__card:hover {
+        transform: scale(0.98);
+    }
+    
+    .chooseMe__card h4 {
+        color: #fff;
+    }
+    
+    .chooseMe__card p {
+        color: var(--grey);
+    }
+
+    .chooseMe__content {
+        display: flex;
+        width: 100%;
+    }
+
+    .chooseMe__content img {
+        margin-right: 10px
+    }
+
+    .chooseMe__projects__description h4 {
+        font-size: 16px;
+    }
+
+    .chooseMe__projects__description p {
+        font-size: 16px;
+    }
+
 /*
