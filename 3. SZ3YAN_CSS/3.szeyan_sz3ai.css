@@ -102,7 +102,13 @@
 
     @media (max-width: 890px) {
         .sz3ai__col {
-            margin: 0 16px;
+            margin: 0 8px;
+            width: 216px;
+        }
+
+        .iphone video, .iphone img {
+            width: 195px;
+            height: 422px;
         }
 
         .sz3ai__iphones .sz3ai__col:nth-of-type(3n+1) .landscape {
@@ -155,7 +161,7 @@
         }
 
         .sz3ai__ui1 img, .sz3ai__ui1 video {
-            max-width: 264px;
+            width: 264px;
         }
 
         .copy {
@@ -178,7 +184,7 @@
         height: 100vh;
     }
 
-    section {
+    .so section {
         margin: 0 30px;
       }
       
