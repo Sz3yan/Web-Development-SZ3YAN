@@ -73,6 +73,7 @@
 
     .sz3ai__iphones {
         width: 100%;
+        overflow: hidden;
     }
 
     .iphones__wrapper {
@@ -104,12 +105,8 @@
             margin: 0 16px;
         }
 
-        .iphone video, .iphone img {
-            width: 264px;
-        }
-
         .sz3ai__iphones .sz3ai__col:nth-of-type(3n+1) .landscape {
-            left: none;
+            left: 0;
             transform: none;
         }
     }
