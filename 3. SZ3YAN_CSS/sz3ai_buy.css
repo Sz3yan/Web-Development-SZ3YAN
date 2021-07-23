@@ -1,0 +1,135 @@
+/* SZ3YAN by Sze Yan (updated as of 22 July 2021)
+
+   Structure of 1.szeyan_sz3ai.css
+   |
+   ├─ 1. sz3ai
+   ├─ 2. features
+   ├─ 3. slide
+   ├─ 4. price
+
+    /* --------------------------------------------------------------------------
+        1. sz3ai (heading)
+    -------------------------------------------------------------------------- */
+
+    .sz3ai__header {
+        width: 100%;
+        z-index: -3;
+        padding-bottom: 170px;
+    }
+    
+    .sz3ai__intro {
+        text-align: center;
+        color: white;
+        letter-spacing: -.005em;
+        padding-top: 5em;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .sz3ai__intro h2:nth-child(3) {
+        margin-bottom: 30px;
+        color: white;
+    }
+
+    .sz3ai__intro h6 {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: var(--blue);
+        text-transform: uppercase;
+        font-weight: 200;
+        letter-spacing: .05em;
+    }
+
+    .sz3ai__intro h2 {
+        font-size: 45px;
+        font-weight: 100;
+        color: var(--grey);
+    }
+
+    .sz3ai__buy {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 6;
+        text-transform: uppercase;
+        height: 30px;
+        background-color: var(--bblack);
+        color: white;
+        border-radius: 15px;
+        padding: 0 18px;
+    }
+
+    .sz3ai__buy:hover {
+        opacity: 0.5;
+    }
+
+    .arrow {
+        display: inline-block;
+        position: relative;
+        width: 0.8em;
+    }
+
+    .sz3ai__iphones {
+        width: 100%;
+    }
+
+    .iphones__wrapper {
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+
+    .sz3ai__col {
+        width: 312px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin: 0 32px;
+    }
+
+    .phone {
+        margin: 32px 0;
+        position: relative;
+    }
+
+    .sz3ai__iphones .sz3ai__col:nth-of-type(3n+1) .landscape {
+        left: 100%; 
+        transform: translate(-100%);
+    }
+
+    @media (max-width: 890px) {
+        .sz3ai__col {
+            margin: 0 16px;
+        }
+
+        .iphone video, .iphone img {
+            width: 264px;
+        }
+
+        .sz3ai__iphones .sz3ai__col:nth-of-type(3n+1) .landscape {
+            left: none;
+            transform: none;
+        }
+    }
+
+    /* --------------------------------------------------------------------------
+        2. features
+    -------------------------------------------------------------------------- */
+    
+    
+    
+    /* --------------------------------------------------------------------------
+        3. slide
+    -------------------------------------------------------------------------- */
+
+    
+
+    /* --------------------------------------------------------------------------
+        4. price
+    -------------------------------------------------------------------------- */
+
+
+
+/*
