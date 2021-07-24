@@ -61,6 +61,21 @@
 
     .arrow {
         width: 0.8em;
+        animation: move__arrow 3s infinite;
+    }
+
+    @keyframes move__arrow {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translate3d(0px, 0, 0);
+        }
+
+        40% {
+            transform: translate3d(7px, 0, 0);
+        }
+
+        60% {
+            transform: translate3d(3px, 0, 0);
+        }
     }
 
     .sz3ai__iphones {
