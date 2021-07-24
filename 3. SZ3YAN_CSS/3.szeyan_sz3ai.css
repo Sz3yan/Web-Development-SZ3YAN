@@ -161,70 +161,28 @@
     -------------------------------------------------------------------------- */
 
     .sz3ai__slide {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .so section {
-        margin: 0 30px;
-    }
-      
-    .con {
-        max-width: 1000px; 
         position: relative;
-        padding: 5px;
-        margin: 15px auto;
-        border-radius: 1rem;
-    }
-      
-    .slider { 
-        margin: 0 auto; 
-        width: 100%; 
-        height: 100%;
-        border-radius: 0.7rem;
-        display: flex; 
-        overflow: hidden; 
-    } 
-      
-    .slider img { 
-        width: 100%; 
-        width: 100%; 
-        height: auto; 
-        object-fit: contain;
-        border-radius: 0.7rem;
-    }
-        
-    #previous, #next { 
-        cursor: pointer; 
-        position: absolute; 
-        width: 50px; 
-        height: 50px; 
-        border-radius: 16px; 
-        background: #2770ff;
-        color: #fff;
-        display: flex; 
-        align-items: center; 
-        justify-content: center; 
-        top: calc(50% - 25px); 
-        left: -20px;
-        box-shadow: 0 12px 25px -9px #0041ac;
-    } 
-      
-    #next { 
-        left: unset; 
-        right: -20px; 
+        width: 100%;
+        height: calc(-56px + 100vh);
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
-    @media (max-width: 890px){
-        #previous, #next { 
-          width: 40px; 
-          height: 40px; 
-          border-radius: 10px;
-          top: calc(50% - 20px);    
-        } 
-      }
+    .slides img {
+        width: 100%;
+    }
+
+    .slides {
+        animation-name: fade;
+        animation-duration: 1.5s;
+        display: none;
+        vertical-align: middle;
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
 
     /* --------------------------------------------------------------------------
         4. price

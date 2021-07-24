@@ -165,44 +165,41 @@
             </div>
 
             <div class="sz3ai__slide">
-                <div class="so">
-                    <section>
-                        <div class="con">
-                            <span id="previous"><i data-feather="chevron-left"></i></span>
-                            <span id="next"><i data-feather="chevron-right"></i></span>
-                        
-                            <div id="slider" class="slider">
-                                <img src="https://images.unsplash.com/photo-1536855337232-a0f6f6f57142?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIwMjczNjA0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000">
-                                <img src="https://images.unsplash.com/photo-1604364184406-060f871a0fee?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIwMjczNDU1&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000">
-                                <img src="https://images.unsplash.com/photo-1496065187959-7f07b8353c55?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIwMjczNDEy&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000">
-                                <img src="https://images.unsplash.com/photo-1433878455169-4698e60005b1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIwMjcyODkx&ixlib=rb-1.2.1&q=60&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000">
-                                <img src="https://images.unsplash.com/photo-1427847856029-612f5e500306?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIwMjcyMDQ3&ixlib=rb-1.2.1&q=60&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000">
-                            </div>
-                        </div>
-                    <section>
-                    <script src='https://unpkg.com/feather-icons'></script>
-                    <script>
-                        feather.replace()
+                <div class="slides slide1">
+                    <img src="../1. SZ3YAN_design/3. szeyan_sz3ai_design/1.jpg">
+                </div>
 
-                        const nextEl = document.getElementById("next");
-                        const previousEl = document.getElementById("previous");
-                        const sliderEl = document.getElementById("slider");
+                <div class="slides slide2">
+                    <img src="../1. SZ3YAN_design/3. szeyan_sz3ai_design/2.jpg">
+                </div>
 
-                        nextEl.addEventListener("click", onNextClick);
-                        previousEl.addEventListener("click", onPreviousClick);
-
-                        function onNextClick() {
-                            const imgWidth = sliderEl.offsetWidth;
-                            sliderEl.scrollLeft += imgWidth;
-                        }
-
-                        function onPreviousClick() {
-                            const imgWidth = sliderEl.offsetWidth;
-                            sliderEl.scrollLeft -= imgWidth;
-                        }
-                    </script>
+                <div class="slides slide3">
+                    <img src="../1. SZ3YAN_design/3. szeyan_sz3ai_design/3.jpg">
                 </div>
             </div>
+
+            <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("slides");
+                    
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+
+                    slideIndex++;
+
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1
+                    }    
+
+                    slides[slideIndex-1].style.display = "block";  
+                    setTimeout(showSlides, 5000);
+                }
+            </script>
 
             <div class="sz3ai__price">
                 <div class="container">
