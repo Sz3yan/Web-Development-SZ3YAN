@@ -164,8 +164,6 @@
         position: relative;
         width: 100%;
         height: calc(-56px + 100vh);
-        overflow-x: hidden;
-        overflow-y: hidden;
     }
 
     .slides img {
@@ -189,44 +187,16 @@
     -------------------------------------------------------------------------- */
 
     .sz3ai__price {
-        padding-top: 150px;
-        padding-bottom: 10px;;
+        padding-top: 170px;
+        padding-bottom: 170px;;
         text-align: center;
         margin: auto;
     }
 
-    .sz3ai__price .container h1 {
-        color: white;
-    }
-
-    .sz3ai__price__description {
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-
-    .price__cards {
-        display: flex;
-        justify-content: space-between;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 50px;
-    }
-
-    .price1, .price2 {
-        border-radius: 30px;
-        background-color: #141414;
-        height: 527px;
-    }
-
-    .price1:hover, .price2:hover {
-        transform: scale(0.98);
-        cursor: pointer;
-    }
-
     @media (max-width: 890px) {
-        .price__cards {
-            display: block;
-            text-align: center;
+        .sz3ai__price {
+            padding-top: 0;
+            padding-bottom: 170px;;
         }
     }
 
