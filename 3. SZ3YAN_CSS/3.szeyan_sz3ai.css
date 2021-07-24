@@ -175,9 +175,7 @@
         max-width: 1000px; 
         position: relative;
         padding: 5px;
-        background: #fff;
         margin: 15px auto;
-        box-shadow: 0 15px 35px -15px #656565;
         border-radius: 1rem;
     }
       
@@ -188,12 +186,11 @@
         border-radius: 0.7rem;
         display: flex; 
         overflow: hidden; 
-        scroll-behavior: smooth;
     } 
       
     .slider img { 
-        min-width: 100%; 
-        max-width: 100%; 
+        width: 100%; 
+        width: 100%; 
         height: auto; 
         object-fit: contain;
         border-radius: 0.7rem;
@@ -220,7 +217,7 @@
         right: -20px; 
     }
 
-    @media (max-width: 480px){
+    @media (max-width: 890px){
         #previous, #next { 
           width: 40px; 
           height: 40px; 
@@ -228,21 +225,6 @@
           top: calc(50% - 20px);    
         } 
       }
-      
-    @media (min-width: 1200px){
-        #previous, #next { 
-            width: 60px; 
-            height: 60px; 
-            border-radius: 18px;
-            top: calc(50% - 30px);
-            left: -30px;
-        }
-        
-        #next { 
-            left: unset; 
-            right: -30px;     
-        }
-    }
 
     /* --------------------------------------------------------------------------
         4. price
