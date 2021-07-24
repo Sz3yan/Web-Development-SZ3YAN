@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../3. SZ3YAN_CSS/global.css"/>
         <link rel="stylesheet" href="../3. SZ3YAN_CSS/3.szeyan_sz3ai.css"/>
         <script src="../4.SZ3YAN_JS/global.js"></script>
+        <script src="../4.SZ3YAN_JS/3.szeyan_sz3ai.js"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-9MZZ65V8BT"></script>
         <script>
@@ -178,28 +179,7 @@
                 </div>
             </div>
 
-            <script>
-                var slideIndex = 0;
-                showSlides();
-                
-                function showSlides() {
-                    var i;
-                    var slides = document.getElementsByClassName("slides");
-                    
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";  
-                    }
-
-                    slideIndex++;
-
-                    if (slideIndex > slides.length) {
-                        slideIndex = 1
-                    }    
-
-                    slides[slideIndex-1].style.display = "block";  
-                    setTimeout(showSlides, 5000);
-                }
-            </script>
+            <script>slides()</script>
 
             <div class="sz3ai__price">
                 <div class="container">
