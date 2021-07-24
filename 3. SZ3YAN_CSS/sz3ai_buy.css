@@ -13,16 +13,13 @@
 
     .sz3ai__header {
         width: 100%;
-        z-index: -3;
         padding-bottom: 170px;
     }
     
     .sz3ai__intro {
         text-align: center;
         color: white;
-        letter-spacing: -.005em;
         padding-top: 5em;
-        max-width: 800px;
         margin: auto;
     }
 
@@ -37,7 +34,6 @@
         color: var(--blue);
         text-transform: uppercase;
         font-weight: 200;
-        letter-spacing: .05em;
     }
 
     .sz3ai__intro h2 {
@@ -49,10 +45,8 @@
     .sz3ai__buy {
         display: inline-flex;
         align-items: center;
-        justify-content: center;
         cursor: pointer;
         font-size: 13px;
-        font-weight: 6;
         text-transform: uppercase;
         height: 30px;
         background-color: var(--bblack);
@@ -86,11 +80,11 @@
 
     .sz3ai__iphones {
         width: 100%;
+        overflow: hidden;
     }
 
     .iphones__wrapper {
         display: flex;
-        position: relative;
         justify-content: center;
     }
 
@@ -113,16 +107,7 @@
 
     @media (max-width: 890px) {
         .sz3ai__col {
-            margin: 0 16px;
-        }
-
-        .iphone video, .iphone img {
-            width: 264px;
-        }
-
-        .sz3ai__iphones .sz3ai__col:nth-of-type(3n+1) .landscape {
-            left: none;
-            transform: none;
+            margin: 0 8px;
         }
     }
 
