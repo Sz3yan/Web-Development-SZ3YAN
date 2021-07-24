@@ -164,6 +164,7 @@
         position: relative;
         width: 100%;
         height: calc(-56px + 100vh);
+        overflow: hidden;
     }
 
     .slides img {
