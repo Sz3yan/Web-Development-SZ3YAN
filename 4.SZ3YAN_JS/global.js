@@ -85,14 +85,14 @@ function register__validate() {
     });
 
     function check(password) {
-        if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) {
-            document.querySelector(".lowerupper__case").style.listStyleType = "disc";
+        if (password.length >= 12) {
+            document.querySelector(".twelve__character").style.listStyleType = "disc";
         } 
         
         else {
-            document.querySelector(".lowerupper__case").style.listStyle = "none";
+            document.querySelector(".twelve__character").style.listStyle = "none";
         }
-        
+
         if (password.match(/([0-9])/)) {
             document.querySelector(".one__number").style.listStyleType = "disc";
         } 
@@ -100,21 +100,21 @@ function register__validate() {
         else {
             document.querySelector(".one__number").style.listStyle = "none";
         }
-                            
+
+        if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) {
+            document.querySelector(".lowerupper__case").style.listStyleType = "disc";
+        } 
+        
+        else {
+            document.querySelector(".lowerupper__case").style.listStyle = "none";
+        }
+                      
         if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) {
             document.querySelector(".special__character").style.listStyleType = "disc";
         } 
                 
         else {
             document.querySelector(".special__character").style.listStyle = "none";
-        }
-
-        if (password.length >= 12) {
-            document.querySelector(".twelve__character").style.listStyleType.li = "disc";
-        } 
-        
-        else {
-            document.querySelector(".twelve__character").style.listStyle = "none";
         }
     }
 }
