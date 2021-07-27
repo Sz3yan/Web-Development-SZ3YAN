@@ -470,7 +470,6 @@
         left: 0;
         transform: translateX(-50%) translateY(-50%);
         mix-blend-mode: difference;
-        z-index: 0;
         display: none;
     }
 
@@ -491,6 +490,8 @@
         .findMe__invert a img {
             width: 30%;
         }
+
+
     }
 
     /* --------------------------------------------------------------------------
