@@ -77,7 +77,23 @@
                     <div class="buy">
                         <div class="sz3ai__payment">
                             <h3>How do you want to pay?</h3>
-                            <button class="credit">Credit or Debit Card</button>
+                            <button class="credit" onclick="change()">Credit or Debit Card</button>
+
+                            <script>
+                                function change() {
+                                    document.querySelector(".credit__hidden").style.display = "block";
+                                }
+                            </script>
+
+                            <div class="credit__hidden">
+                                <h4>Enter your card information</h4>
+                                <input class="credit__input" type="text" placeholder="Credit/Debit Card Number"/>
+                                <div class="second">
+                                    <input class="expire" type="text" placeholder="Expiration MM/YY"/>
+                                    <input class="cvv" type="text" placeholder="CVV"/>
+                                </div>
+                            </div>
+
                             <button class="sz3pay">SZ3Pay</button>
                             <button class="pay">Pay</button>
                         </div>
