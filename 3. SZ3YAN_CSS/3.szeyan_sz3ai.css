@@ -209,6 +209,15 @@
         margin: auto;
     }
 
+    .logo {
+        border-radius: 20px; 
+        margin-bottom: 20px;
+    }
+
+    .sz3ai__buy {
+        margin-top: 20px;
+    }
+
     @media (max-width: 890px) {
         .sz3ai__price {
             padding-top: 0;
