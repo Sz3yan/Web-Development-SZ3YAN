@@ -8,106 +8,73 @@
    ├─ 4. price
 
     /* --------------------------------------------------------------------------
-        1. sz3ai (heading)
+        1. buy (heading)
     -------------------------------------------------------------------------- */
 
-    .sz3ai__header {
-        width: 100%;
-        padding-bottom: 170px;
-    }
-    
-    .sz3ai__intro {
-        text-align: center;
-        color: white;
-        padding-top: 5em;
+    .sz3ai__buy {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
         margin: auto;
     }
 
-    .sz3ai__intro h2:nth-child(3) {
+    .buy {
+        display: flex;
+    }
+
+    .credit {
+        margin-top: 30px;
+    }
+
+    .credit, .sz3pay {
+        width: 400px;
+        height: 62px;
+        border: solid 1px var(--dark-grey);
+        border-radius: 12px;
+        margin-bottom: 15px;
+        color: white;
+        font-size: 17px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .credit:hover , .sz3pay:hover {
+        border: solid 1px var(--blue);
+    }
+
+    .sz3pay {
         margin-bottom: 30px;
+    }
+
+    .pay {
+        width: 400px;
+        height: 42px;
+        border: solid 1px var(--dark-grey);
+        border-radius: 12px;
+        background-color: var(--blue);
         color: white;
+        font-size: 17px;
     }
 
-    .sz3ai__intro h6 {
-        margin-bottom: 10px;
-        font-size: 16px;
-        color: var(--blue);
-        text-transform: uppercase;
-        font-weight: 200;
-    }
-
-    .sz3ai__intro h2 {
-        font-size: 45px;
-        font-weight: 100;
-        color: var(--grey);
-    }
-
-    .sz3ai__buy {
-        display: inline-flex;
-        align-items: center;
+    .sz3ai__payment button:hover {
         cursor: pointer;
-        font-size: 13px;
-        text-transform: uppercase;
-        height: 30px;
-        background-color: var(--bblack);
-        color: white;
-        border-radius: 15px;
-        padding: 0 18px;
     }
 
-    .sz3ai__buy:hover {
-        opacity: 0.5;
-    }
-
-    .arrow {
-        width: 0.8em;
-        animation: move__arrow 3s infinite;
-    }
-
-    @keyframes move__arrow {
-        0%, 20%, 50%, 80%, 100% {
-            transform: translate3d(0px, 0, 0);
-        }
-
-        40% {
-            transform: translate3d(7px, 0, 0);
-        }
-
-        60% {
-            transform: translate3d(3px, 0, 0);
-        }
-    }
-
-    .sz3ai__iphones {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .iphones__wrapper {
+    .sz3ai__ui {
         display: flex;
-        justify-content: center;
     }
 
-    .sz3ai__col {
-        width: 312px;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        margin: 0 32px;
-    }
-
-    .phone {
-        margin: 32px 0;
-    }
-
-    .sz3ai__iphones .sz3ai__col:nth-of-type(3n+1) .landscape {
-        left: 100%; 
-        transform: translate(-100%);
+    .vid2 {
+        margin-top: 50px;
     }
 
     @media (max-width: 890px) {
-        .sz3ai__col {
-            margin: 0 8px;
+        .buy {
+            display: block;
+        }
+
+        .sz3ai__ui {
+            display: none;
         }
     }
 
@@ -116,17 +83,5 @@
     -------------------------------------------------------------------------- */
     
     
-    
-    /* --------------------------------------------------------------------------
-        3. slide
-    -------------------------------------------------------------------------- */
-
-    
-
-    /* --------------------------------------------------------------------------
-        4. price
-    -------------------------------------------------------------------------- */
-
-
 
 /*
