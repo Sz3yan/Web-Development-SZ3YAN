@@ -64,6 +64,10 @@
         display: flex;
     }
 
+    .sz3ai__ui a:hover {
+        cursor: default;
+    }
+
     .vid2 {
         margin-top: 50px;
     }
