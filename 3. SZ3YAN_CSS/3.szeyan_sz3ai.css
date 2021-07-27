@@ -203,10 +203,11 @@
     -------------------------------------------------------------------------- */
 
     .sz3ai__price {
-        padding-top: 170px;
-        padding-bottom: 170px;;
+        height: 90vh;
         text-align: center;
         margin: auto;
+        display: flex;
+        justify-content: center;
     }
 
     .logo {
@@ -216,6 +217,10 @@
 
     .sz3ai__buy {
         margin-top: 20px;
+    }
+
+    .sz3ai__price .container h2 {
+        color: white;
     }
 
     @media (max-width: 890px) {
