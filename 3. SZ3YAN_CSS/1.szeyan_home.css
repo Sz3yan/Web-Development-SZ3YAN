@@ -378,8 +378,12 @@
             display: none;
         }
 
+        .chooseMe__left {
+            animation: moveleft 200s linear infinite;
+        }
+
         .chooseMe__right {
-            animation: moveright 300s linear infinite;
+            animation: moveright 200s linear infinite;
         }
 
         .chooseMe__card {
@@ -451,12 +455,9 @@
         text-align: center;
     }
 
-    .findMe__invert a img{
-        opacity: 0;
-    }
-
-    .findMe__invert a img:hover {
-        opacity: 1;
+    .findMe__invert a img {
+        position: relative;
+        z-index: 1;
     }
 
     .cursor {
