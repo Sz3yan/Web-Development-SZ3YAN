@@ -135,3 +135,12 @@ function store(){
         alert("Enter the password again");
     }
 }
+
+function change() {
+    document.querySelector(".credit__hidden").classList.toggle("block");
+}
+
+function success() {
+    document.querySelector(".buy").style.display = "none";
+    document.querySelector(".done").style.display = "block";
+}

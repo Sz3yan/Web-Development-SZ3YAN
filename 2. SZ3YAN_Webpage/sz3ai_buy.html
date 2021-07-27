@@ -79,13 +79,7 @@
                             <h3>How do you want to pay?</h3>
                             <button class="credit" onclick="change()">Credit or Debit Card</button>
 
-                            <script>
-                                function change() {
-                                    document.querySelector(".credit__hidden").style.display = "block";
-                                }
-                            </script>
-
-                            <div class="credit__hidden">
+                            <div class="credit__hidden" id="h">
                                 <h4>Enter your card information</h4>
                                 <input class="credit__input" type="text" placeholder="Credit/Debit Card Number"/>
                                 <div class="second">
@@ -95,7 +89,7 @@
                             </div>
 
                             <button class="sz3pay">SZ3Pay</button>
-                            <button class="pay">Pay</button>
+                            <button class="pay" onclick="success()">Pay</button>
                         </div>
                         <div class="sz3ai__ui">
                             <a href="3.szeyan_sz3ai.html">
@@ -107,6 +101,10 @@
                                 </video>
                             </a>
                         </div>
+                    </div>
+                    <div class="done">
+                        <h1>Purchased Successfully</h1>
+                        <a href="3.szeyan_sz3ai.html">Return home</a>
                     </div>
                 </div>
             </div>

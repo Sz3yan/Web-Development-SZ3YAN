@@ -59,11 +59,15 @@
 
     .second {
         display: flex;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .credit__hidden {
         display: none;
+    }
+
+    .block {
+        display: block;
     }
 
     .credit, .sz3pay {
@@ -110,6 +114,15 @@
 
     .vid2 {
         margin-top: 50px;
+    }
+
+    .done {
+        display: none;
+        text-align: center;
+    }
+
+    .done h1 {
+        margin-bottom: 20px;
     }
 
     @media (max-width: 890px) {
