@@ -100,11 +100,11 @@
     .title h2 {
         line-height: 1.05;
         letter-spacing: -.015em;
+        padding-bottom: 10px;
     }
 
-    .title p {
-        line-height: 1.14286;
-        letter-spacing: .007em;
+    .title p span {
+        color: var(--blue);
     }
 
     .title img {
