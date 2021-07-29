@@ -82,17 +82,16 @@
                             <div class="credit__hidden" id="h">
                                 <form>
                                     <h4>Enter your card information</h4>
-                                    <input class="credit__input" type="text" placeholder="Credit/Debit Card Number"/>
+                                    <input class="credit__input" id="checkcard" onclick="credit__validate()" type="text" placeholder="Credit/Debit Card Number"/>
                                     <div class="second">
-                                        <input class="expire" type="text" placeholder="Expiration MM/YY"/>
-                                        <input class="cvv" type="text" placeholder="CVV"/>
+                                        <input class="expire" type="date" id="checkdate" onclick="date__validate()" min='1899-01-01' max='2100-13-13' placeholder="Expiration MM/YY"/>
+                                        <input class="cvv" id="checkcvv" onclick="cvv__validate()" type="text" placeholder="CVV"/>
                                     </div>
                                 </form>
-                                
                             </div>
 
                             <button class="sz3pay">SZ3Pay</button>
-                            <button class="pay" type="submit" onclick="success()">Pay</button>
+                            <button class="pay" id="good" onclick="success()">Pay</button>
                         </div>
                         <div class="sz3ai__ui">
                             <a href="3.szeyan_sz3ai.html">

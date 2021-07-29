@@ -98,6 +98,7 @@
         background-color: var(--blue);
         color: white;
         font-size: 17px;
+        cursor: not-allowed;
     }
 
     .sz3ai__payment button:hover {

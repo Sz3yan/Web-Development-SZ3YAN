@@ -120,7 +120,7 @@ function register__validate() {
 }
 
 function store(){
-    if (//document.querySelector(".twelve__character").style.listStyle != "none" &&
+    if (document.querySelector(".twelve__character").style.listStyle != "none" &&
         document.querySelector(".one__number").style.listStyle != "none" &&
         document.querySelector(".special__character").style.listStyle != "none" &&
         document.querySelector(".lowerupper__case").style.listStyle != "none" 
@@ -141,6 +141,61 @@ function change() {
 }
 
 function success() {
-    document.querySelector(".buy").style.display = "none";
-    document.querySelector(".done").style.display = "block";
+    if (document.getElementById("checkcard").style.borderColor != "red" &&
+        document.getElementById("checkdate").style.borderColor != "red" &&
+        document.getElementById("checkcvv").style.borderColor != "red"
+    ) {
+        document.querySelector(".buy").style.display = "none";
+        document.querySelector(".done").style.display = "block";
+    }
+
+    else {
+        alert("Check");
+    }
+}
+
+function credit__validate() {
+    var card = document.getElementById("checkcard");
+
+    card.addEventListener("keyup", function(){
+        if (card.value.length == 16) {
+            card.style.borderColor = "green";
+        }
+    
+        else {
+            card.style.borderColor = "red";
+        }
+    });
+}
+
+function date__validate() {
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1;
+    var yyyy = today.getFullYear();
+
+    if (dd < 10) {
+      dd = "0" + dd;
+    }
+    if (mm < 10) {
+      mm = "0" + mm;
+    }
+
+    today = yyyy + "-" + mm + "-" + dd;
+    document.getElementById("checkdate").setAttribute("min", today);
+    document.getElementById("checkdate").style.borderColor = "green";
+}
+
+function cvv__validate() {
+    var cvv = document.getElementById("checkcvv");
+
+    cvv.addEventListener("keyup", function(){
+        if (cvv.value.length == 3) {
+            cvv.style.borderColor = "green";
+        }
+    
+        else {
+            cvv.style.borderColor = "red";
+        }
+    });
 }
