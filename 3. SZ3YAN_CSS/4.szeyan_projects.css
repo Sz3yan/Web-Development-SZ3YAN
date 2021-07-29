@@ -11,7 +11,7 @@
     -------------------------------------------------------------------------- */
 
     .home__header {
-        height: 90vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -81,7 +81,6 @@
     -------------------------------------------------------------------------- */
 
     .top3 {
-        padding-top: 10em;
         padding-bottom: 10em;
     }
 
@@ -93,14 +92,19 @@
     }
 
     .title {
-        max-width: 520px;
+        max-width: 560px;
         padding-top: 30px;
         padding-bottom: 30px
     }
 
     .title h2 {
-        font-size: 50px;
-        font-weight: 500;
+        line-height: 1.05;
+        letter-spacing: -.015em;
+    }
+
+    .title p {
+        line-height: 1.14286;
+        letter-spacing: .007em;
     }
 
     .title img {
