@@ -122,18 +122,6 @@
         align-items: center;
         padding-bottom: 50px;
     }
-
-    @media (max-width: 1112px) {
-        .home__me img {
-            margin-left: 10%;
-        }
-    }
-
-    @media (max-width: 1024px) {
-        .home__me img {
-            margin-left: 18%;
-        }
-    }
     
     @media (max-width: 890px) {
         .home__intro {
@@ -191,26 +179,6 @@
         .home__screenshot img {
             padding-top: 55px;
             width: 45%;
-        }
-    }
-
-    @media (max-width: 375px) {
-        .home__greeting {
-            top: 130px;
-        }
-    }
-
-    @media (max-width: 320px) {
-        .home__greeting {
-            top: 180px;
-        }
-
-        .home__hai {
-            display: none;
-        }
-
-        .home__screenshot img {
-            width: 37%;
         }
     }
 
@@ -383,7 +351,7 @@
         }
 
         .chooseMe__right {
-            animation: moveright 200s linear infinite;
+            display: none;
         }
 
         .chooseMe__card {

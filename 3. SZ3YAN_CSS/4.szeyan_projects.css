@@ -147,7 +147,35 @@
         font-size: 16px;
     }
 
+    .d {
+        display: none;
+    }
+
     @media (max-width: 890px) {
+        .home__header {
+            height: 70vh;
+        }
+
+        .home__intro {
+            grid-template-columns: none;
+            grid-row-gap: 0;
+        }        
+
+        .home__greeting {
+            width: 100%;
+            position: relative;
+            top: 100px;
+        }
+
+        .home__greeting h2 {
+            font-size: 30px;
+        }
+
+        .home__screenshot img {
+            padding-top: 55px;
+            width: 45%;
+        }
+
         .chooseMe__intro {
             padding-top: 8em;
             padding-left: 26px;
@@ -169,20 +197,12 @@
         }
 
         .chooseMe__moving {
-            padding-top: 50px;
-            padding-bottom: 50px;
+            position: relative;
+            top: 100px;
         }
 
-        .mobile, .chooseMe__projects__description {
+        .mobile, .chooseMe__projects__description, .chooseMe__right {
             display: none;
-        }
-
-        .chooseMe__left {
-            animation: moveleft 200s linear infinite;
-        }
-
-        .chooseMe__right {
-            animation: moveright 200s linear infinite;
         }
 
         .chooseMe__card {
@@ -199,28 +219,6 @@
         .chooseMe__card img {
             width: 78px;
             height: 78px;
-        }
-    }
-
-    @media (max-width: 890px) {
-        .home__intro {
-            grid-template-columns: none;
-            grid-row-gap: 0;
-        }        
-
-        .home__greeting {
-            width: 100%;
-            position: relative;
-            top: 30px;
-        }
-
-        .home__greeting h2 {
-            font-size: 30px;
-        }
-
-        .home__screenshot img {
-            padding-top: 55px;
-            width: 45%;
         }
     }
 
