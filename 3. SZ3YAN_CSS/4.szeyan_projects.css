@@ -76,6 +76,11 @@
         2. top3
     -------------------------------------------------------------------------- */
 
+    .top3 {
+        padding-top: 10em;
+        padding-bottom: 10em;
+    }
+
     .project {
         display: flex;
         justify-content: space-between;
