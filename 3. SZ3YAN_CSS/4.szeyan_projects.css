@@ -297,14 +297,26 @@
         width: 100%;
       }
       
-    th, td {
-        padding: 0.75em;
+    th {
+        padding: 1.5em;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    td {
+        padding: 1.5em;
         text-align: left;
         border-bottom: 1px solid #ddd;
     }
 
     th {
         color: var(--blue);
+    }
+
+    th img {
+        margin-right: 10px;
     }
       
     tr:hover {
