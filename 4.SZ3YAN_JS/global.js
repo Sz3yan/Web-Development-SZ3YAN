@@ -161,6 +161,11 @@ function credit__validate() {
         if (card.value.length == 16) {
             card.style.borderColor = "green";
         }
+
+        else if (card.value.length > 16) {
+            card.value = "";
+            card.style.borderColor = "red";
+        }
     
         else {
             card.style.borderColor = "red";
@@ -192,6 +197,11 @@ function cvv__validate() {
     cvv.addEventListener("keyup", function(){
         if (cvv.value.length == 3) {
             cvv.style.borderColor = "green";
+        }
+
+        else if (cvv.value.length > 3) {
+            cvv.value = "";
+            cvv.style.borderColor = "red";
         }
     
         else {
