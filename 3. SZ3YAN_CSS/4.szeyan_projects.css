@@ -2,140 +2,98 @@
 
    Structure of 4.szeyan_project.css
    |
-   ├─ 1. Project
+   ├─ 1. project intro
+   ├─ 2. top3
+   ├─ 3. table
      
     /* --------------------------------------------------------------------------
-        1. Project
+        1. project intro
     -------------------------------------------------------------------------- */
 
-    .chooseMe__header {
-        width: 100%;
-        background-color: var(--black);
-    }
-    
-    .chooseMe__intro {
-        text-align: center;
-        color: white;
-        letter-spacing: -.005em;
-        padding-top: 10em;
-        max-width: 800px;
-        margin: auto;
-    }
-
-    .chooseMe__intro h6 {
-        margin-bottom: 10px;
-        color: var(--dark-grey);
-        text-transform: uppercase;
-        
-    }
-
-    .chooseMe__intro h2 {
-        font-size: 45px;
-        font-weight: 100;
-    }
-    
-    .chooseMe__description {
-        margin: auto;
-        color: var(--grey);
-        padding-top: 10px;
-        max-width: 760px;
-    }
-    
-    .chooseMe__description span {
-        color: var(--blue);
-    }
-    
-    .chooseMe__moving {
-        padding-top: 50px;
-        padding-bottom: 100px;
-        overflow-x: hidden;
-    }
-    
-    .chooseMe__left, .chooseMe__right {
+    .home__header {
+        height: 90vh;
         display: flex;
-        position: relative;
+        justify-content: center;
+        align-items: center;
     }
-
-    .chooseMe__left {
-        animation: moveleft 300s linear infinite;
-    }
-
-    .chooseMe__right {
-        animation: moveright 300s linear infinite;
-    }
-
-    .chooseMe__right .chooseMe__projectSet1, .chooseMe__right .chooseMe__projectSet2 {
-        position: relative;
-        left: 500px;
-    }
-
-    @keyframes moveleft {
-        0% {
-            right: 0px
-        }
-
-        100% {
-            right: 2000px;
-        }
-    }
-
-    @keyframes moveright {
-        100% {
-            right: 0px
-        }
-
-        0% {
-            right: 2000px;
-        }
-    }
-
-    .chooseMe__projectSet1, .chooseMe__projectSet2 {
+    
+    .home__intro {
         display: grid;
-        row-gap: 45px;
-        column-gap: 40px;
-        grid-template-columns: repeat(5, 300px);
-        padding-top: 20px;
+        width: 100%;
+        max-width: 1280px;
+        margin: auto;
+        grid-column-gap: 16px;
+        grid-row-gap: 60px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-flow: dense;
     }
 
-    .chooseMe__projectSet2 {
-        padding-left: 40px;
-    }
-    
-    .chooseMe__card {
-        border-radius: 10px;
-        background-color: var(--bblack);
-        padding: 20px;
-        width: 300px;
-        height: 112px;
+    .home__greeting {
+        display: flex;
+        max-width: 420px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .chooseMe__card:active, .chooseMe__card:hover {
-        transform: scale(0.98);
+    .home__greeting h2 {
+        font-size: 55px;
+        color: white;
     }
-    
-    .chooseMe__card h4 {
-        color: #fff;
-    }
-    
-    .chooseMe__card p {
+
+    .home__greeting p {
+        max-width: 380px;
+        margin-top: 35px;
         color: var(--grey);
     }
 
-    .chooseMe__content {
+    .home__screenshot {
         display: flex;
-        width: 100%;
+        min-height: 420px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
     }
 
-    .chooseMe__content img {
-        margin-right: 10px
+    @media (max-width: 890px) {
+        .home__intro {
+            grid-template-columns: none;
+            grid-row-gap: 0;
+        }        
+
+        .home__greeting {
+            width: 100%;
+            position: relative;
+            top: 10px;
+        }
+
+        .home__screenshot img {
+            padding-top: 55px;
+            width: 45%;
+        }
     }
 
-    .chooseMe__projects__description h4 {
-        font-size: 16px;
+    /* --------------------------------------------------------------------------
+        2. top3
+    -------------------------------------------------------------------------- */
+
+    .project {
+        display: flex;
+        justify-content: space-between;
     }
 
-    .chooseMe__projects__description p {
-        font-size: 16px;
+    .title {
+        max-width: 520px;
+        padding-top: 30px;
+        padding-bottom: 30px
     }
+
+    .title img {
+        border-radius: 20px; 
+    }
+
+    /* --------------------------------------------------------------------------
+        3. table
+    -------------------------------------------------------------------------- */
+
 
 /*
