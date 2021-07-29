@@ -128,17 +128,27 @@
     @media (max-width: 890px) {
         .buy {
             display: block;
+            margin-top: 90px;
+        }
+
+        .done {
+            margin-top: 230px;
         }
 
         .sz3ai__ui {
             display: none;
         }
+
+        .credit, .expire, .sz3pay, .pay, .credit__input {
+            width: 300px;
+        }
+
+        .expire {
+            width: 220px;
+        }
+
+        .cvv {
+            width: 70px;
+        }
     }
-
-    /* --------------------------------------------------------------------------
-        2. features
-    -------------------------------------------------------------------------- */
-    
-    
-
 /*

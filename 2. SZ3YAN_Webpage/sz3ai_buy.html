@@ -80,16 +80,19 @@
                             <button class="credit" onclick="change()">Credit or Debit Card</button>
 
                             <div class="credit__hidden" id="h">
-                                <h4>Enter your card information</h4>
-                                <input class="credit__input" type="text" placeholder="Credit/Debit Card Number"/>
-                                <div class="second">
-                                    <input class="expire" type="text" placeholder="Expiration MM/YY"/>
-                                    <input class="cvv" type="text" placeholder="CVV"/>
-                                </div>
+                                <form>
+                                    <h4>Enter your card information</h4>
+                                    <input class="credit__input" type="text" placeholder="Credit/Debit Card Number"/>
+                                    <div class="second">
+                                        <input class="expire" type="text" placeholder="Expiration MM/YY"/>
+                                        <input class="cvv" type="text" placeholder="CVV"/>
+                                    </div>
+                                </form>
+                                
                             </div>
 
                             <button class="sz3pay">SZ3Pay</button>
-                            <button class="pay" onclick="success()">Pay</button>
+                            <button class="pay" type="submit" onclick="success()">Pay</button>
                         </div>
                         <div class="sz3ai__ui">
                             <a href="3.szeyan_sz3ai.html">
