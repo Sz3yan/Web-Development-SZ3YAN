@@ -641,6 +641,10 @@
     }
 
     @media (max-width: 890px) {
+        .newsletter__header {
+            height: 80vh;
+        }
+
         .newsletter__intro h2{
             font-size: 36px;
         }

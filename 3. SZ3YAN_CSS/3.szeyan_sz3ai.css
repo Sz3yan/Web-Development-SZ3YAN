@@ -109,6 +109,29 @@
         .sz3ai__col {
             margin: 0 8px;
         }
+
+        .portrait video {
+            width: 216px;
+            height: 390px;
+        }
+
+        .portrait img {
+            width: 200px;
+            height: 380px;
+        }
+
+        #aa {
+            margin-left: 230px;
+        }
+
+        #bb {
+            margin-left: 110px;
+        }
+
+        .landscape img {
+            width: 390px;
+            height: 216px;
+        }
     }
 
     /* --------------------------------------------------------------------------
@@ -225,6 +248,7 @@
 
     @media (max-width: 890px) {
         .sz3ai__price {
+            height: 70vh;
             padding-top: 0;
             padding-bottom: 170px;;
         }
