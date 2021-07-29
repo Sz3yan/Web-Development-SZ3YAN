@@ -103,6 +103,10 @@
         padding-bottom: 10px;
     }
 
+    .t1 h2 {
+        width: 310px;
+    }
+
     .title p span {
         color: var(--blue);
     }
