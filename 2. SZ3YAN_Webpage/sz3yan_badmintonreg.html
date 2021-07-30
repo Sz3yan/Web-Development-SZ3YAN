@@ -57,41 +57,35 @@
             </div>
         </div>
         
-        <div class="sz3ai__buy">
+        <div class="reg">
             <div class="container">
-                <div class="buy">
-                    <div class="sz3ai__payment">
-                        <h3>When do you wanna play?</h3>
-                        <button class="credit" onclick="change()">Credit or Debit Card</button>
-
-                        <div class="credit__hidden" id="h">
-                            <form>
-                                <h4>Enter your card information</h4>
-                                <input class="credit__input" id="checkcard" onclick="credit__validate()" type="text" placeholder="Credit/Debit Card Number"/>
-                                <div class="second">
-                                    <input class="expire" type="date" id="checkdate" onclick="date__validate()" min='1899-01-01' max='2100-13-13' placeholder="Expiration MM/YY"/>
-                                    <input class="cvv" id="checkcvv" onclick="cvv__validate()" type="text" placeholder="CVV"/>
-                                </div>
-                            </form>
+                <div class="reg__intro">
+                    <h3>Hey there</h3>
+                    <form>
+                        <input class="name__input" type="text" placeholder="What's your name"/>
+                        <input class="email__input" type="email" placeholder="Your email address"/>
+                        <div class="second">
+                            <input class="expire" type="date" id="checkdate" onclick="date__validate()" min='1899-01-01' max='2100-13-13' placeholder="Expiration MM/YY"/>
+                            <input class="location" type="text" placeholder="Location"/>
                         </div>
-
-                        <button class="sz3pay">SZ3Pay</button>
-                        <button class="pay" id="good" onclick="success()">Pay</button>
-                    </div>
-                    <div class="sz3ai__ui">
-                        <a href="3.szeyan_sz3ai.html">
-                            <video class="vid1" autoplay loop width="236" height="480">
-                                <source src="../1. SZ3YAN_design/3. szeyan_sz3ai_design/home.mov"> 
-                            </video>
-                            <video class="vid2" autoplay loop width="236" height="480">
-                                <source src="../1. SZ3YAN_design/3. szeyan_sz3ai_design/browse.mov">
-                            </video>
-                        </a>
-                    </div>
+                    </form>
+                    <button class="book" onclick="book()">Book</button>
+                    <script>
+                        function book() {
+                            document.querySelector(".reg__intro").style.display = "none";
+                            document.querySelector(".badminton").style.display = "none";
+                            document.querySelector(".done").style.display = "block";
+                        }
+                    </script>
+                </div>
+                <div class="badminton">
+                    <a href="5.szeyan_badminton.html">
+                        <img class="badminton__img" src="../1. SZ3YAN_design/5. szeyan_badminton_design/badminton.jpeg" alt="badminton" draggable="false"/>
+                    </a>
                 </div>
                 <div class="done">
                     <h1>Booked Successfully</h1>
-                    <a href="3.szeyan_sz3ai.html">Return home</a>
+                    <a href="5.szeyan_badminton.html">Return home</a>
                 </div>
             </div>
         </div>

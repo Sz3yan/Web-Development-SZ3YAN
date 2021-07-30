@@ -11,50 +11,22 @@
         1. buy (heading)
     -------------------------------------------------------------------------- */
 
-    .sz3ai__buy {
+    .reg {
         height: 90vh;
         display: flex;
-        justify-content: center;
-        margin: auto;
     }
 
-    .buy {
-        display: flex;
+    .reg .container {
+        display: flex
     }
 
-    .credit {
-        margin-top: 30px;
-    }
-
-    .credit__input {
+    .name__input, .email__input {
         width: 400px;
     }
 
-    .credit__input, .expire, .cvv {
-        height: 52px;
-        border-radius: 12px;
-        border: solid 1px var(--dark-grey);
-        background-color: transparent;
-        color: white;
-        margin-bottom: 15px;
-        font-size: 17px;
-        text-align: left;
-        padding-left: 20px;
-    }
-
-    .sz3ai__payment h4 {
-        font-weight: 300;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .expire {
-        width: 290px;
+    .expire, .location {
+        width: 195px;
         margin-right: 10px;
-    }
-
-    .cvv {
-        width: 100px;
     }
 
     .second {
@@ -62,35 +34,24 @@
         margin-bottom: 30px;
     }
 
-    .credit__hidden {
-        display: none;
-    }
-
-    .block {
-        display: block;
-    }
-
-    .credit, .sz3pay {
-        width: 400px;
-        height: 72px;
-        border: solid 1px var(--dark-grey);
+    .name__input, .email__input, .expire, .location {
+        height: 52px;
         border-radius: 12px;
+        border: solid 1px var(--dark-grey);
+        background-color: transparent;
         margin-bottom: 15px;
-        color: white;
         font-size: 17px;
         text-align: left;
         padding-left: 20px;
     }
 
-    .credit:hover , .sz3pay:hover {
-        border: solid 1px var(--blue);
+    .reg__intro h3 {
+        font-weight: 300;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
-    .sz3pay {
-        margin-bottom: 30px;
-    }
-
-    .pay {
+    .book {
         width: 400px;
         height: 42px;
         border: solid 1px var(--dark-grey);
@@ -98,23 +59,6 @@
         background-color: var(--blue);
         color: white;
         font-size: 17px;
-        cursor: not-allowed;
-    }
-
-    .sz3ai__payment button:hover {
-        cursor: pointer;
-    }
-
-    .sz3ai__ui a {
-        display: flex;
-    }
-
-    .sz3ai__ui a:hover {
-        cursor: default;
-    }
-
-    .vid2 {
-        margin-top: 50px;
     }
 
     .done {
@@ -122,34 +66,36 @@
         text-align: center;
     }
 
+    .badminton__img {
+        width: 350px;
+        border-radius: 18px;
+        margin-bottom: 50px;
+    }
+
     .done h1 {
         margin-bottom: 20px;
     }
 
     @media (max-width: 890px) {
-        .buy {
+        .reg .container {
             display: block;
             margin-top: 90px;
+        }
+
+        .name__input, .email__input, .book {
+            width: 335px;
+        }
+    
+        .expire, .location {
+            width: 160px;
         }
 
         .done {
             margin-top: 230px;
         }
 
-        .sz3ai__ui {
+        .badminton {
             display: none;
-        }
-
-        .credit, .expire, .sz3pay, .pay, .credit__input {
-            width: 300px;
-        }
-
-        .expire {
-            width: 220px;
-        }
-
-        .cvv {
-            width: 70px;
         }
     }
 /*

@@ -88,6 +88,7 @@
     .hide {
         display: none;
         padding-bottom: 50px;
+        border-radius: 18px;
     }
 
     .badminton__img {
