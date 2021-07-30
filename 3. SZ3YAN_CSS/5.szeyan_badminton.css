@@ -4,7 +4,6 @@
    |
    ├─ 1. badminton intro
    ├─ 2. badminton reg
-   ├─ 3. badminton schedule
 
     /* --------------------------------------------------------------------------
         1. badminton
@@ -86,9 +85,15 @@
         padding-bottom: 170px;
     }
 
+    .hide {
+        display: none;
+        padding-bottom: 50px;
+    }
+
     .badminton__img {
         width: 417px;
         border-radius: 18px;
+        margin-bottom: 50px;
     }
 
     .badminton__reg {
@@ -96,10 +101,47 @@
         justify-content: space-between;
     }
 
-    /* --------------------------------------------------------------------------
-        3. badminton schedule
-    -------------------------------------------------------------------------- */
+    .table {
+        width: 500px;
+    }
 
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+      
+    th, td {
+        padding: 1.5em;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+      
+    tr:hover {
+        background-color: white;
+    }
 
+    @media (max-width: 890px) {
+        .badminton__intro h2 {
+            font-size: 40px;
+        }
 
+        .badminton__reg {
+            display: block;
+        }
+
+        .table {
+            width: 300px;
+        }
+
+        .hide {
+            display: block;
+            width: 300px;
+            margin: auto;
+            border-radius: 18px;
+        }
+
+        .badminton__img {
+            display: none;
+        }
+    }
 /*
