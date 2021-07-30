@@ -9,45 +9,48 @@
         1. project intro
     -------------------------------------------------------------------------- */
 
-    .home__greeting {
-        padding-top: 90px;
+    .project__header {
+        width: 100%;
+        padding-bottom: 70px;
+    }
+    
+    .project__intro {
+        text-align: center;
+        color: black;
+        letter-spacing: -.005em;
+        padding-top: 5em;
+        max-width: 800px;
+        margin: auto;
     }
 
-    .home__greeting h3 {
-        font-size: 35px;
-        color: white;
+    .project__intro h2 {
+        font-size: 45px;
+        font-weight: 100;
     }
 
-    .home__greeting p {
-        max-width: 380px;
-        margin-top: 35px;
+    .project__intro h6 {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: var(--dark-grey);
+        text-transform: uppercase;
+        font-weight: 100;
+        letter-spacing: .05em;
+    }
+    
+    .project__description {
+        margin: auto;
         color: var(--grey);
-    }
-
-    .home__screenshot {
-        display: flex;
-        min-height: 420px;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 50px;
+        padding-top: 10px;
+        max-width: 500px;
     }
 
     .chooseMe__moving {
-        padding-top: 50px;
-        padding-bottom: 100px;
+        padding-bottom: 15px;
         overflow-x: hidden;
     }
 
-    #top3-1 {
+    #top3-1, #top3-2, #top3-3 {
         background-color: #DAFCE8;
-    }
-
-    #top3-2 {
-        background-color: #F2D4CC;
-    }
-
-    #top3-3 {
-        background-color: #DCF0FD;
     }
 
     #top3-1 a div h4, #top3-2 a div h4, #top3-3 a div h4 {
@@ -106,7 +109,7 @@
     
     .chooseMe__card {
         border-radius: 10px;
-        background-color: var(--bblack);
+        background-color: white;
         padding: 20px;
         width: 300px;
         height: 112px;
@@ -114,6 +117,7 @@
 
     .chooseMe__card:active, .chooseMe__card:hover {
         transform: scale(0.98);
+        cursor: pointer;
     }
     
     .chooseMe__card h4 {
@@ -135,6 +139,7 @@
 
     .chooseMe__projects__description h4 {
         font-size: 16px;
+        color: black;
     }
 
     .chooseMe__projects__description p {
@@ -223,7 +228,7 @@
     .project__details {
         width: 517px;
         height: 500px;
-        background-color: #121212;
+        background-color: var(--blue);
         margin: auto;
         border-radius: 18px;
         position: fixed;
@@ -231,10 +236,11 @@
         left: 0;
         right: 0;
         bottom: 0;
+        display: none;
     }
 
     .project__top {
-        background-color: black;
+        background-color: var(--blue);
         height: 200px;
         width: 100%;
         border-top-left-radius: 18px;
@@ -253,7 +259,7 @@
     }
 
     .project__bottom .container p {
-        color: var(--grey);
+        color: var(--dark-grey);
     }
 
 /*
