@@ -1,0 +1,155 @@
+/* SZ3YAN by Sze Yan
+
+   Structure of sz3ai_buy.css
+   |
+   ├─ 1. sz3ai
+   ├─ 2. features
+   ├─ 3. slide
+   ├─ 4. price
+
+    /* --------------------------------------------------------------------------
+        1. buy (heading)
+    -------------------------------------------------------------------------- */
+
+    .sz3ai__buy {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .buy {
+        display: flex;
+    }
+
+    .credit {
+        margin-top: 30px;
+    }
+
+    .credit__input {
+        width: 400px;
+    }
+
+    .credit__input, .expire, .cvv {
+        height: 52px;
+        border-radius: 12px;
+        border: solid 1px var(--dark-grey);
+        background-color: transparent;
+        color: white;
+        margin-bottom: 15px;
+        font-size: 17px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .sz3ai__payment h4 {
+        font-weight: 300;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .expire {
+        width: 290px;
+        margin-right: 10px;
+    }
+
+    .cvv {
+        width: 100px;
+    }
+
+    .second {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .credit__hidden {
+        display: none;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .credit, .sz3pay {
+        width: 400px;
+        height: 72px;
+        border: solid 1px var(--dark-grey);
+        border-radius: 12px;
+        margin-bottom: 15px;
+        color: white;
+        font-size: 17px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .credit:hover , .sz3pay:hover {
+        border: solid 1px var(--blue);
+    }
+
+    .sz3pay {
+        margin-bottom: 30px;
+    }
+
+    .pay {
+        width: 400px;
+        height: 42px;
+        border: solid 1px var(--dark-grey);
+        border-radius: 12px;
+        background-color: var(--blue);
+        color: white;
+        font-size: 17px;
+        cursor: not-allowed;
+    }
+
+    .sz3ai__payment button:hover {
+        cursor: pointer;
+    }
+
+    .sz3ai__ui a {
+        display: flex;
+    }
+
+    .sz3ai__ui a:hover {
+        cursor: default;
+    }
+
+    .vid2 {
+        margin-top: 50px;
+    }
+
+    .done {
+        display: none;
+        text-align: center;
+    }
+
+    .done h1 {
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 890px) {
+        .buy {
+            display: block;
+            margin-top: 90px;
+        }
+
+        .done {
+            margin-top: 230px;
+        }
+
+        .sz3ai__ui {
+            display: none;
+        }
+
+        .credit, .expire, .sz3pay, .pay, .credit__input {
+            width: 300px;
+        }
+
+        .expire {
+            width: 220px;
+        }
+
+        .cvv {
+            width: 70px;
+        }
+    }
+/*
