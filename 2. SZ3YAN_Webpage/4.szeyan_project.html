@@ -65,7 +65,7 @@
             </div>
         </div>
 
-        <div class="project__header">
+        <div class="project__header" id="jj">
             <div class="container">
                 <div class="project__intro">
                     <h6>3 years</h6> 
@@ -75,7 +75,7 @@
             </div>
         </div>
 
-        <div class="chooseMe__moving">
+        <div class="chooseMe__moving" id="hh">
             <div class="chooseMe__left">
                 <div class="chooseMe__projectSet1">
                     <div class="chooseMe__card">
@@ -108,7 +108,7 @@
                         </div>
                     </div>
 
-                    <div class="chooseMe__card" id="top3-1">
+                    <div class="chooseMe__card" id="top3-1" onclick="">
                         <div class="chooseMe__content" >
                             <img src="../1. SZ3YAN_design/1. szeyan_home_design/uns/Ellipse 4.png" alt="" width="32" height="32" draggable="false">
                             <div class="chooseMe__projects__description">
@@ -160,7 +160,7 @@
                         </div>
                     </div>
 
-                    <div class="chooseMe__card" id="top3-1">
+                    <div class="chooseMe__card" id="top3-1" onclick="open()">
                         <div class="chooseMe__content" >
                             <img src="../1. SZ3YAN_design/1. szeyan_home_design/uns/Ellipse 4.png" alt="" width="32" height="32" draggable="false">
                             <div class="chooseMe__projects__description">
@@ -395,10 +395,11 @@
             </div>
         </div>
 
-        <div class="project__details">
+        <div class="project__details" id="kk">
             <div class="project__top">
                 <div class="container">
-                    <img src="../1. SZ3YAN_design/4. szeyan_projects_design/bb1.png"/ width="100" height="100">
+                    <button id="ll"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 20 20"><path d="M18.5,8.51h-7v-7A1.5,1.5,0,0,0,10,0h0A1.5,1.5,0,0,0,8.5,1.5v7h-7a1.5,1.5,0,0,0,0,3h7v7A1.5,1.5,0,0,0,10,20h0a1.5,1.5,0,0,0,1.5-1.5v-7h7a1.5,1.5,0,0,0,0-3Z"></path></svg></button>
+                    <img src="../1. SZ3YAN_design/4. szeyan_projects_design/bb1.png" width="100" height="100">
                 </div>
             </div>
             <div class="project__bottom">
@@ -408,6 +409,26 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            var project = document.querySelectorAll(".chooseMe__card");
+
+            for (let i = 0; i < project.length; i++) {
+                project[i].addEventListener("click", function() {
+                    document.getElementById("hh").classList.toggle("show");
+                    document.getElementById("jj").classList.toggle("show");
+                    document.getElementById("kk").classList.toggle("appear");
+                });
+            }
+
+            var btn = document.getElementById("ll");
+            btn.addEventListener("click", function() {
+                document.getElementById("hh").classList.toggle("show");
+                document.getElementById("jj").classList.toggle("show");
+                document.getElementById("kk").classList.toggle("appear");
+            });
+
+        </script>
 
         <p class="copyright">Copyright &copy; 2021 Sze Yan All Rights Reserved.</p>
     </body>

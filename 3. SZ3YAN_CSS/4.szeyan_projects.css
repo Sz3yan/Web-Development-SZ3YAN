@@ -170,11 +170,6 @@
             font-size: 30px;
         }
 
-        .home__screenshot img {
-            padding-top: 55px;
-            width: 45%;
-        }
-
         .chooseMe__intro {
             padding-top: 8em;
             padding-left: 26px;
@@ -226,9 +221,9 @@
     -------------------------------------------------------------------------- */
 
     .project__details {
-        width: 517px;
-        height: 500px;
-        background-color: var(--blue);
+        width: 817px;
+        height: 650px;
+        background-color: white;
         margin: auto;
         border-radius: 18px;
         position: fixed;
@@ -239,8 +234,16 @@
         display: none;
     }
 
+    .appear {
+        display: block;
+    }
+
+    .show {
+        display: none
+    }
+
     .project__top {
-        background-color: var(--blue);
+        background-color: white;
         height: 200px;
         width: 100%;
         border-top-left-radius: 18px;
@@ -254,12 +257,26 @@
     }
 
     .project__bottom .container h2 {
-        color: white;
         padding-top: 50px;
     }
 
     .project__bottom .container p {
         color: var(--dark-grey);
+    }
+
+    .project__top .container button {
+        height: 33px;
+        width: 33px;
+        background-color: var(--bblack);
+        border-radius: 50%;
+        position: absolute;
+        top: 24px;
+        left: 24px;
+    }
+
+    .project__top .container button svg {
+        height: 50%;
+        transform: rotate(45deg)
     }
 
 /*
