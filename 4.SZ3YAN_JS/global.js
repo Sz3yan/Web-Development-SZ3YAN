@@ -209,3 +209,9 @@ function cvv__validate() {
         }
     });
 }
+
+function book() {
+    document.querySelector(".reg__intro").style.display = "none";
+    document.querySelector(".badminton").style.display = "none";
+    document.querySelector(".done").style.display = "block";
+}
