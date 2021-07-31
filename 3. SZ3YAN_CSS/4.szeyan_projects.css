@@ -9,15 +9,19 @@
         1. project intro
     -------------------------------------------------------------------------- */
 
+    .project {
+        height: 87vh;
+    }
+
     .project__header {
-        padding-bottom: 70px;
+        padding-bottom: 30px;
     }
     
     .project__intro {
         padding-top: 5em;
         text-align: center;
         letter-spacing: -.005em;
-        color: black;
+        color: var(--black);
     }
 
     .project__intro h2 {
@@ -51,7 +55,7 @@
     }
 
     #top3-1 a div h4, #top3-2 a div h4, #top3-3 a div h4 {
-        color: black;
+        color: var(--black);
     }
     
     .chooseMe__left, .chooseMe__right {
@@ -135,7 +139,7 @@
 
     .chooseMe__projects__description h4 {
         font-size: 16px;
-        color: black;
+        color: var(--black);
     }
 
     .chooseMe__projects__description p {
@@ -208,5 +212,9 @@
     .project__top .container button svg {
         height: 50%;
         transform: rotate(45deg);
+    }
+
+    @media (max-width: 890px) {
+         
     }
 /*
