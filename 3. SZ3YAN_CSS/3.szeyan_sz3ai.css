@@ -12,15 +12,13 @@
     -------------------------------------------------------------------------- */
 
     .sz3ai__header {
-        width: 100%;
         padding-bottom: 170px;
     }
     
     .sz3ai__intro {
+        padding-top: 5em;
         text-align: center;
         color: white;
-        padding-top: 5em;
-        margin: auto;
     }
 
     .sz3ai__intro h2:nth-child(3) {
@@ -31,9 +29,9 @@
     .sz3ai__intro h6 {
         margin-bottom: 10px;
         font-size: 16px;
-        color: var(--blue);
-        text-transform: uppercase;
         font-weight: 200;
+        text-transform: uppercase;
+        color: var(--blue);
     }
 
     .sz3ai__intro h2 {
@@ -45,14 +43,14 @@
     .sz3ai__buy {
         display: inline-flex;
         align-items: center;
-        cursor: pointer;
+        padding: 0 18px;
+        height: 30px;
         font-size: 13px;
         text-transform: uppercase;
-        height: 30px;
+        border-radius: 15px;
         background-color: var(--bblack);
         color: white;
-        border-radius: 15px;
-        padding: 0 18px;
+        cursor: pointer;
     }
 
     .sz3ai__buy:hover {
@@ -79,7 +77,6 @@
     }
 
     .sz3ai__iphones {
-        width: 100%;
         overflow: hidden;
     }
 
@@ -89,10 +86,10 @@
     }
 
     .sz3ai__col {
-        width: 312px;
         display: flex;
         flex-flow: column;
         justify-content: center;
+        width: 312px;
         margin: 0 32px;
     }
 
@@ -165,7 +162,7 @@
     .copy {
         text-align: left;
         margin-top: -50px;
-        margin-right: calc(50% + 32px);
+        margin-right: 310px;
     }
 
     .copy h2 {
@@ -183,9 +180,9 @@
         }
 
         .copy {
-            text-align: center;
             margin-top: 32px;
             margin-right: 0;
+            text-align: center;
         }
 
         .copy p {
@@ -210,15 +207,20 @@
     }
 
     .slides {
-        animation-name: fade;
-        animation-duration: 1.5s;
         display: none;
         vertical-align: middle;
+        animation-name: fade;
+        animation-duration: 1.5s;
     }
 
     @keyframes fade {
-        from {opacity: .4} 
-        to {opacity: 1}
+        from {
+            opacity: 0.4;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 
     /* --------------------------------------------------------------------------
@@ -226,16 +228,16 @@
     -------------------------------------------------------------------------- */
 
     .sz3ai__price {
-        height: 90vh;
-        text-align: center;
-        margin: auto;
         display: flex;
         justify-content: center;
+        height: 90vh;
+        margin: auto;
+        text-align: center;
     }
 
     .logo {
-        border-radius: 20px; 
         margin-bottom: 20px;
+        border-radius: 20px; 
     }
 
     .sz3ai__buy {
@@ -248,10 +250,9 @@
 
     @media (max-width: 890px) {
         .sz3ai__price {
-            height: 70vh;
             padding-top: 0;
-            padding-bottom: 170px;;
+            padding-bottom: 170px;
+            height: 70vh;
         }
     }
-
 /*

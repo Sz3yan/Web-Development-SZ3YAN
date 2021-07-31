@@ -159,7 +159,7 @@ p {
   }
 
   .nav__navigation .nav {
-    list-style: none
+    list-style: none;
   }
 
   .nav__navigation .nav li {

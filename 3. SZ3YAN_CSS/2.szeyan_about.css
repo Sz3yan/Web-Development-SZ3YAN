@@ -11,17 +11,14 @@
     -------------------------------------------------------------------------- */
 
     .aboutMe__header {
-        width: 100%;
         padding-bottom: 70px;
     }
     
     .aboutMe__intro {
-        text-align: center;
-        color: black;
-        letter-spacing: -.005em;
         padding-top: 5em;
-        max-width: 800px;
-        margin: auto;
+        text-align: center;
+        letter-spacing: -.005em;
+        color: var(--black);
     }
 
     .aboutMe__intro h2 {
@@ -32,17 +29,17 @@
     .aboutMe__intro h6 {
         margin-bottom: 10px;
         font-size: 16px;
-        color: var(--dark-grey);
-        text-transform: uppercase;
         font-weight: 100;
+        text-transform: uppercase;
         letter-spacing: .05em;
+        color: var(--dark-grey);
     }
     
     .aboutMe__description {
-        margin: auto;
-        color: var(--grey);
         padding-top: 10px;
         max-width: 710px;
+        margin: auto;
+        color: var(--grey);
     }
 
     /* --------------------------------------------------------------------------
@@ -55,185 +52,169 @@
     }
 
     .moreaboutMe__gallery {
-        padding: 10px;
-        margin: auto;
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-auto-rows: 250px;
         grid-auto-flow: dense; 
-      }
+        padding: 10px;
+    }
       
-      /* Stretch vertically */
-      .v-stretch {
+    .v-stretch {
         grid-row: span 2;
-      }
-      
-      /* Stretch horizontally */
-      .h-stretch {
+    }
+    
+    .h-stretch {
         grid-column: span 2;
-      }
-      
-      /* Stretch vertically and horizontally */
-      .big-stretch {
+    }
+    
+    .big-stretch {
         grid-column: span 2;
         grid-row: span 2;
-      }
+    }
 
-      .moreaboutMe__card {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: white;
-          position: relative;
-      }
+    .moreaboutMe__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: white;
+    }
 
-      .moreaboutMe__intro {
-          display: none;
-      }
-      
-      .content1 {
-        background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/icit.jpeg");
-        background-size: cover;
-        border-radius: 16px;
-      }
-
-      .content2 {
-        background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/badminton.jpeg");
-        background-size: cover;
-        border-radius: 16px;
-      }
-
-      .content3 {
-        background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/ncdcc.jpg");
-        background-size: cover;
-        border-radius: 16px;
-      }
-
-      .content4 {
-        background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/python.jpeg");
-        background-size: cover;
-        border-radius: 16px;
-      }
-
-      .content5 {
-        background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/hiking.jpeg");
-        background-size: cover;
-        border-radius: 16px;
-      }
-
-      .content6 {
-        background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/photography.jpeg");
-        background-size: cover;
-        border-radius: 16px;
-      }
-
-      .content7 {
-        background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/backend.jpeg");
-        background-size: cover;
-        border-radius: 16px;
-      }
-
-      .moreaboutMe__card button {
-        height: 33px;
-        width: 33px;
-        background-color: var(--grey);
-        border-radius: 50%;
-        position: absolute;
+    .moreaboutMe__intro {
         display: none;
+    }
+
+    .content1, .content2, .content3, .content4, .content5, .content6, .content7 {
+        background-size: cover;
+        border-radius: 16px;
+    }
+    
+    .content1 {
+        background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/icit.jpeg");
+    }
+
+    .content2 {
+        background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/badminton.jpeg");
+    }
+
+    .content3 {
+        background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/ncdcc.jpg");
+    }
+
+    .content4 {
+        background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/python.jpeg");
+    }
+
+    .content5 {
+        background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/hiking.jpeg");
+    }
+
+    .content6 {
+        background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/photography.jpeg");
+    }
+
+    .content7 {
+        background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/backend.jpeg");
+    }
+
+    .moreaboutMe__card button {
+        display: none;
+        position: absolute;
         bottom: 24px;
         right: 24px;
-      }
+        height: 33px;
+        width: 33px;
+        border-radius: 50%;
+        background-color: var(--grey);
+    }
 
-      .moreaboutMe__card:hover button, .moreaboutMe__card:hover .moreaboutMe__intro {
+    .moreaboutMe__card:hover button, .moreaboutMe__card:hover .moreaboutMe__intro {
         display: block;
-      }
+    }
 
-      .moreaboutMe__card button:hover {
+    .moreaboutMe__card button:hover {
         cursor: pointer;
-      }
+    }
 
-      .moreaboutMe__turn1, .moreaboutMe__turn2, .moreaboutMe__turn3, .moreaboutMe__turn4, .moreaboutMe__turn5, .moreaboutMe__turn6, .moreaboutMe__turn7 {
+    .moreaboutMe__turn1, .moreaboutMe__turn2, .moreaboutMe__turn3, .moreaboutMe__turn4, .moreaboutMe__turn5, .moreaboutMe__turn6, .moreaboutMe__turn7 {
         height: 50%;
-      }
+    }
 
-      .turning {
+    .turning {
         animation: buttonanimate 1s;
         animation-fill-mode: forwards;
-      }
+    }
 
-      .blue {
+    .blue {
         background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/blue.png");
-      }
+    }
 
-      .blue h3 {
+    .blue h3 {
         opacity: 0;
-      }
+    }
 
-      #overlay, #overlay1, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6 {
+    #overlay, #overlay1, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6 {
         display: flex;
         flex-direction: column;
         position: absolute;
         width: 100%;
-        justify-content: center;
         text-align: center;
         opacity: 0;
-      }
+    }
 
-      @keyframes buttonanimate {
+    @keyframes buttonanimate {
         from {
-          transform: rotate(0deg)
+            transform: rotate(0deg)
         }
 
         to {
-          transform: rotate(45deg)
+            transform: rotate(45deg)
         }
-      }
-      
-      @media screen and (max-width: 515px) {
-        .v-stretch {
+    }
+    
+    @media screen and (max-width: 515px) {
+      .v-stretch {
           grid-row: span 1;
-        }
-      
-        .h-stretch {
+      }
+    
+      .h-stretch {
           grid-column: span 1;
-        }
-      
-        .big-stretch {
+      }
+    
+      .big-stretch {
           grid-column: span 1;
           grid-row: span 1;
-        }
       }
+    }
 
     /* --------------------------------------------------------------------------
         3. newsletter
     -------------------------------------------------------------------------- */
 
     .newsletter__header {
-        height: 100vh;
-    }
+      height: 100vh;
+  }
 
     .newsletter__header .container {
         padding-top: 14%;
     }
 
     .newsletter__intro {
+        padding-top: 2.5em;
         text-align: center;
-        color: black;
         font-weight: 100;
         letter-spacing: -.005em;
-        padding-top: 2.5em;
-        max-width: 650px;
-        margin: auto;
+        color: var(--black);
     }
 
     .newsletter__intro h6 {
         margin-bottom: 10px;
-        font-size: 16px;
-        color: var(--dark-grey);
         text-transform: uppercase;
-        font-weight: 100;
         letter-spacing: .05em;
+        font-size: 16px;
+        font-weight: 100;
+        color: var(--grey);
     }
 
     .newsletter__intro h2 {
@@ -242,80 +223,60 @@
     }
     
     .newsletter__description {
-        text-align: center;
-        color: var(--grey);
         padding-top: 10px;
         padding-bottom: 20px;
+        text-align: center;
         font-weight: 100;
+        color: var(--grey);
     }
 
-     .newsletter__header form {
-        margin-bottom: 16px;
-        max-width: 500px;
-        margin: auto;
+    .newsletter__question {
         display: flex;
         flex-direction: column;
         align-items: center;
-     }
+        position: relative;
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 16px;
+        color: white;
+    }
 
-     .newsletter__question {
-         position: relative;
-         width: 100%;
-         color: white;
-     }
-
-     .newsletter__question select {
+    .newsletter__question select {
         display: block;
         width: 100%;
         height: 40px;
-        line-height: 18px;
-        font-size: 14px;
-        color: inherit;
-        background: var(--grey);
+        margin-bottom: 16px;
+        padding: 0 18px 0 18px;
         border: none;
         border-radius: 20px;
-        padding: 0 18px 0 18px;
-        outline: none;
         -webkit-appearance: none;
-        margin-bottom: 16px;
+        line-height: 18px;
+        font-size: 14px;
+        background: var(--grey);
+        color: inherit;
     }
 
     .newsletter__header button {
-        color: white;
-        background-color: var(--blue);
+        padding: 0 18px;
         height: 30px;
         border-radius: 15px;
-        padding: 0 18px;
+        color: white;
+        background-color: var(--blue);
     }
 
     .newsletter__question input {
         display: block;
         width: 100%;
         height: 40px;
-        line-height: 18px;
+        padding: 0 42px 0 18px;
+        margin-bottom: 16px;
         font-size: 14px;
+        line-height: 18px;
+        border: none;
+        border-radius: 15px;
+        outline: none;
         color: white;
         background: var(--grey);
-        border: none;
-        border-radius: 15px;
-        padding: 0 42px 0 18px;
-        outline: none;
-        margin-bottom: 16px;
-    }
-
-    .newsletter__question input {
-        display: block;
-        width: 100%;
-        height: 40px;
-        line-height: 18px;
-        font-size: 14px;
-        color: inherit;
-        background: var(--grey);
-        border: none;
-        border-radius: 15px;
-        padding: 0 42px 0 18px;
-        outline: none;
-        margin-bottom: 16px;
     }
 
     .newsletter__question textarea {
@@ -327,38 +288,31 @@
     }
 
     #hishow h4, #colabshow h4 {
-        text-align: center;
         margin-bottom: 20px;
+        text-align: center;
+        color: var(--grey);
     }
 
     #colabshow, #hishow {
         width: 100%;
     }
 
-    #colabshow h4, #hishow h4 {
-      color: var(--black);
-    }
-
     #hishow textarea, #colabshow textarea {
+        padding: 14px 18px;
+        width: 100%;
         resize: none;
+        border: none;
+        border-radius: 15px;
+        font-size: 14px;
         background-color: var(--grey);
         color: white;
-        font-size: 14px;
-        border: none;
-        width: 100%;
-        padding: 14px 18px;
-        border-radius: 15px;
     }
-
+    
     #hishow textarea::placeholder, #colabshow textarea::placeholder {
-      color: white;
+        color: white;
     }
 
     @media (max-width: 890px) {
-        .newsletter__header {
-            height: 80vh;
-        }
-
         .newsletter__intro h2{
             font-size: 36px;
         }

@@ -10,17 +10,14 @@
     -------------------------------------------------------------------------- */
 
     .project__header {
-        width: 100%;
         padding-bottom: 70px;
     }
     
     .project__intro {
-        text-align: center;
-        color: black;
-        letter-spacing: -.005em;
         padding-top: 5em;
-        max-width: 800px;
-        margin: auto;
+        text-align: center;
+        letter-spacing: -.005em;
+        color: black;
     }
 
     .project__intro h2 {
@@ -31,17 +28,17 @@
     .project__intro h6 {
         margin-bottom: 10px;
         font-size: 16px;
-        color: var(--dark-grey);
-        text-transform: uppercase;
         font-weight: 100;
+        text-transform: uppercase;
         letter-spacing: .05em;
+        color: var(--dark-grey);
     }
     
     .project__description {
-        margin: auto;
-        color: var(--grey);
         padding-top: 10px;
+        margin: auto;
         max-width: 500px;
+        color: var(--grey);
     }
 
     .chooseMe__moving {
@@ -108,11 +105,11 @@
     }
     
     .chooseMe__card {
-        border-radius: 10px;
-        background-color: white;
         padding: 20px;
         width: 300px;
         height: 112px;
+        border-radius: 10px;
+        background-color: white;
     }
 
     .chooseMe__card:active, .chooseMe__card:hover {
@@ -130,7 +127,6 @@
 
     .chooseMe__content {
         display: flex;
-        width: 100%;
     }
 
     .chooseMe__content img {
@@ -155,17 +151,17 @@
     -------------------------------------------------------------------------- */
 
     .project__details {
-        width: 817px;
-        height: 650px;
-        background-color: white;
-        margin: auto;
-        border-radius: 18px;
+        display: none;
         position: fixed;
         top: 0; 
         left: 0;
         right: 0;
         bottom: 0;
-        display: none;
+        width: 817px;
+        height: 650px;
+        margin: auto;
+        border-radius: 18px;
+        background-color: white;
     }
 
     .appear {
@@ -177,11 +173,11 @@
     }
 
     .project__top {
-        background-color: white;
-        height: 200px;
         width: 100%;
+        height: 200px;
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
+        background-color: white;
     }
 
     .project__top .container {
@@ -199,19 +195,18 @@
     }
 
     .project__top .container button {
-        height: 33px;
-        width: 33px;
-        background-color: var(--bblack);
-        border-radius: 50%;
         position: absolute;
         top: 24px;
         left: 24px;
+        height: 33px;
+        width: 33px;
+        border-radius: 50%;
+        background-color: var(--bblack);
         cursor: pointer;
     }
 
     .project__top .container button svg {
         height: 50%;
-        transform: rotate(45deg)
+        transform: rotate(45deg);
     }
-
 /*

@@ -14,10 +14,10 @@
     }
     
     .badminton__intro {
-        text-align: center;
-        color: white;
         padding-top: 5em;
         margin: auto;
+        text-align: center;
+        color: white;
     }
 
     .badminton__intro h2:nth-child(3) {
@@ -28,9 +28,9 @@
     .badminton__intro h6 {
         margin-bottom: 10px;
         font-size: 16px;
-        color: var(--blue);
-        text-transform: uppercase;
         font-weight: 200;
+        text-transform: uppercase;
+        color: var(--blue);
     }
 
     .badminton__intro h2 {
@@ -42,15 +42,15 @@
     .badminton__play {
         display: inline-flex;
         align-items: center;
-        cursor: pointer;
-        font-size: 13px;
-        text-transform: uppercase;
-        height: 30px;
-        background-color: var(--bblack);
-        color: white;
-        border-radius: 15px;
         padding: 0 18px;
         margin-top: 20px;
+        height: 30px;
+        font-size: 13px;
+        text-transform: uppercase;
+        border-radius: 15px;
+        background-color: var(--bblack);
+        color: white;
+        cursor: pointer;
     }
 
     .badminton__play:hover {
@@ -81,8 +81,8 @@
     -------------------------------------------------------------------------- */
 
     .reg {
-        text-align: center;
         padding-bottom: 170px;
+        text-align: center;
     }
 
     .hide {
@@ -93,8 +93,8 @@
 
     .badminton__img {
         width: 417px;
-        border-radius: 18px;
         margin-bottom: 50px;
+        border-radius: 18px;
     }
 
     .badminton__reg {
@@ -107,7 +107,6 @@
     }
 
     table {
-        border-collapse: collapse;
         width: 100%;
     }
       

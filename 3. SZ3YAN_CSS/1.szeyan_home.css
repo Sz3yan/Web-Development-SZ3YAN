@@ -12,28 +12,24 @@
     -------------------------------------------------------------------------- */
 
     .home__header {
-        height: 90vh;
         display: flex;
-        justify-content: center;
         align-items: center;
+        height: 90vh;
     }
     
     .home__intro {
         display: grid;
-        width: 100%;
-        max-width: 1280px;
-        margin: auto;
-        grid-column-gap: 16px;
-        grid-row-gap: 60px;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-auto-flow: dense;
+        max-width: 1280px;
+        width: 100%;
     }
 
     .home__greeting {
         display: flex;
-        max-width: 420px;
         flex-direction: column;
         align-items: flex-start;
+        max-width: 420px;
     }
 
     .home__greeting h2 {
@@ -41,8 +37,8 @@
     }
 
     .home__greeting p {
-        max-width: 380px;
         margin-top: 35px;
+        max-width: 380px;
     }
 
     .home__icons {
@@ -54,10 +50,10 @@
     .home__icons .insta {
         width: 24px;
         height: 24px;
+        margin-right: 30px;
         background-image: url("../1. SZ3YAN_design/1. szeyan_home_design/home_icons/insta.png");
         background-size: 24px;
         background-repeat: no-repeat;
-        margin-right: 30px
     }
 
     .home__icons .insta:hover {
@@ -68,10 +64,10 @@
     .home__icons .whatsapp {
         width: 24px;
         height: 24px;
+        margin-right: 30px;
         background-image: url("../1. SZ3YAN_design/1. szeyan_home_design/home_icons/whatsapp.png");
         background-size: 24px;
         background-repeat: no-repeat;
-        margin-right: 30px
     }
 
     .home__icons .whatsapp:hover {
@@ -82,10 +78,10 @@
     .home__icons .gmail {
         width: 24px;
         height: 24px;
+        margin-right: 30px;
         background-image: url("../1. SZ3YAN_design/1. szeyan_home_design/home_icons/gmail.png");
         background-size: 24px;
         background-repeat: no-repeat;
-        margin-right: 30px
     }
 
     .home__icons .gmail:hover {
@@ -96,10 +92,10 @@
     .home__icons .profile {
         width: 24px;
         height: 24px;
+        margin-right: 30px;
         background-image: url("../1. SZ3YAN_design/1. szeyan_home_design/home_icons/profile.png");
         background-size: 24px;
         background-repeat: no-repeat;
-        margin-right: 30px
     }
 
     .home__icons .profile:hover {
@@ -126,49 +122,48 @@
     @media (max-width: 890px) {
         .home__intro {
             grid-template-columns: none;
-            grid-row-gap: 0px;
         }        
 
         .home__greeting {
-            width: 100%;
             position: relative;
             top: 100px;
+            width: 100%;
         }
 
         .home__icons .insta {
             width: 24px;
             height: 24px;
+            margin-right: 30px;
             background-image: url("../1. SZ3YAN_design/1. szeyan_home_design/home_icons/insta-colour.png");
             background-size: 24px;
             background-repeat: no-repeat;
-            margin-right: 30px
         }
     
         .home__icons .whatsapp {
             width: 24px;
             height: 24px;
+            margin-right: 30px;
             background-image: url("../1. SZ3YAN_design/1. szeyan_home_design/home_icons/whatsapp-colour.png");
             background-size: 24px;
             background-repeat: no-repeat;
-            margin-right: 30px
         }
     
         .home__icons .gmail {
             width: 24px;
             height: 24px;
+            margin-right: 30px;
             background-image: url("../1. SZ3YAN_design/1. szeyan_home_design/home_icons/gmail-colour.png");
             background-size: 24px;
             background-repeat: no-repeat;
-            margin-right: 30px
         }
     
         .home__icons .profile {
             width: 24px;
             height: 24px;
+            margin-right: 30px;
             background-image: url("../1. SZ3YAN_design/1. szeyan_home_design/home_icons/profile-colour.png");
             background-size: 24px;
             background-repeat: no-repeat;
-            margin-right: 30px
         }
 
         .home__hai {
@@ -192,19 +187,17 @@
     }
     
     .chooseMe__intro {
-        text-align: center;
-        color: white;
-        letter-spacing: -.005em;
         padding-top: 10em;
-        max-width: 800px;
         margin: auto;
+        text-align: center;
+        letter-spacing: -.005em; 
+        color: white;
     }
 
     .chooseMe__intro h6 {
         margin-bottom: 10px;
         color: var(--dark-grey);
         text-transform: uppercase;
-        
     }
 
     .chooseMe__intro h2 {
@@ -213,10 +206,10 @@
     }
     
     .chooseMe__description {
-        margin: auto;
-        color: var(--grey);
         padding-top: 10px;
         max-width: 760px;
+        margin: auto;
+        color: var(--grey);
     }
     
     .chooseMe__description span {
@@ -269,10 +262,10 @@
 
     .chooseMe__projectSet1, .chooseMe__projectSet2 {
         display: grid;
+        padding-top: 20px;
         row-gap: 45px;
         column-gap: 40px;
         grid-template-columns: repeat(5, 300px);
-        padding-top: 20px;
     }
 
     .chooseMe__projectSet2 {
@@ -280,11 +273,11 @@
     }
     
     .chooseMe__card {
-        border-radius: 10px;
-        background-color: var(--bblack);
         padding: 20px;
         width: 300px;
         height: 112px;
+        border-radius: 10px;
+        background-color: var(--bblack);
     }
 
     .chooseMe__card:active, .chooseMe__card:hover {
@@ -333,8 +326,6 @@
 
         .chooseMe__description {
             font-size: 16px;
-            max-width: 500px;
-            margin: auto;
         }
 
         .chooseMe__moving {
@@ -342,7 +333,7 @@
             padding-bottom: 50px;
         }
 
-        .mobile, .chooseMe__projects__description {
+        .mobile, .chooseMe__projects__description, .chooseMe__right {
             display: none;
         }
 
@@ -350,19 +341,15 @@
             animation: moveleft 200s linear infinite;
         }
 
-        .chooseMe__right {
-            display: none;
-        }
-
         .chooseMe__card {
-            background-color: transparent;
-            width: 100px;
             padding: 0;
+            width: 100px;
+            background-color: transparent;  
         }
 
         .chooseMe__projectSet1, .chooseMe__projectSet2 {
-            grid-template-columns: repeat(5, 100px);
             padding-top: 20px;
+            grid-template-columns: repeat(5, 100px); 
         }
 
         .chooseMe__card img {
@@ -382,23 +369,21 @@
     }
 
     .findMe__intro {
+        padding-top: 2.5em;
         text-align: center;
-        color: white;
         font-size: 38px;
         font-weight: 600;
         letter-spacing: -.005em;
-        padding-top: 2.5em;
-        max-width: 650px;
-        margin: auto;
+        color: white;
     }
 
     .findMe__intro h6 {
         margin-bottom: 10px;
-        font-size: 16px;
-        color: var(--dark-grey);
         text-transform: uppercase;
+        font-size: 16px;
         font-weight: 600;
         letter-spacing: .05em;
+        color: var(--dark-grey);
     }
 
     .findMe__intro h2 {
@@ -407,10 +392,10 @@
     }
     
     .findMe__description {
+        padding-top: 10px;
+        max-width: 500px; 
         margin: auto;
         color: var(--grey);
-        padding-top: 10px;
-        max-width: 550px; 
     }
 
     .findMe__description span {
@@ -429,16 +414,16 @@
     }
 
     .cursor {
-        width: 300px;
-        height: 300px;
-        background: #fff;
-        border-radius: 50%;
+        display: none;
         position: absolute;
         top: 0;
         left: 0;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
         transform: translateX(-50%) translateY(-50%);
         mix-blend-mode: difference;
-        display: none;
+        background: #fff;
     }
 
     @media (max-width: 890px) {
@@ -458,8 +443,6 @@
         .findMe__invert a img {
             width: 30%;
         }
-
-
     }
 
     /* --------------------------------------------------------------------------
@@ -476,22 +459,20 @@
     }
 
     .newsletter__intro {
+        padding-top: 2.5em;
         text-align: center;
-        color: white;
         font-weight: 100;
         letter-spacing: -.005em;
-        padding-top: 2.5em;
-        max-width: 650px;
-        margin: auto;
+        color: white;
     }
 
     .newsletter__intro h6 {
         margin-bottom: 10px;
-        font-size: 16px;
-        color: var(--dark-grey);
         text-transform: uppercase;
-        font-weight: 100;
         letter-spacing: .05em;
+        font-size: 16px;
+        font-weight: 100;
+        color: var(--dark-grey);
     }
 
     .newsletter__intro h2 {
@@ -500,80 +481,60 @@
     }
     
     .newsletter__description {
-        text-align: center;
-        color: var(--grey);
         padding-top: 10px;
         padding-bottom: 20px;
+        text-align: center;
         font-weight: 100;
+        color: var(--grey);
     }
 
-     .newsletter__header form {
-        margin-bottom: 16px;
-        max-width: 500px;
-        margin: auto;
+    .newsletter__question {
         display: flex;
         flex-direction: column;
         align-items: center;
-     }
+        position: relative;
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 16px;
+        color: white;
+    }
 
-     .newsletter__question {
-         position: relative;
-         width: 100%;
-         color: white;
-     }
-
-     .newsletter__question select {
+    .newsletter__question select {
         display: block;
         width: 100%;
         height: 40px;
-        line-height: 18px;
-        font-size: 14px;
-        color: inherit;
-        background: var(--dark-grey);
+        margin-bottom: 16px;
+        padding: 0 18px 0 18px;
         border: none;
         border-radius: 20px;
-        padding: 0 18px 0 18px;
-        outline: none;
         -webkit-appearance: none;
-        margin-bottom: 16px;
+        line-height: 18px;
+        font-size: 14px;
+        background: var(--dark-grey);
+        color: inherit;
     }
 
     .newsletter__header button {
-        color: white;
-        background-color: var(--blue);
+        padding: 0 18px;
         height: 30px;
         border-radius: 15px;
-        padding: 0 18px;
+        color: white;
+        background-color: var(--blue);
     }
 
     .newsletter__question input {
         display: block;
         width: 100%;
         height: 40px;
-        line-height: 18px;
+        padding: 0 42px 0 18px;
+        margin-bottom: 16px;
         font-size: 14px;
+        line-height: 18px;
+        border: none;
+        border-radius: 15px;
+        outline: none;
         color: white;
         background: var(--dark-grey);
-        border: none;
-        border-radius: 15px;
-        padding: 0 42px 0 18px;
-        outline: none;
-        margin-bottom: 16px;
-    }
-
-    .newsletter__question input {
-        display: block;
-        width: 100%;
-        height: 40px;
-        line-height: 18px;
-        font-size: 14px;
-        color: inherit;
-        background: var(--dark-grey);
-        border: none;
-        border-radius: 15px;
-        padding: 0 42px 0 18px;
-        outline: none;
-        margin-bottom: 16px;
     }
 
     .newsletter__question textarea {
@@ -585,8 +546,8 @@
     }
 
     #hishow h4, #colabshow h4 {
-        text-align: center;
         margin-bottom: 20px;
+        text-align: center;
     }
 
     #colabshow, #hishow {
@@ -594,14 +555,14 @@
     }
 
     #hishow textarea, #colabshow textarea {
+        padding: 14px 18px;
+        width: 100%;
         resize: none;
+        border: none;
+        border-radius: 15px;
+        font-size: 14px;
         background-color: var(--dark-grey);
         color: white;
-        font-size: 14px;
-        border: none;
-        width: 100%;
-        padding: 14px 18px;
-        border-radius: 15px;
     }
     
     #hishow textarea::placeholder, #colabshow textarea::placeholder {
@@ -609,10 +570,6 @@
     }
 
     @media (max-width: 890px) {
-        .newsletter__header {
-            height: 80vh;
-        }
-
         .newsletter__intro h2{
             font-size: 36px;
         }

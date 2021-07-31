@@ -29,21 +29,21 @@
     }
 
     .credit__input, .expire, .cvv {
+        padding-left: 20px;
+        margin-bottom: 15px;
         height: 52px;
+        text-align: left;
         border-radius: 12px;
         border: solid 1px var(--dark-grey);
+        font-size: 17px;
         background-color: transparent;
         color: white;
-        margin-bottom: 15px;
-        font-size: 17px;
-        text-align: left;
-        padding-left: 20px;
     }
 
     .sz3ai__payment h4 {
-        font-weight: 300;
         padding-top: 10px;
         padding-bottom: 10px;
+        font-weight: 300;
     }
 
     .expire {
@@ -71,13 +71,13 @@
     .credit, .sz3pay {
         width: 400px;
         height: 72px;
+        padding-left: 20px;
+        margin-bottom: 15px;
+        text-align: left;
         border: solid 1px var(--dark-grey);
         border-radius: 12px;
-        margin-bottom: 15px;
-        color: white;
         font-size: 17px;
-        text-align: left;
-        padding-left: 20px;
+        color: white;
     }
 
     .credit:hover , .sz3pay:hover {
@@ -93,9 +93,9 @@
         height: 42px;
         border: solid 1px var(--dark-grey);
         border-radius: 12px;
+        font-size: 17px;
         background-color: var(--blue);
         color: white;
-        font-size: 17px;
         cursor: not-allowed;
     }
 
