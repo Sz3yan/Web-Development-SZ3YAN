@@ -195,6 +195,14 @@
     }
 
     .project__bottom .container p {
+        width: 500px;
+    }
+
+    .project__bottom .container p span {
+        color: var(--blue);
+    }
+
+    .project__bottom .container p {
         color: var(--dark-grey);
     }
 
