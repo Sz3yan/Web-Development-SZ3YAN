@@ -223,5 +223,9 @@
         .project__top {
             width: 400px;
         }
+
+        .copyright {
+            top: 50px;
+        }
     }
 /*
