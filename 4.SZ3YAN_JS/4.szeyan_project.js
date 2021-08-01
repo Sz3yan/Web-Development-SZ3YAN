@@ -31,6 +31,12 @@ function project__details() {
                 content1.textContent = "Redesign from ground up.";
                 content2.textContent = "simply and seamlessly focus on what matters. Search and summarised within seconds. Tune the information presented to you with ease, making anything, easy.";
             }
+
+            else {
+                head.textContent = "Collaboration Snap it. Build it. Send it.";
+                content1.textContent = "Whether you are working alone or with friends, collaboration is key. Share ideas, send giant files or brainstorm on possible solutions. ";
+                content2.textContent = "empowers you to do more.";
+            }
         });
     }
     
