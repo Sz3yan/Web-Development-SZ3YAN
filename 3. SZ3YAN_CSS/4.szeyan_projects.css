@@ -41,8 +41,12 @@
     .project__description {
         padding-top: 10px;
         margin: auto;
-        max-width: 500px;
+        max-width: 610px;
         color: var(--grey);
+    }
+
+    .project__description span {
+        color: var(--blue);
     }
 
     .chooseMe__moving {
@@ -50,8 +54,16 @@
         overflow-x: hidden;
     }
 
-    #top3-1, #top3-2, #top3-3 {
+    #top3-1 {
+        background-color: #F2D4CC;
+    }
+
+    #top3-2 {
         background-color: #AFEEEE;
+    }
+
+    #top3-3 {
+        background-color: #DCF0FD;
     }
 
     #top3-1 a div h4, #top3-2 a div h4, #top3-3 a div h4 {

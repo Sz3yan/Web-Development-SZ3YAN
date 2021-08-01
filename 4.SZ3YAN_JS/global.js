@@ -210,6 +210,15 @@ function cvv__validate() {
     });
 }
 
+function name() {
+    var hi = document.querySelector(".reg__intro h3");
+    var hehe = document.querySelector(".name__input");
+
+    hehe.addEventListener("keyup", function() {
+        hi.innerText = "Hey " + hehe.value;
+    });
+}
+
 function book() {
     document.querySelector(".reg__intro").style.display = "none";
     document.querySelector(".badminton").style.display = "none";
