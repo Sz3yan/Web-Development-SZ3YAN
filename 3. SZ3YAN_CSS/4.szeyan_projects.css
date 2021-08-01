@@ -195,7 +195,7 @@
     }
 
     .project__content {
-        width: 320px;
+        width: 500px;
         color: var(--dark-grey);
     }
 
@@ -227,6 +227,10 @@
 
         .project__top {
             width: 400px;
+        }
+
+        .project__content {
+            width: 320px;
         }
 
         .copyright {
