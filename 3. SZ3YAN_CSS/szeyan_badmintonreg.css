@@ -17,11 +17,16 @@
     }
 
     .reg .container {
-        display: flex
+        display: flex;
     }
 
-    .name__input, .email__input {
+    .name__input, .email__input, iframe {
         width: 400px;
+    }
+
+    iframe {
+        height: 250px;
+        margin-bottom: 20px;
     }
 
     .expire, .location {
@@ -40,7 +45,7 @@
         text-align: left;
         height: 52px;
         border-radius: 12px;
-        border: solid 1px var(--dark-grey);
+        border: solid 1px var(--grey);
         font-size: 17px;
         background-color: transparent;
     }
@@ -66,6 +71,10 @@
         text-align: center;
     }
 
+    .badminton a {
+        display: flex;
+    }
+
     .badminton__img {
         width: 350px;
         margin-bottom: 50px;
@@ -84,6 +93,10 @@
 
         .name__input, .email__input, .book {
             width: 335px;
+        }
+
+        iframe {
+            display: none;
         }
     
         .expire, .location {
