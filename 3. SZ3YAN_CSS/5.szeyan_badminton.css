@@ -80,15 +80,11 @@
         2. badminton reg
     -------------------------------------------------------------------------- */
 
-    .reg {
+    .badminton__reg {
+        display: flex;
+        justify-content: space-between;
         padding-bottom: 170px;
         text-align: center;
-    }
-
-    .hide {
-        display: none;
-        padding-bottom: 50px;
-        border-radius: 18px;
     }
 
     .badminton__img {
@@ -97,17 +93,9 @@
         border-radius: 18px;
     }
 
-    .badminton__reg {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .table {
-        width: 500px;
-    }
-
     table {
         width: 100%;
+        width: 500px;
     }
       
     th, td {
@@ -131,17 +119,6 @@
 
         .table {
             width: 300px;
-        }
-
-        .hide {
-            display: block;
-            width: 300px;
-            margin: auto;
-            border-radius: 18px;
-        }
-
-        .badminton__img {
-            display: none;
         }
     }
 /*
