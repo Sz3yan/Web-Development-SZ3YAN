@@ -231,9 +231,8 @@ function docIsReady(){
 	else {	
 		badminton=JSON.parse(badminton);
         
-        var row = document.getElementById("schedule").insertRow(1);
-
         for (x = 0; x < badminton.length; x++) {
+            var row = document.getElementById("schedule").insertRow(1);
             var cell1 = row.insertCell(0);
             var cell2 = row.insertCell(1);
             var cell3 = row.insertCell(2);
