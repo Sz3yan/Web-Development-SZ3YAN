@@ -122,12 +122,12 @@
             margin-top: 90px;
         }
 
-        .name__input, .email__input, .book {
+        .your__details ,.more__info {
             width: 335px;
         }
 
-        iframe {
-            display: none;
+        .name__input, .email__input, .book, iframe {
+            width: 335px;
         }
     
         .expire, .location {
