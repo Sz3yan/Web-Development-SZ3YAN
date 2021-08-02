@@ -140,20 +140,6 @@ function change() {
     document.querySelector(".credit__hidden").classList.toggle("block");
 }
 
-function success() {
-    if (document.getElementById("checkcard").style.borderColor != "red" &&
-        document.getElementById("checkdate").style.borderColor != "red" &&
-        document.getElementById("checkcvv").style.borderColor != "red"
-    ) {
-        document.querySelector(".buy").style.display = "none";
-        document.querySelector(".done").style.display = "block";
-    }
-
-    else {
-        alert("Check");
-    }
-}
-
 function credit__validate() {
     var card = document.getElementById("checkcard");
 
@@ -208,6 +194,21 @@ function cvv__validate() {
             cvv.style.borderColor = "red";
         }
     });
+}
+
+function success() {
+    var card = document.getElementById("checkcard");
+    var cvv = document.getElementById("checkcvv");
+
+    if (card.value.length == 16 &&
+        cvv.value.length == 3) {
+        document.querySelector(".buy").style.display = "none";
+        document.querySelector(".done").style.display = "block";
+    }
+
+    else {
+        alert("Check");
+    }
 }
 
 function name() {
