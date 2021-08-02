@@ -224,3 +224,11 @@ function book() {
     document.querySelector(".badminton").style.display = "none";
     document.querySelector(".done").style.display = "block";
 }
+
+function details() {
+    document.querySelector(".details__hide").classList.toggle("show");
+}
+
+function info() {
+    document.querySelector(".info__hide").classList.toggle("show");
+}

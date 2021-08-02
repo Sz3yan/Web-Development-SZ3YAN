@@ -20,6 +20,30 @@
         display: flex;
     }
 
+    .your__details ,.more__info {
+        width: 400px;
+        height: 72px;
+        padding-left: 20px;
+        margin-bottom: 15px;
+        text-align: left;
+        border: solid 1px var(--dark-grey);
+        border-radius: 12px;
+        font-size: 17px;
+    }
+
+    .your__details:hover ,.more__info:hover {
+        border: solid 1px var(--blue);
+        cursor: pointer;
+    }
+
+    .details__hide, .info__hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
     .name__input, .email__input, iframe {
         width: 400px;
     }
@@ -64,6 +88,7 @@
         font-size: 17px;
         color: white;
         background-color: var(--blue);
+        cursor: pointer;
     }
 
     .done {
@@ -76,9 +101,15 @@
     }
 
     .badminton__img {
-        width: 350px;
-        margin-bottom: 50px;
+        width: 250px;
+        height: 480px;
         border-radius: 18px;
+        object-fit: cover;
+    }
+
+    .badminton__img:nth-child(2) {
+        margin-top: 50px;
+        margin-left: 10px;
     }
 
     .done h1 {

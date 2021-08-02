@@ -47,10 +47,10 @@
             <div id="nav__mobile">
                 <div class="container">
                     <ul class="nav">
-                        <li class="nav__about"><a href="2.szeyan_about.html">About</a></li>
-                        <li class="nav__sz3ai"><a href="3.szeyan_sz3ai.html">SZ3AI</a></li>
-                        <li class="nav__projects"><a href="4.szeyan_project.html">Projects</a></li>
-                        <li class="nav__badminton"><a href="5.szeyan_badminton.html">Badminton</a></li>
+                        <a href="2.szeyan_about.html"><li class="nav__about">About</li></a>
+                        <a href="3.szeyan_sz3ai.html"><li class="nav__sz3ai">SZ3AI</li></a>
+                        <a href="4.szeyan_project.html"><li class="nav__projects">Projects</li></a>
+                        <a href="5.szeyan_badminton.html"><li class="nav__badminton">Badminton</li></a>
                     </ul>
                 </div>
                 <script>nav__trigger()</script>
@@ -61,21 +61,31 @@
             <div class="container">
                 <div class="reg__intro">
                     <h3>Hey there</h3>
-                    <form>
-                        <input class="name__input" id="nn" type="text" placeholder="What's your name"/>
-                        <input class="email__input" type="email" placeholder="Your email address"/>
-                        <div class="second">
-                            <input class="expire" type="date" id="checkdate" onclick="date__validate()" min='1899-01-01' max='2100-13-13' placeholder="Expiration MM/YY"/>
-                            <input class="location" type="text" placeholder="Location"/>
-                        </div>
-                    </form>
-                    <script>name()</script>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63816.688879781286!2d103.80695493175996!3d1.4486815184290642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbadminton!5e0!3m2!1sen!2ssg!4v1627802408151!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <button class="your__details" onclick="details()">Your details</button>
+                    <div class="details__hide">
+                        <form>
+                            <input class="name__input" id="nn" type="text" placeholder="What's your name"/>
+                            <input class="email__input" type="email" placeholder="Your email address"/>
+                            <div class="second">
+                                <input class="expire" type="date" id="checkdate" onclick="date__validate()" min='1899-01-01' max='2100-13-13' placeholder="Expiration MM/YY"/>
+                                <input class="location" type="text" placeholder="Location"/>
+                            </div>
+                        </form>
+                        <script>name()</script>
+                    </div>
+                    
+                    <button class="more__info" onclick="info()">More info</button>
+
+                    <div class="info__hide">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63816.688879781286!2d103.80695493175996!3d1.4486815184290642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbadminton!5e0!3m2!1sen!2ssg!4v1627802408151!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    
                     <button class="book" onclick="book()">Book</button>
                 </div>
                 <div class="badminton">
                     <a href="5.szeyan_badminton.html">
-                        <img class="badminton__img" src="../1. SZ3YAN_design/5. szeyan_badminton_design/badminton.jpeg" alt="badminton" draggable="false"/>
+                        <img class="badminton__img" src="../1. SZ3YAN_design/5. szeyan_badminton_design/lcw.JPG" alt="badminton" draggable="false"/>
+                        <img class="badminton__img" src="../1. SZ3YAN_design/5. szeyan_badminton_design/lindan.JPG" alt="badminton" draggable="false"/>
                     </a>
                 </div>
                 <div class="done">
