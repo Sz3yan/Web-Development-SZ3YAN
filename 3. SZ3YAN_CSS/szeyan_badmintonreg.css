@@ -74,7 +74,7 @@
         background-color: transparent;
     }
 
-    .reg__intro h3 {
+    .reg__intro h3, .reg__intro h4 {
         padding-top: 10px;
         padding-bottom: 10px;
         font-weight: 300;

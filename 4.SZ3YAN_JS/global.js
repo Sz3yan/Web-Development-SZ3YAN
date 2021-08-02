@@ -220,6 +220,19 @@ function name() {
     });
 }
 
+document.addEventListener("DOMContentLoaded",docIsReady);
+var badminton;
+function docIsReady(){
+	badminton=localStorage.getItem("badminton");
+ 
+	if (badminton==null){
+		badminton=[];
+	}
+	else {	
+		badminton=JSON.parse(badminton);
+	}
+}
+
 function book() {
     var name = document.querySelector(".name__input");
     var email = document.querySelector(".email__input");
@@ -228,15 +241,19 @@ function book() {
     if (name.value.length > 0 && 
         email.value.length > 0 && 
         location.value.length > 0) {
+            
+        var obj={"name":name.value, "email":email.value, "location":location.value};
+        badminton.push(obj);
+        localStorage.setItem("badminton",JSON.stringify(badminton));
+
         document.querySelector(".reg__intro").style.display = "none";
         document.querySelector(".badminton").style.display = "none";
-        document.querySelector(".done").style.display = "block";
+        document.querySelector(".done").style.display = "block"; 
     }
 
     else {
         alert("Enter first");
     }
-    
 }
 
 function details() {
