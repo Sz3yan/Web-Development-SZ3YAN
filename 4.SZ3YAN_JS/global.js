@@ -220,9 +220,22 @@ function name() {
 }
 
 function book() {
-    document.querySelector(".reg__intro").style.display = "none";
-    document.querySelector(".badminton").style.display = "none";
-    document.querySelector(".done").style.display = "block";
+    var name = document.querySelector(".name__input");
+    var email = document.querySelector(".email__input");
+    var location = document.querySelector(".location");
+
+    if (name.value.length > 0 && 
+        email.value.length > 0 && 
+        location.value.length > 0) {
+        document.querySelector(".reg__intro").style.display = "none";
+        document.querySelector(".badminton").style.display = "none";
+        document.querySelector(".done").style.display = "block";
+    }
+
+    else {
+        alert("Enter first");
+    }
+    
 }
 
 function details() {
