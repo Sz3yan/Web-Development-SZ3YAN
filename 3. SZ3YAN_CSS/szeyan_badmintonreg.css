@@ -122,12 +122,8 @@
             margin-top: 90px;
         }
 
-        .your__details ,.more__info {
-            width: 335px;
-        }
-
-        .name__input, .email__input, .book, iframe {
-            width: 335px;
+        .your__details ,.more__info, .name__input, .email__input, .book, iframe {
+            width: 300px;
         }
     
         .expire, .location {
