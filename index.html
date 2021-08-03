@@ -76,6 +76,18 @@
                             <a class="whatsapp" href="https://wa.me/6597924720" target="_blank"></a>
                             <a class="gmail" href="mailto:sz3yan@gmail.com" target="_blank"></a>
                             <a class="profile" href="2. SZ3YAN_Webpage/szeyan_login.html"></a>
+                            <!-- <button class="profile" id="pp" onclick="logout()">
+                            <script>
+                                var getname = localStorage.getItem("nom");
+
+                                if (getname != null) {
+                                    document.getElementById("pp").style.display ="block";
+                                } 
+
+                                else {
+                                    document.getElementById("pp").style.display ="none";
+                                }
+                            </script> -->
                         </div>
                         <a class="home__hai" href="#hai">Say Hai!</a>
                     </div>
@@ -430,7 +442,7 @@
             </div>
         </div>
 
-        <div class="newsletter__header">
+        <div class="newsletter__header" id="hai">
             <div class="container">
                 <div class="newsletter__intro">
                     <h6>Still got questions?</h6>

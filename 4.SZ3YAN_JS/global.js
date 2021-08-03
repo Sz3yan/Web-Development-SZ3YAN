@@ -76,6 +76,13 @@ function check(){
     }
 }
 
+// function logout() {
+//     localStorage.removeItem("user");
+//     localStorage.removeItem("pw");
+//     localStorage.removeItem("nom");
+//     window.location.reload();
+// }
+
 function register__validate() {
     var password = document.getElementById("pw");
 
