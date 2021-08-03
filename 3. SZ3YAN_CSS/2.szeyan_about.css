@@ -299,7 +299,7 @@
         color: white;
     }
 
-    #hishow h4, #colabshow h4 {
+    #hishow p, #colabshow p {
         margin-bottom: 20px;
         text-align: center;
         color: var(--grey);
