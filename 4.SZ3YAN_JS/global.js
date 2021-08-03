@@ -142,18 +142,12 @@ function send_email() {
     document.getElementById('form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    btn.value = 'Sending...';
-
     const serviceID = 'default_service';
     const templateID = 'template_8hjq86e';
 
     emailjs.sendForm(serviceID, templateID, this).then(() => {
         btn.value = 'Send Email';
-        // Swal.fire(
-        //     'Good job!',
-        //     'You clicked the button!',
-        //     'success'
-        // )
+            alert("Sent")
         }, 
 
         (err) => {
@@ -283,6 +277,18 @@ function book() {
         var obj={"name":name.value, "email":email.value, "date":date.value, "location":location.value};
         badminton.push(obj);
         localStorage.setItem("badminton", JSON.stringify(badminton));
+
+        const serviceID = 'default_service';
+        const templateID = 'template_9p2ciqd';
+
+        var tomail = {
+            fromname: name.value,
+            yourmail: email.value,
+            yourdate: date.value,
+            yourlocation: location.value
+        };
+
+        emailjs.send(serviceID, templateID, tomail);
 
         document.querySelector(".reg__intro").style.display = "none";
         document.querySelector(".badminton").style.display = "none";

