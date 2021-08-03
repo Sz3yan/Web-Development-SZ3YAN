@@ -136,6 +136,33 @@ function store(){
     }
 }
 
+function send_email() {
+    const btn = document.getElementById('send');
+
+    document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    btn.value = 'Sending...';
+
+    const serviceID = 'default_service';
+    const templateID = 'template_8hjq86e';
+
+    emailjs.sendForm(serviceID, templateID, this).then(() => {
+        btn.value = 'Send Email';
+        // Swal.fire(
+        //     'Good job!',
+        //     'You clicked the button!',
+        //     'success'
+        // )
+        }, 
+
+        (err) => {
+            btn.value = 'Send Email';
+            alert(JSON.stringify(err));
+        });
+    });
+}
+
 function change() {
     document.querySelector(".credit__hidden").classList.toggle("block");
 }
