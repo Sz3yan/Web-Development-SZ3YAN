@@ -236,11 +236,9 @@ function docIsReady(){
             var cell1 = row.insertCell(0);
             var cell2 = row.insertCell(1);
             var cell3 = row.insertCell(2);
-            var cell4 = row.insertCell(3);
             cell1.innerHTML = badminton[x].name;
-            cell2.innerHTML = badminton[x].name;
-            cell3.innerHTML = badminton[x].email;
-            cell4.innerHTML = badminton[x].location;
+            cell2.innerHTML = badminton[x].date;
+            cell3.innerHTML = badminton[x].location;
         }
 	}
 }
@@ -248,15 +246,16 @@ function docIsReady(){
 function book() {
     var name = document.querySelector(".name__input");
     var email = document.querySelector(".email__input");
+    var date = document.querySelector(".expire");
     var location = document.querySelector(".location");
 
     if (name.value.length > 0 && 
         email.value.length > 0 && 
         location.value.length > 0) {
             
-        var obj={"name":name.value, "email":email.value, "location":location.value};
+        var obj={"name":name.value, "email":email.value, "date":date.value, "location":location.value};
         badminton.push(obj);
-        localStorage.setItem("badminton",JSON.stringify(badminton));
+        localStorage.setItem("badminton", JSON.stringify(badminton));
 
         document.querySelector(".reg__intro").style.display = "none";
         document.querySelector(".badminton").style.display = "none";

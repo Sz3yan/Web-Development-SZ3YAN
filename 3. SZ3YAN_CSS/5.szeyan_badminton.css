@@ -91,6 +91,7 @@
         width: 417px;
         margin-bottom: 50px;
         border-radius: 18px;
+        object-fit: cover;
     }
 
     table {
