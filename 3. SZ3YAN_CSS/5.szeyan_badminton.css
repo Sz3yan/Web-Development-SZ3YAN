@@ -94,13 +94,16 @@
         object-fit: cover;
     }
 
+    .badminton__form {
+        width: 500px;
+    }
+
     table {
         width: 100%;
-        width: 500px;
     }
       
     th, td {
-        padding: 1.5em;
+        padding: 1em;
         text-align: left;
         border-bottom: 1px solid #ddd;
     }
@@ -118,8 +121,15 @@
             display: block;
         }
 
-        .badminton__img, table {
+        .badminton__img {
             width: 300px;
+        }
+
+        .badminton__form {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            width: 400px;
         }
     }
 /*
