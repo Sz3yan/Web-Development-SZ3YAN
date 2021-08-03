@@ -429,7 +429,7 @@
                     <p class="newsletter__description">Let get in touch</p>
                 </div>
                 
-                <form class="newsletter__question">
+                <form class="newsletter__question" action="https://formsubmit.co/sz3yan@gmail.com" method="POST">
                     <select id="seeAnotherField" autocomplete="off">
                         <option disabled selected value="">Choose a selection...</option> 
                         <option value="email">How do I sign up for newsletter?</option>
@@ -438,25 +438,25 @@
                     </select>
 
                     <div id="emailshow">
-                        <input type="email" placeholder="email">
+                        <input class="email" type="email" placeholder="email">
                     </div>
 
                     <div id="colabshow">
                         <h4>Wanna collab?</h4>
                         <div class="your_info">
-                            <input type="text" placeholder="What's your name?">
-                            <input type="email" placeholder="Where can I contact you?">
+                            <input name="name" type="text" placeholder="What's your name?">
+                            <input name="email" type="email" placeholder="Where can I contact you?">
                         </div>
-                        <textarea rows="6" placeholder="Tell me about your idea" style="height: 136px;"></textarea>
+                        <textarea name="message" rows="6" placeholder="Tell me about your idea" style="height: 136px;"></textarea>
                     </div>
 
                     <div id="hishow">
                         <h4>I love to hear from you!</h4>
                         <div class="your_info">
-                            <input type="text" placeholder="What's your name?">
-                            <input type="email" placeholder="Where can I contact you?">
+                            <input name="name" type="text" placeholder="What's your name?">
+                            <input name="email" type="email" placeholder="Where can I contact you?">
                         </div>
-                        <textarea rows="6" placeholder="What's on your mind" style="height: 136px;"></textarea>
+                        <textarea name="message" rows="6" placeholder="What's on your mind" style="height: 136px;"></textarea>
                     </div>
 
                     <button type="submit">CONTINUE</button>

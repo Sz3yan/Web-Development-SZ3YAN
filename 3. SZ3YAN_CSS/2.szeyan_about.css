@@ -102,6 +102,14 @@
         background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/badminton.jpg");
     }
 
+    .content2 #overlay1 p span a {
+        color: white;
+    }
+
+    .content2 #overlay1 p span a:hover {
+        color: var(--black);
+    }
+
     .content3 {
         background-image: url("../1. SZ3YAN_design/2. szeyan_about_design/ncdcc.jpg");
     }
